@@ -1,0 +1,2 @@
+Sitemap: https://chloehafner.com/sitemap.xml
+User-agent: *

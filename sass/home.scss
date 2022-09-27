@@ -1,0 +1,60 @@
+@import "./_variables.scss";
+
+body {
+  background: #FAFAF8;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 40px 0;
+
+  .nav-links {
+    font-size: 30px;
+
+
+    a {
+      margin: 0 10px;
+    }
+  }
+}
+
+.body-wrapper {
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-top: 40px;
+
+  @media only screen and (min-width: $bp-desktop) {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
+
+.intro {
+  margin-bottom: 60px;
+
+  .img-container {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 300px;
+      height: 300px;
+    }
+  }
+}
+
+.tiles {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  .project {
+    width: 40%;
+    min-width: 400px;
+    padding: 0 40px;
+    margin-bottom: 40px;
+    background: #797A9E;
+    border-radius: 30px;
+  }
+}

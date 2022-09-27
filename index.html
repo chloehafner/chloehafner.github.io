@@ -1,23 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JCJBXXSW31"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google Tag Manager -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JCJBXXSW31"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-JCJBXXSW31');
-</script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
 
-  <!-- SEO -->
-  <meta charset="UTF-8">
-  <title>Chloe Hafner's Personal Website</title>
-  <link href="https://chloehafner.com/" rel="canonical">
-  <meta name="viewport" content="width=device-width">
+    gtag("js", new Date());
+    gtag("config", "G-JCJBXXSW31");
+  </script>
 
+  <!-- SEO -->
+  <meta charset="UTF-8">
+  <title>Chloe Hafner's Personal Website</title>
+  <link href="https://chloehafner.com/" rel="canonical">
+  <meta property="og:image" content="./img/profile.png" />
+  <meta name="viewport" content="width=device-width">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/home.css">
 </head>
-  <h1>Hi! I'm Chloe Hafner!</h1>
-  <p>I am a UX designer! I <3 UX design!</p>
+<div class="header-wrapper">
+<!-- Logo -->
+  <div class="img-container logo">
+    <img src="https://via.placeholder.com/200x100" alt="My website logo" />
+  </div>
+
+<!-- Nav links -->
+  <div class="nav-links">
+    <a href="#">Home</a>
+    <a href="#">Portfolio</a>
+    <a href="#">About</a>
+  </div>
+</div>
+<div class="body-wrapper">
+  <!-- Intro Block -->
+  <div class="intro">
+    <h1>Hi! I'm Chloe Hafner!</h1>
+    <p>Welcome to my site! I'm Chloe Hafner, UX designer, artist, and color enthusiast!</p>
+  </div>
+
+  <div class="tiles">
+    <div class="project">
+      <h3>House Numbers</h3>
+      <div class="img-container">
+        <img src="https://via.placeholder.com/300" alt="Screenshot of dashboard on iPhone" />
+      </div>
+      <p>Reverse Mortgage Assessment, Results and User Dashboard</p>
+    </div>
+    <div class="project">
+      <h3>Gennev</h3>
+      <div class="img-container">
+        <img src="https://via.placeholder.com/300" alt="Screenshot of results page" />
+      </div>
+      <p>Menopause Assessment and Results</p>
+    </div>
+  </div>
+</div>
 </html>
