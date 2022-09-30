@@ -2,32 +2,27 @@
 
 body {
   background: #FAFAF8;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-top: 40px;
+
+  @media only screen and (min-width: $bp-desktop) {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
 }
 
 .header-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 40px 40px 0;
 
   .nav-links {
     font-size: 30px;
 
-
     a {
       margin: 0 10px;
     }
-  }
-}
-
-.body-wrapper {
-  margin-left: 50px;
-  margin-right: 50px;
-  padding-top: 40px;
-
-  @media only screen and (min-width: $bp-desktop) {
-    margin-left: 200px;
-    margin-right: 200px;
   }
 }
 
@@ -50,12 +45,40 @@ body {
   flex-flow: row wrap;
   justify-content: space-between;
 
-  .project {
-    width: 40%;
-    min-width: 400px;
-    padding: 0 40px;
+  .tile {
+    width: 350px;
+    height: 350px;
     margin-bottom: 40px;
-    background: #797A9E;
-    border-radius: 30px;
+    border-radius: 50%;
+
+    h3 {
+      font-family: $font-regular;
+      padding: 40px 30px 0;
+      text-align: center;
+    }
+
+    p {
+      font-size: 24px;
+      padding: 0 20px;
+      text-align: center;
+    }
+  }
+
+  // Credit to Nick Else: https://codepen.io/nickelse
+  .diamond {
+    //background: #fff;
+    height: 60%;
+    width: 60%;
+    text-align: center;
+    transform:rotate(45deg);
+    margin-left: 20%;
+    margin-top: 20%;
+  }
+
+  .star {
+    width: 80%;
+    margin-top: 10%;
+    margin-left: 10%;
+    fill: orange;
   }
 }
