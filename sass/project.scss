@@ -1,0 +1,88 @@
+@import "./_variables.scss";
+
+$max-width-desktop: 1440px;
+
+body {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  background: $white;
+}
+
+h1, h2 {
+  /* Open sans */
+
+  //font-family: 'Open Sans';
+  font-family: $font-regular;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 76px;
+
+  /* Gray/gray-900 */
+
+  color: #13151A;
+
+  // Other
+  margin-top: 0;
+}
+
+h3 {
+  font-family: $font-light;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 40px;
+  /* identical to box height, or 118% */
+
+  letter-spacing: -0.02em;
+
+  /* Gray/gray-700 */
+
+  color: #5E6B81;
+}
+
+$cover-bottom-margin: -670px;
+
+.section {
+  width: 100%;
+  display: flex;
+
+  &.cover {
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: $cover-bottom-margin + 125px;
+
+    .logo {
+      width: 176px;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      max-width: 1067px;
+      margin-top: 0;
+      margin-bottom: 8px;
+    }
+
+    h3 {
+      margin-top: 0;
+      margin-bottom: 400px;
+    }
+
+    .background-img {
+      width: 810px;
+      position: relative;
+      top: -670px;
+      left: 522px;
+      z-index: -1;
+    }
+
+    .duration p {
+      font-size: 24px;
+      line-height: 32px;
+      color: #5E6B81;
+
+      b {
+        color: #13151A;
+      }
+    }
+  }
+}

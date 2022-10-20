@@ -38,100 +38,71 @@
   font-style: normal;
   font-display: swap;
 }
-h1 {
-  font-family: "Rubik-Medium";
-  font-size: 50px;
+body {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #FFFFFF;
 }
 
-h2 {
-  font-family: "Rubik-Light";
-  font-size: 42px;
+h1, h2 {
+  /* Open sans */
+  font-family: "Rubik-Regular";
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 76px;
+  /* Gray/gray-900 */
+  color: #13151A;
+  margin-top: 0;
 }
 
 h3 {
-  font-family: "Rubik-Bold";
-  font-size: 36px;
+  font-family: "Rubik-Light";
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 40px;
+  /* identical to box height, or 118% */
+  letter-spacing: -0.02em;
+  /* Gray/gray-700 */
+  color: #5E6B81;
 }
 
-body, p, li, a {
-  font-family: "Rubik-Regular";
-  color: black;
-  text-decoration: none;
-  text-underline: none;
-}
-body:visited, p:visited, li:visited, a:visited {
-  color: black;
-}
-body:hover, p:hover, li:hover, a:hover {
-  color: black;
-}
-
-a {
-  text-decoration: underline;
-  text-underline-offset: 5px;
-  text-decoration-thickness: 1px;
-  padding-bottom: 5px;
-}
-
-p {
-  font-size: 30px;
-}
-
-.back-button {
-  position: absolute;
-  left: 30px;
-  top: 30px;
-  user-select: none;
-}
-.back-button a {
-  color: #333333;
-  font-size: 46px;
-  text-decoration: none;
-}
-
-.pink {
-  background: lightpink;
-}
-
-.orange {
-  background: orangered;
-}
-
-.green {
-  background: darkolivegreen;
-}
-
-.black {
-  background: #1C1C1C;
-}
-
-.blue {
-  background: dodgerblue;
-}
-
-.header-wrapper {
+.section {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
-.header-wrapper .nav-links {
-  font-size: 30px;
+.section.cover {
+  flex-direction: column;
+  margin-top: 40px;
+  margin-bottom: -545px;
 }
-.header-wrapper .nav-links a {
-  margin: 0 10px;
+.section.cover .logo {
+  width: 176px;
+  margin-bottom: 25px;
+}
+.section.cover h1 {
+  max-width: 1067px;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+.section.cover h3 {
+  margin-top: 0;
+  margin-bottom: 400px;
+}
+.section.cover .background-img {
+  width: 810px;
+  position: relative;
+  top: -670px;
+  left: 522px;
+  z-index: -1;
+}
+.section.cover .duration p {
+  font-size: 24px;
+  line-height: 32px;
+  color: #5E6B81;
+}
+.section.cover .duration p b {
+  color: #13151A;
 }
 
-body {
-  background: #FAFAF8;
-  margin-left: 50px;
-  margin-right: 50px;
-  padding-top: 40px;
-}
-@media only screen and (min-width: 992px) {
-  body {
-    margin-left: 64px;
-    margin-right: 64px;
-  }
-}
-
-/*# sourceMappingURL=global.css.map */
+/*# sourceMappingURL=project.css.map */

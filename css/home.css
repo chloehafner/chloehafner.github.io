@@ -38,31 +38,6 @@
   font-style: normal;
   font-display: swap;
 }
-body {
-  background: #FAFAF8;
-  margin-left: 50px;
-  margin-right: 50px;
-  padding-top: 40px;
-}
-@media only screen and (min-width: 992px) {
-  body {
-    margin-left: 100px;
-    margin-right: 100px;
-  }
-}
-
-.header-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.header-wrapper .nav-links {
-  font-size: 30px;
-}
-.header-wrapper .nav-links a {
-  margin: 0 10px;
-}
-
 .intro {
   margin-bottom: 60px;
 }
