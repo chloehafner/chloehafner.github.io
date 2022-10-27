@@ -2,6 +2,9 @@
 
 $max-width-desktop: 1440px;
 $cover-bottom-margin: -670px;
+$black: #13151A;
+$grey: #5E6B81;
+$gold: #D2A570;
 
 body {
   max-width: 1440px;
@@ -20,13 +23,21 @@ body {
   h1, h2 {
     font-family: $font-regular;
     font-weight: 700;
-    font-size: 56px;
     line-height: 76px;
     color: #13151A;
     margin-top: 0;
   }
 
+  h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 82px;
+    letter-spacing: 0.03em;
+  }
+
   h2 {
+    font-size: 56px;
     padding-bottom: 8px;
     margin-bottom: 0;
   }
@@ -37,31 +48,32 @@ body {
     font-size: 40px;
     line-height: 54px;
     letter-spacing: 0.02em;
-    color: #13151A;
+    color: $black;
   }
 
   h4 {
-    font-family: $font-light;
+    font-style: normal;
     font-weight: 400;
     font-size: 34px;
     line-height: 40px;
     letter-spacing: -0.02em;
-    color: #5E6B81;
+    color: $grey;
   }
 
   p {
-    color: #5E6B81;
+    color: $grey;
   }
 
   ul {
     list-style-type: circle;
+
     li {
       font-family: $font-regular;
       font-style: normal;
       font-weight: 500;
       font-size: 24px;
       line-height: 32px;
-      color: #5E6B81;
+      color: $grey;
     }
   }
 
@@ -92,7 +104,7 @@ body {
 
   .underline {
     width: 165px;
-    border: 3px solid #3676E0;
+    border: 3px solid $gold;
     border-radius: 3px;
   }
 
@@ -101,7 +113,10 @@ body {
   &#section-1 {
     flex-direction: column;
     margin-top: 40px;
-    margin-bottom: $cover-bottom-margin + 125px;
+    background-image: url("./../img/gennev-cover.png");
+    background-position: right 105px bottom 20%;
+    background-repeat: no-repeat;
+    margin-right: 105px;
 
     .logo {
       width: 176px;
@@ -109,31 +124,30 @@ body {
     }
 
     h1 {
-      max-width: 1067px;
+      max-width: 1152px;
       margin-top: 0;
       margin-bottom: 8px;
     }
 
     h4 {
       margin-top: 0;
-      margin-bottom: 400px;
+      margin-bottom: 600px;
     }
 
-    .background-img {
-      width: 810px;
-      position: relative;
-      top: -670px;
-      left: 522px;
-      z-index: -1;
-    }
+    .duration {
+      margin-bottom: 92px;
 
-    .duration p {
-      font-size: 24px;
-      line-height: 32px;
-      color: #5E6B81;
+      p {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: -0.02em;
 
-      b {
-        color: #13151A;
+        b {
+          font-weight: 700;
+          color: $black;
+        }
       }
     }
   }
@@ -142,7 +156,7 @@ body {
     margin-bottom: 128px;
 
     h2 {
-      max-width: 930px;
+      max-width: 1060px;
     }
 
     h3 {
@@ -154,8 +168,17 @@ body {
       flex-flow: row;
     }
 
+    .half.text {
+      width: 57%;
+    }
+
+    .half.image {
+      width: 43%;
+    }
+
     img {
       margin-left: auto;
+
     }
   }
 
@@ -171,4 +194,5 @@ body {
       margin-left: -100px;
     }
   }
+
 }
