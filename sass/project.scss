@@ -13,10 +13,7 @@ body {
   background: $white;
 }
 
-.section {
-  width: 100%;
-  padding-left: 64px;
-  padding-right: 64px;
+.gennev {
 
   //--- Headings ---
 
@@ -26,6 +23,7 @@ body {
     line-height: 76px;
     color: #13151A;
     margin-top: 0;
+    margin-bottom: 8px;
   }
 
   h1 {
@@ -38,8 +36,6 @@ body {
 
   h2 {
     font-size: 56px;
-    padding-bottom: 8px;
-    margin-bottom: 0;
   }
 
   h3 {
@@ -61,11 +57,22 @@ body {
   }
 
   p {
+    font-family: $font-mono;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
     color: $grey;
   }
 
   ul {
-    list-style-type: circle;
+    list-style-type: disc;
+    color: $gold;
+
+    li::before {
+      color: $gold;
+    }
 
     li {
       font-family: $font-regular;
@@ -78,6 +85,12 @@ body {
   }
 
   //--- Containers ---
+
+  .section {
+    width: 100%;
+    padding-left: 64px;
+    padding-right: 64px;
+  }
 
   .full {
     width: 100%;
@@ -110,7 +123,7 @@ body {
 
   //--- Section-Specific ---
 
-  &#section-1 {
+  #cover {
     flex-direction: column;
     margin-top: 40px;
     background-image: url("./../img/gennev-cover.png");
@@ -126,7 +139,6 @@ body {
     h1 {
       max-width: 1152px;
       margin-top: 0;
-      margin-bottom: 8px;
     }
 
     h4 {
@@ -143,6 +155,7 @@ body {
         font-size: 24px;
         line-height: 32px;
         letter-spacing: -0.02em;
+        font-family: $font-mono;
 
         b {
           font-weight: 700;
@@ -152,7 +165,7 @@ body {
     }
   }
 
-  &#section-2 {
+  #section-2 {
     margin-bottom: 128px;
 
     h2 {
@@ -160,7 +173,12 @@ body {
     }
 
     h3 {
+      margin-top: 28px;
       margin-bottom: 0;
+    }
+
+    p {
+      margin-bottom: 24px;
     }
 
     .skills {
@@ -169,30 +187,29 @@ body {
     }
 
     .half.text {
-      width: 57%;
+      width: 100%;
+      max-width: 750px;
     }
 
     .half.image {
-      width: 43%;
+      margin-left: auto;
+      justify-content: end;
+      width: 100%;
     }
 
-    img {
-      margin-left: auto;
-
+    #skills {
+      margin-top: -24px;
     }
   }
 
-  &#section-3 {
+  #section-3 {
 
-    img {
-      margin-right: auto;
-      max-height: 529px;
+    .half.image {
+      justify-content: center;
     }
 
     .half.text {
       justify-content: center;
-      margin-left: -100px;
     }
   }
-
 }

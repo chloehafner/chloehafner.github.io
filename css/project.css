@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap");
 body {
   max-width: 1440px;
   margin-left: auto;
@@ -6,31 +7,25 @@ body {
   background: #FFFFFF;
 }
 
-.section {
-  width: 100%;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-.section h1, .section h2 {
+.gennev h1, .gennev h2 {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   line-height: 76px;
   color: #13151A;
   margin-top: 0;
+  margin-bottom: 8px;
 }
-.section h1 {
+.gennev h1 {
   font-style: normal;
   font-weight: 700;
   font-size: 60px;
   line-height: 82px;
   letter-spacing: 0.03em;
 }
-.section h2 {
+.gennev h2 {
   font-size: 56px;
-  padding-bottom: 8px;
-  margin-bottom: 0;
 }
-.section h3 {
+.gennev h3 {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 40px;
@@ -38,7 +33,7 @@ body {
   letter-spacing: 0.02em;
   color: #13151A;
 }
-.section h4 {
+.gennev h4 {
   font-style: normal;
   font-weight: 400;
   font-size: 34px;
@@ -46,13 +41,23 @@ body {
   letter-spacing: -0.02em;
   color: #5E6B81;
 }
-.section p {
+.gennev p {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
   color: #5E6B81;
 }
-.section ul {
-  list-style-type: circle;
+.gennev ul {
+  list-style-type: disc;
+  color: #D2A570;
 }
-.section ul li {
+.gennev ul li::before {
+  color: #D2A570;
+}
+.gennev ul li {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -60,29 +65,34 @@ body {
   line-height: 32px;
   color: #5E6B81;
 }
-.section .full {
+.gennev .section {
+  width: 100%;
+  padding-left: 64px;
+  padding-right: 64px;
+}
+.gennev .full {
   width: 100%;
   display: flex;
 }
-.section .half {
+.gennev .half {
   width: 50%;
   display: flex;
 }
-.section .third {
+.gennev .third {
   width: 33%;
   display: flex;
   flex-flow: column;
 }
-.section .text {
+.gennev .text {
   display: flex;
   flex-flow: column;
 }
-.section .underline {
+.gennev .underline {
   width: 165px;
   border: 3px solid #D2A570;
   border-radius: 3px;
 }
-.section#section-1 {
+.gennev #cover {
   flex-direction: column;
   margin-top: 40px;
   background-image: url("./../img/gennev-cover.png");
@@ -90,62 +100,67 @@ body {
   background-repeat: no-repeat;
   margin-right: 105px;
 }
-.section#section-1 .logo {
+.gennev #cover .logo {
   width: 176px;
   margin-bottom: 25px;
 }
-.section#section-1 h1 {
+.gennev #cover h1 {
   max-width: 1152px;
   margin-top: 0;
-  margin-bottom: 8px;
 }
-.section#section-1 h4 {
+.gennev #cover h4 {
   margin-top: 0;
   margin-bottom: 600px;
 }
-.section#section-1 .duration {
+.gennev #cover .duration {
   margin-bottom: 92px;
 }
-.section#section-1 .duration p {
+.gennev #cover .duration p {
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
   letter-spacing: -0.02em;
+  font-family: "Montserrat", sans-serif;
 }
-.section#section-1 .duration p b {
+.gennev #cover .duration p b {
   font-weight: 700;
   color: #13151A;
 }
-.section#section-2 {
+.gennev #section-2 {
   margin-bottom: 128px;
 }
-.section#section-2 h2 {
+.gennev #section-2 h2 {
   max-width: 1060px;
 }
-.section#section-2 h3 {
+.gennev #section-2 h3 {
+  margin-top: 28px;
   margin-bottom: 0;
 }
-.section#section-2 .skills {
+.gennev #section-2 p {
+  margin-bottom: 24px;
+}
+.gennev #section-2 .skills {
   display: flex;
   flex-flow: row;
 }
-.section#section-2 .half.text {
-  width: 57%;
+.gennev #section-2 .half.text {
+  width: 100%;
+  max-width: 750px;
 }
-.section#section-2 .half.image {
-  width: 43%;
-}
-.section#section-2 img {
+.gennev #section-2 .half.image {
   margin-left: auto;
+  justify-content: end;
+  width: 100%;
 }
-.section#section-3 img {
-  margin-right: auto;
-  max-height: 529px;
+.gennev #section-2 #skills {
+  margin-top: -24px;
 }
-.section#section-3 .half.text {
+.gennev #section-3 .half.image {
   justify-content: center;
-  margin-left: -100px;
+}
+.gennev #section-3 .half.text {
+  justify-content: center;
 }
 
 /*# sourceMappingURL=project.css.map */
