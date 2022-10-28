@@ -25,7 +25,7 @@ body {
 .gennev h2 {
   font-size: 56px;
 }
-.gennev h3 {
+.gennev h5 {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 40px;
@@ -127,39 +127,39 @@ body {
   font-weight: 700;
   color: #13151A;
 }
-.gennev #section-2 {
+.gennev #overview {
   margin-bottom: 128px;
 }
-.gennev #section-2 h2 {
+.gennev #overview h2 {
   max-width: 1060px;
 }
-.gennev #section-2 h3 {
+.gennev #overview h5 {
   margin-top: 28px;
   margin-bottom: 0;
 }
-.gennev #section-2 p {
+.gennev #overview p {
   margin-bottom: 24px;
 }
-.gennev #section-2 .skills {
+.gennev #overview .skills {
   display: flex;
   flex-flow: row;
 }
-.gennev #section-2 .half.text {
+.gennev #overview .half.text {
   width: 100%;
   max-width: 750px;
 }
-.gennev #section-2 .half.image {
+.gennev #overview .half.image {
   margin-left: auto;
   justify-content: end;
   width: 100%;
 }
-.gennev #section-2 #skills {
+.gennev #overview #skills {
   margin-top: -24px;
 }
-.gennev #section-3 .half.image {
+.gennev #goals .half.image {
   justify-content: center;
 }
-.gennev #section-3 .half.text {
+.gennev #goals .half.text {
   justify-content: center;
 }
 

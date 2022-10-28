@@ -38,7 +38,7 @@ body {
     font-size: 56px;
   }
 
-  h3 {
+  h5 {
     font-family: $font-light;
     font-weight: 400;
     font-size: 40px;
@@ -165,14 +165,14 @@ body {
     }
   }
 
-  #section-2 {
+  #overview {
     margin-bottom: 128px;
 
     h2 {
       max-width: 1060px;
     }
 
-    h3 {
+    h5 {
       margin-top: 28px;
       margin-bottom: 0;
     }
@@ -202,7 +202,7 @@ body {
     }
   }
 
-  #section-3 {
+  #goals {
 
     .half.image {
       justify-content: center;
