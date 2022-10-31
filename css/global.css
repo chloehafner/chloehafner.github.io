@@ -51,23 +51,23 @@ p {
   text-decoration: none;
 }
 
-.pink {
+.bg-pink {
   background: lightpink;
 }
 
-.orange {
+.bg-orange {
   background: orangered;
 }
 
-.green {
+.bg-green {
   background: darkolivegreen;
 }
 
-.black {
+.bg-black {
   background: #1C1C1C;
 }
 
-.blue {
+.bg-blue {
   background: dodgerblue;
 }
 

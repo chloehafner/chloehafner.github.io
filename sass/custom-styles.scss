@@ -1,0 +1,46 @@
+@import "./_variables.scss";
+
+// Text Colors
+.bold {font-weight: 700;}
+.blue { color: $blue;}
+.black { color: $black;}
+.grey { color: $grey;}
+
+// Text Alignment
+.txt-center { text-align: center; }
+
+// Flex
+.flex { display: flex }
+.flex-horiz-center {
+  @extend .flex;
+  justify-content: center
+}
+.flex-vert-center {
+  @extend .flex;
+  align-items: center
+}
+.flex-center-center {
+  @extend .flex;
+  @extend .flex-horiz-center;
+  @extend .flex-vert-center;
+}
+
+/*
+    Text Sizes
+ */
+
+.txt-sm {font-size: 16px;}
+.txt-md {font-size: 24px;}
+.txt-lg { font-size: 32px; }
+.txt-xl { font-size: 40px; }
+.txt-xxl { font-size: 52px; }
+
+@media only screen and (min-width: $bp-desktop) {
+  .txt-sm { font-size: 24px;}
+  .txt-md { font-size: 32px;}
+  .txt-lg { font-size: 40px;}
+  .txt-xl { font-size: 52px;}
+  .txt-xxl { font-size: 60px;}
+}
+
+
