@@ -2,6 +2,7 @@
 
 // Text Colors
 .bold {font-weight: 700;}
+.light {font-weight: 600;}
 .blue { color: $blue;}
 .black { color: $black;}
 .grey { color: $grey;}
@@ -36,7 +37,7 @@
 .txt-xxl { font-size: 52px; }
 
 @media only screen and (min-width: $bp-desktop) {
-  .txt-sm { font-size: 24px;}
+  .txt-sm { font-size: 26px;}
   .txt-md { font-size: 32px;}
   .txt-lg { font-size: 40px;}
   .txt-xl { font-size: 52px;}

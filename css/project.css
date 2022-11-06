@@ -6,6 +6,10 @@
   font-weight: 700;
 }
 
+.light {
+  font-weight: 600;
+}
+
 .blue {
   color: #072D4B;
 }
@@ -41,11 +45,11 @@
   font-size: 16px;
 }
 
-.txt-md, .gennev h4 {
+.txt-md, .gennev h5, .gennev h4 {
   font-size: 24px;
 }
 
-.txt-lg, .gennev h5 {
+.txt-lg, .gennev h3 {
   font-size: 32px;
 }
 
@@ -59,14 +63,14 @@
 
 @media only screen and (min-width: 992px) {
   .txt-sm, .gennev #closer-look .analytic-1 .question, .gennev #closer-look .analytic-2 .question, .gennev #closer-look .analytic-3 .question, .gennev ul li, .gennev p {
-    font-size: 24px;
+    font-size: 26px;
   }
 
-  .txt-md, .gennev h4 {
+  .txt-md, .gennev h5, .gennev h4 {
     font-size: 32px;
   }
 
-  .txt-lg, .gennev h5 {
+  .txt-lg, .gennev h3 {
     font-size: 40px;
   }
 
@@ -78,13 +82,12 @@
     font-size: 60px;
   }
 }
-body {
-  max-width: 1440px;
+.gennev {
+  max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
   background: #FFFFFF;
 }
-
 .gennev h1, .gennev h2 {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
@@ -99,19 +102,19 @@ body {
   line-height: 82px;
   letter-spacing: 0.03em;
 }
-.gennev h5 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  line-height: 54px;
-  letter-spacing: 0.02em;
-  color: #13151A;
-}
 .gennev h4 {
   font-style: normal;
   font-weight: 400;
   font-size: 34px;
   letter-spacing: -0.02em;
   color: #5E6B81;
+}
+.gennev h5 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #13151A;
+  margin-top: 28px;
+  margin-bottom: 0;
 }
 .gennev p {
   font-family: "Montserrat", sans-serif;
@@ -186,14 +189,13 @@ body {
 }
 .gennev #cover .duration p {
   font-style: normal;
-  font-weight: 600;
   font-size: 24px;
   line-height: 32px;
   letter-spacing: -0.02em;
   font-family: "Montserrat", sans-serif;
 }
 .gennev #cover .duration p b {
-  font-weight: 700;
+  font-weight: 600;
   color: #13151A;
 }
 .gennev #overview {
@@ -202,28 +204,24 @@ body {
 .gennev #overview h2 {
   max-width: 1060px;
 }
-.gennev #overview h5 {
-  margin-top: 28px;
-  margin-bottom: 0;
-}
 .gennev #overview p {
   margin-bottom: 24px;
 }
-.gennev #overview .skills {
+.gennev #overview .skill-lists {
   display: flex;
   flex-flow: row;
 }
-.gennev #overview .half.text {
-  width: 100%;
-  max-width: 750px;
-}
-.gennev #overview .half.image {
-  margin-left: auto;
-  justify-content: end;
+.gennev #overview .text {
   width: 100%;
 }
-.gennev #overview #skills {
-  margin-top: -24px;
+.gennev #overview .image {
+  max-height: 832px;
+}
+.gennev #overview .part-2 .text {
+  padding-right: 16px;
+}
+.gennev #overview .part-3 {
+  margin-top: 40px;
 }
 .gennev #goals {
   margin-bottom: 90px;
@@ -297,6 +295,13 @@ body {
 }
 .gennev #closer-look .analytic-3 {
   border-color: #FABAAC;
+}
+.gennev #meet-robyn .part-1 h5 {
+  max-width: 530px;
+}
+.gennev #meet-robyn .part-1 img {
+  max-height: 365px;
+  max-width: 355px;
 }
 
 /*# sourceMappingURL=project.css.map */

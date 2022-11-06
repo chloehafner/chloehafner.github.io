@@ -75,19 +75,22 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: 144px;
+  margin-right: 144px;
 
   .nav-links {
-    font-size: 30px;
+    font-size: 32px;
 
     a {
-      margin: 0 10px;
+      margin: 0 0 0 56px;
+      text-decoration: none;
     }
   }
 }
 
 //--- Body ---
 body {
-  background: #FAFAF8;
+  background: $white;
   margin-left: 50px;
   margin-right: 50px;
   padding-top: 40px;

@@ -1,17 +1,15 @@
 @import "./_variables";
-@import './custom-styles';
+@import "./custom-styles";
 
-$max-width-desktop: 1440px;
+$max-width-desktop: 1100px;
 $cover-bottom-margin: -670px;
 
-body {
-  max-width: 1440px;
+.gennev {
+
+  max-width: $max-width-desktop;
   margin-left: auto;
   margin-right: auto;
   background: $bg-color;
-}
-
-.gennev {
 
   //--- Headings ---
 
@@ -36,13 +34,8 @@ body {
     @extend .txt-xl;
   }
 
-  h5 {
+  h3 {
     @extend .txt-lg;
-    font-family: $font-light;
-    font-weight: 400;
-    line-height: 54px;
-    letter-spacing: 0.02em;
-    color: $black;
   }
 
   h4 {
@@ -52,6 +45,15 @@ body {
     font-size: 34px;
     letter-spacing: -0.02em;
     color: $grey;
+  }
+
+  h5 {
+    @extend .txt-md;
+    font-family: $font-light;
+    font-weight: 400;
+    color: $black;
+    margin-top: 28px;
+    margin-bottom: 0;
   }
 
   p {
@@ -148,14 +150,13 @@ body {
 
       p {
         font-style: normal;
-        font-weight: 600;
         font-size: 24px;
         line-height: 32px;
         letter-spacing: -0.02em;
         font-family: $font-mono;
 
         b {
-          font-weight: 700;
+          font-weight: 600;
           color: $black;
         }
       }
@@ -169,33 +170,29 @@ body {
       max-width: 1060px;
     }
 
-    h5 {
-      margin-top: 28px;
-      margin-bottom: 0;
-    }
-
     p {
       margin-bottom: 24px;
     }
 
-    .skills {
+    .skill-lists {
       display: flex;
       flex-flow: row;
     }
 
-    .half.text {
-      width: 100%;
-      max-width: 750px;
-    }
-
-    .half.image {
-      margin-left: auto;
-      justify-content: end;
+    .text {
       width: 100%;
     }
 
-    #skills {
-      margin-top: -24px;
+    .image {
+      max-height: 832px;
+    }
+
+    .part-2 .text {
+      padding-right: 16px;
+    }
+
+    .part-3 {
+      margin-top: 40px;
     }
   }
 
@@ -291,6 +288,24 @@ body {
     }
     .analytic-3 {
       border-color: $pink;
+    }
+  }
+
+  #meet-robyn {
+    .part-1 {
+      h5 {
+        max-width: 530px;
+      }
+      img {
+        max-height: 365px;
+        max-width:  355px;
+      }
+    }
+
+    .part-2 {
+      h3 {
+
+      }
     }
   }
 }
