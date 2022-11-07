@@ -91,12 +91,12 @@ p {
 //--- Body ---
 body {
   background: $white;
-  margin-left: 50px;
-  margin-right: 50px;
+  //margin-left: 50px;
+  //margin-right: 50px;
   padding-top: 40px;
 
   @media only screen and (min-width: $bp-desktop) {
-    margin-left: 64px;
-    margin-right: 64px;
+    //margin-left: 64px;
+    //margin-right: 64px;
   }
 }

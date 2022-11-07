@@ -139,8 +139,6 @@
 }
 .gennev .section {
   width: 100%;
-  padding-left: 64px;
-  padding-right: 64px;
 }
 .gennev .full {
   width: 100%;
@@ -159,6 +157,9 @@
   display: flex;
   flex-flow: column;
 }
+.gennev img {
+  max-width: 100%;
+}
 .gennev .underline {
   width: 165px;
   border: 3px solid #D2A570;
@@ -170,7 +171,6 @@
   background-image: url("./../img/gennev-cover.png");
   background-position: right 105px bottom 20%;
   background-repeat: no-repeat;
-  margin-right: 105px;
 }
 .gennev #cover .logo {
   width: 176px;
@@ -258,7 +258,7 @@
   background: linear-gradient(90deg, #D4E2E2 4612%, #6A82FB 11057%);
   border-radius: 50%;
   margin-left: 45px;
-  margin-top: calc((162px - 114px) / 2);
+  margin-top: 24px;
 }
 .gennev #closer-look .pill-text {
   text-align: left;
@@ -302,6 +302,24 @@
 .gennev #meet-robyn .part-1 img {
   max-height: 365px;
   max-width: 355px;
+}
+.gennev #pain-points h5 {
+  margin-bottom: 60px;
+}
+.gennev #pain-points .full {
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+.gennev #pain-points img {
+  height: 615px;
+  width: 296px;
+}
+.gennev #pain-points img:first-of-type {
+  margin-right: 32px;
+}
+.gennev #pain-points .text {
+  justify-content: center;
+  max-width: 400px;
 }
 
 /*# sourceMappingURL=project.css.map */

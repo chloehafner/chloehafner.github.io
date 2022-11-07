@@ -88,15 +88,7 @@ p {
 
 body {
   background: #FFFFFF;
-  margin-left: 50px;
-  margin-right: 50px;
   padding-top: 40px;
-}
-@media only screen and (min-width: 992px) {
-  body {
-    margin-left: 64px;
-    margin-right: 64px;
-  }
 }
 
 /*# sourceMappingURL=global.css.map */

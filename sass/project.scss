@@ -87,8 +87,8 @@ $cover-bottom-margin: -670px;
 
   .section {
     width: 100%;
-    padding-left: 64px;
-    padding-right: 64px;
+    //margin-left: 64px;
+    //margin-right: 64px;
   }
 
   .full {
@@ -112,6 +112,10 @@ $cover-bottom-margin: -670px;
     flex-flow: column;
   }
 
+  img {
+    max-width: 100%;
+  }
+
   //--- Special ---
 
   .underline {
@@ -128,7 +132,6 @@ $cover-bottom-margin: -670px;
     background-image: url("./../img/gennev-cover.png");
     background-position: right 105px bottom 20%;
     background-repeat: no-repeat;
-    margin-right: 105px;
 
     .logo {
       width: 176px;
@@ -306,6 +309,32 @@ $cover-bottom-margin: -670px;
       h3 {
 
       }
+    }
+  }
+
+  #pain-points {
+
+    h5 {
+      margin-bottom: 60px;
+    }
+
+    .full {
+      justify-content: space-between;
+      margin-bottom: 60px;
+    }
+
+    img {
+      height: 615px;
+      width: 296px;
+
+      &:first-of-type {
+        margin-right: 32px;
+      }
+    }
+
+    .text {
+      justify-content: center;
+      max-width: 400px;
     }
   }
 }
