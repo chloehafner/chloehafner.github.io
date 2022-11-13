@@ -105,9 +105,7 @@ $cover-bottom-margin: -670px;
   //--- Containers ---
 
   .section {
-    width:         100%;
-    padding-left:  64px;
-    padding-right: 64px;
+    width: 100%;
   }
 
   .full {
@@ -133,7 +131,6 @@ $cover-bottom-margin: -670px;
 
   img {
     max-width:  $max-width-desktop;
-    max-height: 700px;
   }
 
   //--- Special ---
@@ -335,6 +332,9 @@ $cover-bottom-margin: -670px;
         .text {
           max-width: 650px;
         }
+        img {
+          max-height: 670px;
+        }
       }
     }
   }
@@ -385,6 +385,32 @@ $cover-bottom-margin: -670px;
   #takeaways {
     img {
       max-width: 340px;
+    }
+  }
+
+  #pain-points {
+
+    h5 {
+      margin-bottom: 60px;
+    }
+
+    .full {
+      justify-content: space-between;
+      margin-bottom: 60px;
+    }
+
+    img {
+      height: 615px;
+      width: 296px;
+
+      &:first-of-type {
+        margin-right: 32px;
+      }
+    }
+
+    .text {
+      justify-content: center;
+      max-width: 400px;
     }
   }
 }
