@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap");
-.bold, .gennev #closer-look .analytic-1 .answer, .gennev #closer-look .analytic-2 .answer, .gennev #closer-look .analytic-3 .answer {
+.bold, .gennev #current-design .analytic-1 .answer, .gennev #current-design .analytic-2 .answer, .gennev #current-design .analytic-3 .answer {
   font-weight: 700;
 }
 
@@ -22,63 +22,63 @@
   color: #5E6B81;
 }
 
-.txt-center, .gennev #closer-look .analytic-1, .gennev #closer-look .analytic-2, .gennev #closer-look .analytic-3 {
+.txt-center, .gennev #current-design .analytic-1, .gennev #current-design .analytic-2, .gennev #current-design .analytic-3 {
   text-align: center;
 }
 
-.flex, .flex-center-center, .gennev #closer-look .circle, .gennev #closer-look .open-circle .inner-circle, .flex-vert-center, .flex-horiz-center {
+.flex, .flex-center-center, .gennev #current-design .circle, .gennev #current-design .open-circle .inner-circle, .flex-vert-center, .flex-horiz-center {
   display: flex;
 }
 
-.flex-horiz-center, .flex-center-center, .gennev #closer-look .circle, .gennev #closer-look .open-circle .inner-circle {
+.flex-horiz-center, .flex-center-center, .gennev #current-design .circle, .gennev #current-design .open-circle .inner-circle {
   justify-content: center;
 }
 
-.flex-vert-center, .flex-center-center, .gennev #closer-look .circle, .gennev #closer-look .open-circle .inner-circle {
+.flex-vert-center, .flex-center-center, .gennev #current-design .circle, .gennev #current-design .open-circle .inner-circle {
   align-items: center;
 }
 
 /*
     Text Sizes
  */
-.txt-sm, .gennev #closer-look .analytic-1 .question, .gennev #closer-look .analytic-2 .question, .gennev #closer-look .analytic-3 .question, .gennev ul li, .gennev p {
+.txt-sm, .gennev #current-design .analytic-1 .question, .gennev #current-design .analytic-2 .question, .gennev #current-design .analytic-3 .question {
   font-size: 16px;
 }
 
-.txt-md, .gennev h5, .gennev h4 {
+.txt-md {
   font-size: 24px;
 }
 
-.txt-lg, .gennev h3 {
+.txt-lg {
   font-size: 32px;
 }
 
-.txt-xl, .gennev h2 {
+.txt-xl {
   font-size: 40px;
 }
 
-.txt-xxl, .gennev h1 {
+.txt-xxl {
   font-size: 52px;
 }
 
 @media only screen and (min-width: 992px) {
-  .txt-sm, .gennev #closer-look .analytic-1 .question, .gennev #closer-look .analytic-2 .question, .gennev #closer-look .analytic-3 .question, .gennev ul li, .gennev p {
+  .txt-sm, .gennev #current-design .analytic-1 .question, .gennev #current-design .analytic-2 .question, .gennev #current-design .analytic-3 .question {
     font-size: 26px;
   }
 
-  .txt-md, .gennev h5, .gennev h4 {
+  .txt-md {
     font-size: 32px;
   }
 
-  .txt-lg, .gennev h3 {
+  .txt-lg {
     font-size: 40px;
   }
 
-  .txt-xl, .gennev h2 {
+  .txt-xl {
     font-size: 52px;
   }
 
-  .txt-xxl, .gennev h1 {
+  .txt-xxl {
     font-size: 60px;
   }
 }
@@ -88,40 +88,64 @@
   margin-right: auto;
   background: #FFFFFF;
 }
-.gennev h1, .gennev h2 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-  line-height: 76px;
-  color: #13151A;
+.gennev h1, .gennev h2, .gennev h3, .gennev h4, .gennev h5, .gennev p, .gennev li {
   margin-top: 0;
+  font-family: "Open Sans", sans-serif;
+}
+.gennev h1, .gennev h2, .gennev h3, .gennev h4, .gennev h5 {
+  color: #13151A;
+}
+.gennev h1, .gennev h2 {
+  font-weight: 700;
   margin-bottom: 8px;
 }
+.gennev h3, .gennev h5 {
+  font-weight: 600;
+}
 .gennev h1 {
-  font-style: normal;
-  font-weight: 700;
+  font-size: 60px;
   line-height: 82px;
-  letter-spacing: 0.03em;
+}
+.gennev h2 {
+  font-size: 52px;
+  line-height: 72px;
+}
+.gennev h3 {
+  font-size: 40px;
+  line-height: 54px;
+  margin-bottom: 16px;
+  letter-spacing: 0.1em;
 }
 .gennev h4 {
-  font-style: normal;
   font-weight: 400;
   font-size: 34px;
-  letter-spacing: -0.02em;
   color: #5E6B81;
 }
 .gennev h5 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  color: #13151A;
-  margin-top: 28px;
-  margin-bottom: 0;
+  font-size: 32px;
+  line-height: 42px;
+  margin-bottom: 18px;
 }
 .gennev p {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
+  font-size: 26px;
+  color: #5E6B81;
+}
+.gennev p.txt-light {
+  font-size: 34px;
+}
+.gennev p.blue {
+  font-weight: 700;
+  line-height: 36px;
+  margin-bottom: 30px;
+}
+.gennev p.caps {
+  font-weight: 600;
+  font-size: 24px;
   line-height: 32px;
-  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 .gennev ul {
   list-style-type: disc;
@@ -131,11 +155,11 @@
   color: #D2A570;
 }
 .gennev ul li {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 500;
+  color: #5E6B81;
+  font-weight: 400;
+  font-size: 26px;
   line-height: 32px;
-  color: #13151A;
+  margin-bottom: 8px;
 }
 .gennev .section {
   width: 100%;
@@ -159,10 +183,15 @@
   display: flex;
   flex-flow: column;
 }
+.gennev img {
+  max-width: 1100px;
+  max-height: 700px;
+}
 .gennev .underline {
   width: 165px;
   border: 3px solid #D2A570;
   border-radius: 3px;
+  margin-bottom: 24px;
 }
 .gennev #cover {
   flex-direction: column;
@@ -171,6 +200,7 @@
   background-position: right 105px bottom 20%;
   background-repeat: no-repeat;
   margin-right: 105px;
+  height: 100vh;
 }
 .gennev #cover .logo {
   width: 176px;
@@ -232,7 +262,7 @@
 .gennev #goals .half.text {
   justify-content: center;
 }
-.gennev #closer-look .part {
+.gennev #current-design .part {
   width: 100%;
   height: 162px;
   display: flex;
@@ -240,19 +270,19 @@
   margin-bottom: 24px;
   border-radius: 81px;
 }
-.gennev #closer-look .open-circle {
+.gennev #current-design .open-circle {
   background-image: url("./../img/gennev-open-circle.png");
   position: absolute;
   height: 204px;
   width: 204px;
 }
-.gennev #closer-look .open-circle .inner-circle {
+.gennev #current-design .open-circle .inner-circle {
   width: 164px;
   height: 164px;
   background: #FFFFFF;
   border-radius: 50%;
 }
-.gennev #closer-look .circle {
+.gennev #current-design .circle {
   width: 114px;
   height: 114px;
   background: linear-gradient(90deg, #D4E2E2 4612%, #6A82FB 11057%);
@@ -260,40 +290,40 @@
   margin-left: 45px;
   margin-top: calc((162px - 114px) / 2);
 }
-.gennev #closer-look .pill-text {
+.gennev #current-design .pill-text {
   text-align: left;
   flex-direction: column;
   margin-left: 90px;
 }
-.gennev #closer-look .analytics-header {
+.gennev #current-design .analytics-header {
   margin-top: 128px;
   margin-bottom: 64px;
 }
-.gennev #closer-look .analytics {
+.gennev #current-design .analytics {
   justify-content: space-between;
   margin-bottom: 105px;
 }
-.gennev #closer-look .analytic-1, .gennev #closer-look .analytic-2, .gennev #closer-look .analytic-3 {
+.gennev #current-design .analytic-1, .gennev #current-design .analytic-2, .gennev #current-design .analytic-3 {
   max-width: 300px;
   border-bottom: solid 24px;
 }
-.gennev #closer-look .analytic-1 .question, .gennev #closer-look .analytic-2 .question, .gennev #closer-look .analytic-3 .question {
+.gennev #current-design .analytic-1 .question, .gennev #current-design .analytic-2 .question, .gennev #current-design .analytic-3 .question {
   text-transform: uppercase;
   font-weight: 600;
   margin-bottom: 16px;
 }
-.gennev #closer-look .analytic-1 .answer, .gennev #closer-look .analytic-2 .answer, .gennev #closer-look .analytic-3 .answer {
+.gennev #current-design .analytic-1 .answer, .gennev #current-design .analytic-2 .answer, .gennev #current-design .analytic-3 .answer {
   margin-top: 0;
   margin-bottom: 30px;
   color: #072D4B;
 }
-.gennev #closer-look .analytic-1 {
+.gennev #current-design .analytic-1 {
   border-color: #E8CFB3;
 }
-.gennev #closer-look .analytic-2 {
+.gennev #current-design .analytic-2 {
   border-color: #D2A570;
 }
-.gennev #closer-look .analytic-3 {
+.gennev #current-design .analytic-3 {
   border-color: #FABAAC;
 }
 .gennev #meet-robyn .part-1 h5 {
@@ -302,6 +332,43 @@
 .gennev #meet-robyn .part-1 img {
   max-height: 365px;
   max-width: 355px;
+}
+.gennev #meet-robyn .part-2 .full {
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+.gennev #meet-robyn .part-2 .full .text {
+  max-width: 650px;
+}
+.gennev #usability-testing .image {
+  display: flex;
+  gap: 24px;
+}
+.gennev #usability-testing .image img {
+  max-height: 670px;
+}
+.gennev #usability-testing #sticky-notes {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.gennev #pain-points .full:first-child {
+  margin-right: 16px;
+}
+.gennev #pain-points .image {
+  display: flex;
+  gap: 24px;
+}
+.gennev #pain-points .image img {
+  max-height: 670px;
+}
+.gennev #video #backlink {
+  display: none;
+}
+.gennev #takeaways img {
+  max-width: 340px;
 }
 
 /*# sourceMappingURL=project.css.map */

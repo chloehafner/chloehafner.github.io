@@ -1,147 +1,173 @@
 @import "./_variables";
 @import "./custom-styles";
 
-$max-width-desktop: 1100px;
+$max-width-desktop:   1100px;
 $cover-bottom-margin: -670px;
 
 .gennev {
 
-  max-width: $max-width-desktop;
-  margin-left: auto;
+  max-width:    $max-width-desktop;
+  margin-left:  auto;
   margin-right: auto;
-  background: $bg-color;
+  background:   $bg-color;
 
   //--- Headings ---
 
-  h1, h2 {
+  h1, h2, h3, h4, h5, p, li {
+    margin-top:  0;
     font-family: $font-regular;
-    font-weight: 700;
-    line-height: 76px;
-    color: #13151A;
-    margin-top: 0;
+  }
+
+  h1, h2, h3, h4, h5 {
+    color: $black;
+  }
+
+  h1, h2 {
+    font-weight:   700;
     margin-bottom: 8px;
   }
 
+  h3, h5 {
+    font-weight: 600;
+  }
+
   h1 {
-    @extend .txt-xxl;
-    font-style: normal;
-    font-weight: 700;
+    font-size:   60px;
     line-height: 82px;
-    letter-spacing: 0.03em;
   }
 
   h2 {
-    @extend .txt-xl;
+    font-size:   52px;
+    line-height: 72px;
   }
 
   h3 {
-    @extend .txt-lg;
+    font-size:      40px;
+    line-height:    54px;
+    margin-bottom:  16px;
+    letter-spacing: 0.1em;
   }
 
   h4 {
-    @extend .txt-md;
-    font-style: normal;
     font-weight: 400;
-    font-size: 34px;
-    letter-spacing: -0.02em;
-    color: $grey;
+    font-size:   34px;
+    color:       $grey;
   }
 
   h5 {
-    @extend .txt-md;
-    font-family: $font-light;
-    font-weight: 400;
-    color: $black;
-    margin-top: 28px;
-    margin-bottom: 0;
+    font-size:     32px;
+    line-height:   42px;
+    margin-bottom: 18px;
   }
 
   p {
-    @extend .txt-sm;
-    font-family: $font-mono;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 32px;
-    letter-spacing: -0.02em;
+    font-weight: 400;
+    font-size:   26px;
+    color:       $grey;
+
+    &.txt-light {
+      font-size: 34px;
+    }
+
+    &.blue {
+      font-weight:   700;
+      line-height:   36px;
+      margin-bottom: 30px;
+    }
+
+    &.caps {
+      font-weight:    600;
+      font-size:      24px;
+      line-height:    32px;
+      margin-bottom:  24px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
   }
 
   ul {
     list-style-type: disc;
-    color: $gold;
+    color:           $gold;
 
     li::before {
       color: $gold;
     }
 
     li {
-      @extend .txt-sm;
-      font-family: $font-regular;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 32px;
-      color: $black;
+      color:         $grey;
+      font-weight:   400;
+      font-size:     26px;
+      line-height:   32px;
+      margin-bottom: 8px;
     }
   }
 
   //--- Containers ---
 
   .section {
-    width: 100%;
-    padding-left: 64px;
+    width:         100%;
+    padding-left:  64px;
     padding-right: 64px;
   }
 
   .full {
-    width: 100%;
+    width:   100%;
     display: flex;
   }
 
   .half {
-    width: 50%;
+    width:   50%;
     display: flex;
   }
 
   .third {
-    width: 33%;
-    display: flex;
+    width:     33%;
+    display:   flex;
     flex-flow: column;
   }
 
   .text {
-    display: flex;
+    display:   flex;
     flex-flow: column;
+  }
+
+  img {
+    max-width:  $max-width-desktop;
+    max-height: 700px;
   }
 
   //--- Special ---
 
   .underline {
-    width: 165px;
-    border: 3px solid $gold;
+    width:         165px;
+    border:        3px solid $gold;
     border-radius: 3px;
+    margin-bottom: 24px;
   }
 
   //--- Section-Specific ---
 
   #cover {
-    flex-direction: column;
-    margin-top: 40px;
-    background-image: url("./../img/gennev-cover.png");
+    flex-direction:      column;
+    margin-top:          40px;
+    background-image:    url("./../img/gennev-cover.png");
     background-position: right 105px bottom 20%;
-    background-repeat: no-repeat;
-    margin-right: 105px;
+    background-repeat:   no-repeat;
+    margin-right:        105px;
+    height:              100vh;
 
     .logo {
-      width: 176px;
+      width:         176px;
       margin-bottom: 25px;
     }
 
     h1 {
-      max-width: 1152px;
+      max-width:  1152px;
       margin-top: 0;
     }
 
     h4 {
-      margin-top: 0;
+      margin-top:    0;
       margin-bottom: 600px;
     }
 
@@ -149,15 +175,15 @@ $cover-bottom-margin: -670px;
       margin-bottom: 92px;
 
       p {
-        font-style: normal;
-        font-size: 24px;
-        line-height: 32px;
+        font-style:     normal;
+        font-size:      24px;
+        line-height:    32px;
         letter-spacing: -0.02em;
-        font-family: $font-mono;
+        font-family:    $font-mono;
 
         b {
           font-weight: 600;
-          color: $black;
+          color:       $black;
         }
       }
     }
@@ -175,7 +201,7 @@ $cover-bottom-margin: -670px;
     }
 
     .skill-lists {
-      display: flex;
+      display:   flex;
       flex-flow: row;
     }
 
@@ -208,74 +234,74 @@ $cover-bottom-margin: -670px;
     }
   }
 
-  #closer-look {
+  #current-design {
 
     .part {
-      width: 100%;
-      height: 162px;
-      display: flex;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      width:         100%;
+      height:        162px;
+      display:       flex;
+      box-shadow:    0 0 20px rgba(0, 0, 0, 0.1);
       margin-bottom: 24px;
       border-radius: 81px;
     }
 
     .open-circle {
       background-image: url("./../img/gennev-open-circle.png");
-      position: absolute;
-      height: 204px;
-      width: 204px;
+      position:         absolute;
+      height:           204px;
+      width:            204px;
 
       .inner-circle {
         @extend .flex-center-center;
-        width: 164px;
-        height: 164px;
-        background: $white;
+        width:         164px;
+        height:        164px;
+        background:    $white;
         border-radius: 50%;
       }
     }
 
     .circle {
       @extend .flex-center-center;
-      width: 114px;
-      height: 114px;
-      background: $light-blue;
+      width:         114px;
+      height:        114px;
+      background:    $light-blue;
       border-radius: 50%;
-      margin-left: 45px;
-      margin-top: calc((162px - 114px) / 2);
+      margin-left:   45px;
+      margin-top:    calc((162px - 114px) / 2);
     }
 
     .pill-text {
       // @extend .flex-vert-center;
-      text-align: left;
+      text-align:     left;
       flex-direction: column;
-      margin-left: 90px;
+      margin-left:    90px;
     }
 
     .analytics-header {
-      margin-top: 128px;
+      margin-top:    128px;
       margin-bottom: 64px;
     }
 
     .analytics {
       justify-content: space-between;
-      margin-bottom: 105px;
+      margin-bottom:   105px;
     }
 
     .analytic-1, .analytic-2, .analytic-3 {
-      max-width: 300px;
-      @extend  .txt-center;
+      max-width:     300px;
+      @extend .txt-center;
       border-bottom: solid 24px;
 
       .question {
         @extend .txt-sm;
         text-transform: uppercase;
-        font-weight: 600;
-        margin-bottom: 16px;
+        font-weight:    600;
+        margin-bottom:  16px;
       }
       .answer {
-        margin-top: 0;
+        margin-top:    0;
         margin-bottom: 30px;
-        color: $blue;
+        color:         $blue;
         @extend .bold;
       }
     }
@@ -303,9 +329,62 @@ $cover-bottom-margin: -670px;
     }
 
     .part-2 {
-      h3 {
-
+      .full {
+        justify-content: space-between;
+        margin-bottom: 80px;
+        .text {
+          max-width: 650px;
+        }
       }
+    }
+  }
+
+  #wireframes {
+
+  }
+
+  #usability-testing {
+    .image {
+      display: flex;
+      gap:     24px;
+      img {
+        max-height: 670px;
+      }
+    }
+
+    #sticky-notes {
+      display:         flex;
+      width:           100%;
+      flex-direction:  row;
+      flex-wrap:       wrap;
+      justify-content: space-between;
+    }
+  }
+
+  #user-centered {}
+
+  #pain-points {
+    .full:first-child {
+      margin-right: 16px;
+    }
+    .image {
+      display: flex;
+      gap:     24px;
+      img {
+        max-height: 670px;
+      }
+    }
+  }
+
+  #video {
+    #backlink {
+      display: none;
+    }
+  }
+
+  #takeaways {
+    img {
+      max-width: 340px;
     }
   }
 }
