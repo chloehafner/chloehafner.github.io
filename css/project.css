@@ -84,11 +84,17 @@
 }
 .gennev {
   max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
   background: #FFFFFF;
+  margin-left: 28px;
+  margin-right: 28px;
 }
-.gennev h1, .gennev h2, .gennev h3, .gennev h4, .gennev h5, .gennev p, .gennev li {
+@media only screen and (min-width: 992px) {
+  .gennev {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.gennev h1, .gennev h2, .gennev h3, .gennev h4, .gennev h5, .gennev p, .gennev ul, .gennev li {
   margin-top: 0;
   font-family: "Open Sans", sans-serif;
 }
@@ -103,53 +109,93 @@
   font-weight: 600;
 }
 .gennev h1 {
-  font-size: 60px;
-  line-height: 82px;
+  font-size: 22px;
+  line-height: 32px;
+}
+@media only screen and (min-width: 992px) {
+  .gennev h1 {
+    font-size: 60px;
+    line-height: 82px;
+  }
 }
 .gennev h2 {
-  font-size: 52px;
-  line-height: 72px;
+  font-size: 22px;
+  line-height: 30px;
+}
+@media only screen and (min-width: 992px) {
+  .gennev h2 {
+    font-size: 52px;
+    line-height: 72px;
+  }
 }
 .gennev h3 {
-  font-size: 40px;
-  line-height: 54px;
-  margin-bottom: 16px;
+  font-size: 20px;
+  line-height: 24px;
   letter-spacing: 0.1em;
+}
+@media only screen and (min-width: 992px) {
+  .gennev h3 {
+    font-size: 40px;
+    line-height: 54px;
+    margin-bottom: 16px;
+  }
 }
 .gennev h4 {
   font-weight: 400;
-  font-size: 34px;
   color: #5E6B81;
+  font-size: 15px;
+  letter-spacing: -0.02em;
+}
+@media only screen and (min-width: 992px) {
+  .gennev h4 {
+    font-size: 34px;
+  }
 }
 .gennev h5 {
-  font-size: 32px;
-  line-height: 42px;
-  margin-bottom: 18px;
+  font-size: 16px;
+  line-height: 20px;
+}
+@media only screen and (min-width: 992px) {
+  .gennev h5 {
+    font-size: 32px;
+    line-height: 42px;
+    margin-bottom: 18px;
+  }
 }
 .gennev p {
   font-weight: 400;
-  font-size: 26px;
   color: #5E6B81;
-}
-.gennev p.txt-light {
-  font-size: 34px;
+  font-size: 14px;
 }
 .gennev p.blue {
   font-weight: 700;
-  line-height: 36px;
-  margin-bottom: 30px;
+  line-height: 18px;
 }
 .gennev p.caps {
   font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
-  margin-bottom: 24px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  line-height: 18px;
+  margin-bottom: 8px;
+}
+@media only screen and (min-width: 992px) {
+  .gennev p {
+    font-size: 26px;
+  }
+  .gennev p.blue {
+    line-height: 36px;
+    margin-bottom: 30px;
+  }
+  .gennev p.caps {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 24px;
+  }
 }
 .gennev ul {
   list-style-type: disc;
   color: #D2A570;
+  margin-bottom: 0;
 }
 .gennev ul li::before {
   color: #D2A570;
@@ -157,73 +203,132 @@
 .gennev ul li {
   color: #5E6B81;
   font-weight: 400;
-  font-size: 26px;
-  line-height: 32px;
+  font-size: 14px;
+  line-height: 18px;
   margin-bottom: 8px;
+}
+@media only screen and (min-width: 992px) {
+  .gennev ul li {
+    font-size: 26px;
+    line-height: 32px;
+  }
 }
 .gennev .section {
   width: 100%;
 }
 .gennev .full {
-  width: 100%;
   display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 992px) {
+  .gennev .full {
+    width: 100%;
+    flex-direction: row;
+  }
 }
 .gennev .half {
-  width: 50%;
   display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 992px) {
+  .gennev .half {
+    width: 50%;
+    flex-direction: row;
+  }
 }
 .gennev .third {
-  width: 33%;
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
+}
+@media only screen and (min-width: 992px) {
+  .gennev .third {
+    width: 33%;
+  }
 }
 .gennev .text {
   display: flex;
   flex-flow: column;
 }
+.gennev .list {
+  display: flex;
+  flex-flow: column;
+}
+.gennev .image {
+  margin-left: auto;
+  margin-right: auto;
+}
 .gennev img {
-  max-width: 1100px;
+  max-width: 100%;
+}
+@media only screen and (min-width: 992px) {
+  .gennev img {
+    max-width: 1100px;
+  }
+}
+.gennev .double-image img {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 45%;
+}
+@media only screen and (min-width: 992px) {
+  .gennev .double-image img {
+    max-width: 550px;
+  }
 }
 .gennev .underline {
-  width: 165px;
+  width: 95px;
   border: 3px solid #D2A570;
   border-radius: 3px;
-  margin-bottom: 24px;
+  margin-bottom: 14px;
+}
+@media only screen and (min-width: 992px) {
+  .gennev .underline {
+    width: 165px;
+    margin-bottom: 24px;
+  }
+}
+.gennev .text-image {
+  flex-direction: column;
+}
+@media only screen and (min-width: 992px) {
+  .gennev .text-image {
+    flex-direction: row;
+  }
+}
+.gennev .text-image-flip {
+  flex-direction: column-reverse;
+}
+@media only screen and (min-width: 992px) {
+  .gennev .text-image-flip {
+    flex-direction: row;
+  }
 }
 .gennev #cover {
   flex-direction: column;
-  margin-top: 40px;
-  background-image: url("./../img/gennev-cover.png");
-  background-position: right 105px bottom 20%;
-  background-repeat: no-repeat;
-  margin-right: 105px;
-  height: 100vh;
+  margin-top: 32px;
 }
 .gennev #cover .logo {
   width: 176px;
   margin-bottom: 25px;
 }
-.gennev #cover h1 {
-  max-width: 1152px;
-  margin-top: 0;
-}
-.gennev #cover h4 {
-  margin-top: 0;
-  margin-bottom: 600px;
-}
-.gennev #cover .duration {
-  margin-bottom: 92px;
-}
-.gennev #cover .duration p {
-  font-style: normal;
-  font-size: 24px;
-  line-height: 32px;
-  letter-spacing: -0.02em;
-  font-family: "Montserrat", sans-serif;
-}
-.gennev #cover .duration p b {
-  font-weight: 600;
-  color: #13151A;
+@media only screen and (min-width: 992px) {
+  .gennev #cover {
+    margin-top: 40px;
+    background-image: url("./../img/gennev-cover.png");
+    background-position: right 105px bottom 20%;
+    background-repeat: no-repeat;
+    margin-right: 105px;
+    height: 100vh;
+  }
+  .gennev #cover h1 {
+    max-width: 1152px;
+  }
+  .gennev #cover h4 {
+    margin-bottom: 600px;
+  }
+  .gennev #cover .image {
+    display: none;
+  }
 }
 .gennev #overview {
   margin-bottom: 128px;
@@ -236,28 +341,46 @@
 }
 .gennev #overview .skill-lists {
   display: flex;
-  flex-flow: row;
+  flex-direction: column;
+}
+@media only screen and (min-width: 992px) {
+  .gennev #overview .skill-lists {
+    flex-flow: row;
+  }
 }
 .gennev #overview .text {
   width: 100%;
 }
-.gennev #overview .image {
-  max-height: 832px;
+.gennev #overview img {
+  max-height: 365px;
 }
 .gennev #overview .part-2 .text {
   padding-right: 16px;
 }
-.gennev #overview .part-3 {
+.gennev #overview .list {
   margin-top: 40px;
 }
+@media only screen and (min-width: 992px) {
+  .gennev #overview img {
+    max-height: 832px;
+  }
+}
 .gennev #goals {
-  margin-bottom: 90px;
+  margin-bottom: 45px;
 }
-.gennev #goals .half.image {
+.gennev #goals .image {
   justify-content: center;
 }
-.gennev #goals .half.text {
+.gennev #goals img {
+  max-width: 154px;
+}
+.gennev #goals .text {
   justify-content: center;
+}
+@media only screen and (min-width: 992px) {
+  .gennev #goals {
+    margin-bottom: 90px;
+  }
 }
 .gennev #current-design .part {
   width: 100%;
@@ -340,19 +463,31 @@
 .gennev #meet-robyn .part-2 .full img {
   max-height: 670px;
 }
-.gennev #usability-testing .image {
-  display: flex;
-  gap: 24px;
-}
-.gennev #usability-testing .image img {
-  max-height: 670px;
-}
 .gennev #usability-testing #sticky-notes {
   display: flex;
   width: 100%;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+.gennev #usability-testing #sticky-notes img {
+  max-width: 50%;
+}
+.gennev #usability-testing .image {
+  display: flex;
+  gap: 24px;
+}
+@media only screen and (min-width: 992px) {
+  .gennev #usability-testing {
+    max-width: unset;
+  }
+  .gennev #usability-testing .image {
+    display: flex;
+    gap: 24px;
+  }
+  .gennev #usability-testing img {
+    max-height: 670px;
+  }
 }
 .gennev #pain-points .full:first-child {
   margin-right: 16px;
@@ -361,15 +496,6 @@
   display: flex;
   gap: 24px;
 }
-.gennev #pain-points .image img {
-  max-height: 670px;
-}
-.gennev #video #backlink {
-  display: none;
-}
-.gennev #takeaways img {
-  max-width: 340px;
-}
 .gennev #pain-points h5 {
   margin-bottom: 60px;
 }
@@ -377,16 +503,29 @@
   justify-content: space-between;
   margin-bottom: 60px;
 }
-.gennev #pain-points img {
-  height: 615px;
-  width: 296px;
-}
-.gennev #pain-points img:first-of-type {
+.gennev #pain-points:first-of-type {
   margin-right: 32px;
 }
 .gennev #pain-points .text {
   justify-content: center;
   max-width: 400px;
+}
+@media only screen and (min-width: 992px) {
+  .gennev #pain-points img {
+    max-height: 670px;
+  }
+}
+.gennev #video #backlink {
+  display: none;
+}
+.gennev #takeaways img {
+  display: none;
+}
+@media only screen and (min-width: 992px) {
+  .gennev #takeaways img {
+    display: block;
+    max-width: 340px;
+  }
 }
 
 /*# sourceMappingURL=project.css.map */

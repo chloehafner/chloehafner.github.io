@@ -79,14 +79,19 @@ p {
 
   .nav-links {
     font-size: 32px;
+  }
 
+  a {
+    text-decoration: none;
+  }
+
+  .active {
+    @extend .bold;
+  }
+
+  @media only screen and (min-width: $bp-desktop) {
     a {
       margin: 0 0 0 56px;
-      text-decoration: none;
-
-      &.active {
-        @extend .bold;
-      }
     }
   }
 }

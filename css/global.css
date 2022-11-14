@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap");
-.bold, .header-wrapper .nav-links a.active {
+.bold, .header-wrapper .active {
   font-weight: 700;
 }
 
@@ -161,10 +161,15 @@ p {
 .header-wrapper .nav-links {
   font-size: 32px;
 }
-.header-wrapper .nav-links a {
-  margin: 0 0 0 56px;
+.header-wrapper a {
   text-decoration: none;
 }
+@media only screen and (min-width: 992px) {
+  .header-wrapper a {
+    margin: 0 0 0 56px;
+  }
+}
+
 body {
   background: #FFFFFF;
   padding-top: 40px;
