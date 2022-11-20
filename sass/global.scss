@@ -56,19 +56,19 @@ p {
 }
 
 .bg-pink {
-  background: lightpink;
+  background: #FA92C4;
 }
 .bg-orange {
-  background: orangered;
+  background: #F4483D;
 }
 .bg-green {
-  background: darkolivegreen;
+  background: #8C8E1C;
 }
 .bg-black {
-  background: #1C1C1C;
+  background: #000000;
 }
 .bg-blue {
-  background: dodgerblue;
+  background: #4EAAFF;
 }
 
 //--- Header ---
@@ -79,6 +79,10 @@ p {
 
   .logo {
     max-width: 108px;
+  }
+
+  img {
+    max-width: 100%;
   }
 
   .nav-links {

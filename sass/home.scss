@@ -1,58 +1,85 @@
 @import "./_variables.scss";
+@import "./custom-styles.scss";
 
-.intro {
-  margin-bottom: 60px;
+.home {
+
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media only screen and (min-width: 20px) and (max-width: 1400 - 1px) {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+
+  .intro {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
 
   .img-container {
-    display: flex;
+    display:         flex;
+    justify-content: center;
+  }
+
+  // img {
+  //   width:  300px;
+  //   height: 300px;
+  // }
+
+  .tiles {
+    display:         flex;
+    flex-flow:       row wrap;
     justify-content: center;
 
-    img {
-      width: 300px;
-      height: 300px;
+    a, .tile {
+      width: 325px;
+      height: 325px;
+      text-decoration: none;
     }
   }
-}
-
-.tiles {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
 
   .tile {
-    width: 350px;
-    height: 350px;
+    aspect-ratio: 1;
     margin-bottom: 40px;
     border-radius: 50%;
+  }
 
-    h3 {
-      font-family: $font-regular;
-      padding: 40px 30px 0;
-      text-align: center;
-    }
+  h3 {
+    font-family: $font-regular;
+    text-align:  center;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 
-    p {
-      font-size: 24px;
-      padding: 0 20px;
-      text-align: center;
-    }
+  p {
+    font-size:  24px;
+    padding:    0;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .text {
+    @extend .flex-center-center;
+    flex-flow: column;
   }
 
   // Credit to Nick Else: https://codepen.io/nickelse
   .diamond {
     //background: #fff;
-    height: 60%;
-    width: 60%;
-    text-align: center;
-    transform:rotate(45deg);
+    height:      60%;
+    width:       60%;
+    text-align:  center;
+    transform:   rotate(45deg);
     margin-left: 20%;
-    margin-top: 20%;
+    margin-top:  20%;
   }
 
   .star {
-    width: 80%;
-    margin-top: 10%;
+    width:       80%;
+    margin-top:  10%;
     margin-left: 10%;
-    fill: orange;
+    fill:        orange;
   }
 }
