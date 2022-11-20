@@ -3,24 +3,24 @@
 
 h1 {
   font-family: $font-medium;
-  font-size: 50px;
+  font-size:   50px;
 }
 
 h2 {
   font-family: $font-light;
-  font-size: 42px;
+  font-size:   42px;
 }
 
 h3 {
   font-family: $font-bold;
-  font-size: 36px;
+  font-size:   36px;
 }
 
 body, p, li, a {
-  font-family: $font-regular;
-  color: black;
+  font-family:     $font-regular;
+  color:           black;
   text-decoration: none;
-  text-underline: none;
+  text-underline:  none;
 
   &:visited {
     color: black;
@@ -32,10 +32,10 @@ body, p, li, a {
 }
 
 a {
-  text-decoration: underline;
-  text-underline-offset: 5px;
+  text-decoration:           underline;
+  text-underline-offset:     5px;
   text-decoration-thickness: 1px;
-  padding-bottom: 5px;
+  padding-bottom:            5px;
 }
 
 p {
@@ -43,14 +43,14 @@ p {
 }
 
 .back-button {
-  position: absolute;
-  left: 30px;
-  top: 30px;
+  position:    absolute;
+  left:        30px;
+  top:         30px;
   user-select: none;
 
   a {
-    color: #333333;
-    font-size: 46px;
+    color:           #333333;
+    font-size:       46px;
     text-decoration: none;
   }
 }
@@ -73,16 +73,28 @@ p {
 
 //--- Header ---
 .header-wrapper {
-  display: flex;
+  display:         flex;
   justify-content: space-between;
-  align-items: center;
+  align-items:     center;
+
+  .logo {
+    max-width: 108px;
+  }
 
   .nav-links {
-    font-size: 32px;
+    display:   flex;
+    // flex-flow: column;
+    font-size: 20px;
+    // justify-content: space-between;
+
   }
 
   a {
     text-decoration: none;
+
+    & + a {
+      margin-left: 20px;
+    }
   }
 
   .active {
@@ -90,9 +102,20 @@ p {
   }
 
   @media only screen and (min-width: $bp-desktop) {
+
+    .logo {
+      max-width: unset;
+    }
+
     a {
       margin: 0 0 0 56px;
     }
+
+    .nav-links {
+      font-size: 32px;
+      flex-flow: row;
+    }
+
   }
 }
 
@@ -101,10 +124,18 @@ body {
   background: $white;
   //margin-left: 50px;
   //margin-right: 50px;
-  padding-top: 40px;
+  margin-top: 24px;
 
   @media only screen and (min-width: $bp-desktop) {
     //margin-left: 64px;
     //margin-right: 64px;
+    padding-top: 40px;
   }
+}
+
+.desktop-only {display: none;}
+
+@media only screen and (min-width: $bp-desktop) {
+  .mobile-only {display: none;}
+  .desktop-only {display: unset;}
 }

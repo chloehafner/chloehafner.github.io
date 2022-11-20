@@ -79,6 +79,7 @@ $cover-bottom-margin: -670px;
   h5 {
     font-size:   16px;
     line-height: 20px;
+    margin-bottom: 8px;
 
     @media only screen and (min-width: $bp-desktop) {
       font-size:     32px;
@@ -150,6 +151,11 @@ $cover-bottom-margin: -670px;
 
   .section {
     width: 100%;
+    margin-bottom: 30px;
+
+    @media only screen and (min-width: $bp-desktop) {
+      margin-bottom: 0;
+    }
   }
 
   .full {
@@ -246,7 +252,7 @@ $cover-bottom-margin: -670px;
 
   #cover {
     flex-direction: column;
-    margin-top:     32px;
+    margin-top:     16px;
 
     .logo {
       width:         176px;
@@ -276,7 +282,6 @@ $cover-bottom-margin: -670px;
   }
 
   #overview {
-    margin-bottom: 128px;
 
     h2 {
       max-width: 1060px;
@@ -300,18 +305,22 @@ $cover-bottom-margin: -670px;
     }
 
     img {
-      max-height: 365px;
+      max-width: 80vw;
     }
 
     .part-2 .text {
       padding-right: 16px;
     }
 
-    .list {
-      margin-top: 40px;
-    }
 
     @media only screen and (min-width: $bp-desktop) {
+      margin-bottom: 128px;
+
+
+      .list {
+        margin-top: 40px;
+      }
+
       img {
         max-height: 832px;
       }
@@ -319,9 +328,8 @@ $cover-bottom-margin: -670px;
   }
 
   #goals {
-    margin-bottom: 45px;
-
     .image {
+      margin-top: 20px;
       justify-content: center;
     }
 
@@ -335,79 +343,45 @@ $cover-bottom-margin: -670px;
 
     @media only screen and (min-width: $bp-desktop) {
       margin-bottom: 90px;
+
+      .image {
+        margin-top: unset;
+      }
     }
   }
 
   #current-design {
 
-    .part {
-      width:         100%;
-      height:        162px;
-      display:       flex;
-      box-shadow:    0 0 20px rgba(0, 0, 0, 0.1);
-      margin-bottom: 24px;
-      border-radius: 81px;
-    }
-
-    .open-circle {
-      background-image: url("./../img/gennev-open-circle.png");
-      position:         absolute;
-      height:           204px;
-      width:            204px;
-
-      .inner-circle {
-        @extend .flex-center-center;
-        width:         164px;
-        height:        164px;
-        background:    $white;
-        border-radius: 50%;
-      }
-    }
-
-    .circle {
-      @extend .flex-center-center;
-      width:         114px;
-      height:        114px;
-      background:    $light-blue;
-      border-radius: 50%;
-      margin-left:   45px;
-      margin-top:    calc((162px - 114px) / 2);
-    }
-
-    .pill-text {
-      // @extend .flex-vert-center;
-      text-align:     left;
-      flex-direction: column;
-      margin-left:    90px;
-    }
-
-    .analytics-header {
-      margin-top:    128px;
-      margin-bottom: 64px;
+    .icon svg {
+      max-width: 74px;
+      max-height: 74px;
     }
 
     .analytics {
-      justify-content: space-between;
-      margin-bottom:   105px;
+      max-width: 60vw;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
     }
 
     .analytic-1, .analytic-2, .analytic-3 {
-      max-width:     300px;
       @extend .txt-center;
-      border-bottom: solid 24px;
+      border-bottom: solid 18px;
 
       .question {
         @extend .txt-sm;
         text-transform: uppercase;
         font-weight:    600;
-        margin-bottom:  16px;
       }
       .answer {
         margin-top:    0;
-        margin-bottom: 30px;
         color:         $blue;
         @extend .bold;
       }
+    }
+
+    .third + .third {
+      margin-top: 20px;
     }
 
     .analytic-1 {
@@ -419,28 +393,89 @@ $cover-bottom-margin: -670px;
     .analytic-3 {
       border-color: $pink;
     }
+
+    @media only screen and (min-width: $bp-desktop) {
+      .analytics {
+        justify-content: space-between;
+        margin-bottom:   105px;
+      }
+
+      .analytic-1, .analytic-2, .analytic-3 {
+        max-width:     300px;
+        border-bottom: solid 24px;
+
+        .question {
+          margin-bottom:  16px;
+        }
+        .answer {
+          margin-top:    0;
+          margin-bottom: 30px;
+        }
+      }
+    }
   }
 
   #meet-robyn {
+    h3 {
+      margin-bottom: 8px;
+    }
+
     .part-1 {
-      h5 {
-        max-width: 530px;
-      }
+      margin-top: 20px;
+
       img {
-        max-height: 365px;
-        max-width:  355px;
+        max-width: 60vw;
+        max-height: 60vh;
+        margin-bottom: 20px;
       }
     }
 
     .part-2 {
+      margin-top: 20px;
+
+      img {
+        max-height: 40vh;
+      }
+
       .full {
-        justify-content: space-between;
-        margin-bottom:   80px;
-        .text {
-          max-width: 650px;
+        margin-bottom: 15px;
+      }
+
+      br {
+        display: none;
+      }
+    }
+
+    @media only screen and (min-width: $bp-desktop) {
+      margin-top: unset;
+      h3 {
+        margin-bottom: unset;
+      }
+
+      .part-1 {
+        img {
+          max-height: 365px;
+          max-width:  355px;
+          margin-bottom: unset;
         }
+
+        h5 {
+          max-width: 530px;
+        }
+      }
+      .part-2 {
+        margin-top: unset;
+
         img {
           max-height: 670px;
+        }
+
+        .full {
+          justify-content: space-between;
+          margin-bottom:   80px;
+          .text {
+            max-width: 650px;
+          }
         }
       }
     }
@@ -468,6 +503,10 @@ $cover-bottom-margin: -670px;
       gap:     24px;
     }
 
+    .double-image {
+      margin-bottom: 20px;
+    }
+
     @media only screen and (min-width: $bp-desktop) {
       .image {
         display: flex;
@@ -486,22 +525,12 @@ $cover-bottom-margin: -670px;
 
   #pain-points {
 
-    .full:first-child {
-      margin-right: 16px;
-    }
     .image {
       display: flex;
       gap:     24px;
+      margin-bottom: 20px;
     }
 
-    h5 {
-      margin-bottom: 60px;
-    }
-
-    .full {
-      justify-content: space-between;
-      margin-bottom:   60px;
-    }
 
     &:first-of-type {
       margin-right: 32px;
@@ -513,8 +542,25 @@ $cover-bottom-margin: -670px;
     }
 
     @media only screen and (min-width: $bp-desktop) {
+      h5 {
+        margin-bottom: 60px;
+      }
+
+      .image {
+        margin-bottom: unset;
+      }
+
       img {
         max-height: 670px;
+      }
+
+      .full {
+        justify-content: space-between;
+        margin-bottom:   60px;
+      }
+
+      .full:first-child {
+        margin-right: 16px;
       }
     }
   }

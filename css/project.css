@@ -26,15 +26,15 @@
   text-align: center;
 }
 
-.flex, .flex-center-center, .gennev #current-design .circle, .gennev #current-design .open-circle .inner-circle, .flex-vert-center, .flex-horiz-center {
+.flex, .flex-center-center, .flex-vert-center, .flex-horiz-center {
   display: flex;
 }
 
-.flex-horiz-center, .flex-center-center, .gennev #current-design .circle, .gennev #current-design .open-circle .inner-circle {
+.flex-horiz-center, .flex-center-center {
   justify-content: center;
 }
 
-.flex-vert-center, .flex-center-center, .gennev #current-design .circle, .gennev #current-design .open-circle .inner-circle {
+.flex-vert-center, .flex-center-center {
   align-items: center;
 }
 
@@ -154,6 +154,7 @@
 .gennev h5 {
   font-size: 16px;
   line-height: 20px;
+  margin-bottom: 8px;
 }
 @media only screen and (min-width: 992px) {
   .gennev h5 {
@@ -215,6 +216,12 @@
 }
 .gennev .section {
   width: 100%;
+  margin-bottom: 30px;
+}
+@media only screen and (min-width: 992px) {
+  .gennev .section {
+    margin-bottom: 0;
+  }
 }
 .gennev .full {
   display: flex;
@@ -305,7 +312,7 @@
 }
 .gennev #cover {
   flex-direction: column;
-  margin-top: 32px;
+  margin-top: 16px;
 }
 .gennev #cover .logo {
   width: 176px;
@@ -330,9 +337,6 @@
     display: none;
   }
 }
-.gennev #overview {
-  margin-bottom: 128px;
-}
 .gennev #overview h2 {
   max-width: 1060px;
 }
@@ -352,23 +356,24 @@
   width: 100%;
 }
 .gennev #overview img {
-  max-height: 365px;
+  max-width: 80vw;
 }
 .gennev #overview .part-2 .text {
   padding-right: 16px;
 }
-.gennev #overview .list {
-  margin-top: 40px;
-}
 @media only screen and (min-width: 992px) {
+  .gennev #overview {
+    margin-bottom: 128px;
+  }
+  .gennev #overview .list {
+    margin-top: 40px;
+  }
   .gennev #overview img {
     max-height: 832px;
   }
 }
-.gennev #goals {
-  margin-bottom: 45px;
-}
 .gennev #goals .image {
+  margin-top: 20px;
   justify-content: center;
 }
 .gennev #goals img {
@@ -381,61 +386,33 @@
   .gennev #goals {
     margin-bottom: 90px;
   }
+  .gennev #goals .image {
+    margin-top: unset;
+  }
 }
-.gennev #current-design .part {
-  width: 100%;
-  height: 162px;
-  display: flex;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  margin-bottom: 24px;
-  border-radius: 81px;
-}
-.gennev #current-design .open-circle {
-  background-image: url("./../img/gennev-open-circle.png");
-  position: absolute;
-  height: 204px;
-  width: 204px;
-}
-.gennev #current-design .open-circle .inner-circle {
-  width: 164px;
-  height: 164px;
-  background: #FFFFFF;
-  border-radius: 50%;
-}
-.gennev #current-design .circle {
-  width: 114px;
-  height: 114px;
-  background: linear-gradient(90deg, #D4E2E2 4612%, #6A82FB 11057%);
-  border-radius: 50%;
-  margin-left: 45px;
-  margin-top: calc((162px - 114px) / 2);
-}
-.gennev #current-design .pill-text {
-  text-align: left;
-  flex-direction: column;
-  margin-left: 90px;
-}
-.gennev #current-design .analytics-header {
-  margin-top: 128px;
-  margin-bottom: 64px;
+.gennev #current-design .icon svg {
+  max-width: 74px;
+  max-height: 74px;
 }
 .gennev #current-design .analytics {
-  justify-content: space-between;
-  margin-bottom: 105px;
+  max-width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
 }
 .gennev #current-design .analytic-1, .gennev #current-design .analytic-2, .gennev #current-design .analytic-3 {
-  max-width: 300px;
-  border-bottom: solid 24px;
+  border-bottom: solid 18px;
 }
 .gennev #current-design .analytic-1 .question, .gennev #current-design .analytic-2 .question, .gennev #current-design .analytic-3 .question {
   text-transform: uppercase;
   font-weight: 600;
-  margin-bottom: 16px;
 }
 .gennev #current-design .analytic-1 .answer, .gennev #current-design .analytic-2 .answer, .gennev #current-design .analytic-3 .answer {
   margin-top: 0;
-  margin-bottom: 30px;
   color: #072D4B;
+}
+.gennev #current-design .third + .third {
+  margin-top: 20px;
 }
 .gennev #current-design .analytic-1 {
   border-color: #E8CFB3;
@@ -446,22 +423,74 @@
 .gennev #current-design .analytic-3 {
   border-color: #FABAAC;
 }
-.gennev #meet-robyn .part-1 h5 {
-  max-width: 530px;
+@media only screen and (min-width: 992px) {
+  .gennev #current-design .analytics {
+    justify-content: space-between;
+    margin-bottom: 105px;
+  }
+  .gennev #current-design .analytic-1, .gennev #current-design .analytic-2, .gennev #current-design .analytic-3 {
+    max-width: 300px;
+    border-bottom: solid 24px;
+  }
+  .gennev #current-design .analytic-1 .question, .gennev #current-design .analytic-2 .question, .gennev #current-design .analytic-3 .question {
+    margin-bottom: 16px;
+  }
+  .gennev #current-design .analytic-1 .answer, .gennev #current-design .analytic-2 .answer, .gennev #current-design .analytic-3 .answer {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+}
+.gennev #meet-robyn h3 {
+  margin-bottom: 8px;
+}
+.gennev #meet-robyn .part-1 {
+  margin-top: 20px;
 }
 .gennev #meet-robyn .part-1 img {
-  max-height: 365px;
-  max-width: 355px;
+  max-width: 60vw;
+  max-height: 60vh;
+  margin-bottom: 20px;
+}
+.gennev #meet-robyn .part-2 {
+  margin-top: 20px;
+}
+.gennev #meet-robyn .part-2 img {
+  max-height: 40vh;
 }
 .gennev #meet-robyn .part-2 .full {
-  justify-content: space-between;
-  margin-bottom: 80px;
+  margin-bottom: 15px;
 }
-.gennev #meet-robyn .part-2 .full .text {
-  max-width: 650px;
+.gennev #meet-robyn .part-2 br {
+  display: none;
 }
-.gennev #meet-robyn .part-2 .full img {
-  max-height: 670px;
+@media only screen and (min-width: 992px) {
+  .gennev #meet-robyn {
+    margin-top: unset;
+  }
+  .gennev #meet-robyn h3 {
+    margin-bottom: unset;
+  }
+  .gennev #meet-robyn .part-1 img {
+    max-height: 365px;
+    max-width: 355px;
+    margin-bottom: unset;
+  }
+  .gennev #meet-robyn .part-1 h5 {
+    max-width: 530px;
+  }
+  .gennev #meet-robyn .part-2 {
+    margin-top: unset;
+  }
+  .gennev #meet-robyn .part-2 img {
+    max-height: 670px;
+  }
+  .gennev #meet-robyn .part-2 .full {
+    justify-content: space-between;
+    margin-bottom: 80px;
+  }
+  .gennev #meet-robyn .part-2 .full .text {
+    max-width: 650px;
+  }
 }
 .gennev #usability-testing #sticky-notes {
   display: flex;
@@ -477,6 +506,9 @@
   display: flex;
   gap: 24px;
 }
+.gennev #usability-testing .double-image {
+  margin-bottom: 20px;
+}
 @media only screen and (min-width: 992px) {
   .gennev #usability-testing {
     max-width: unset;
@@ -489,19 +521,10 @@
     max-height: 670px;
   }
 }
-.gennev #pain-points .full:first-child {
-  margin-right: 16px;
-}
 .gennev #pain-points .image {
   display: flex;
   gap: 24px;
-}
-.gennev #pain-points h5 {
-  margin-bottom: 60px;
-}
-.gennev #pain-points .full {
-  justify-content: space-between;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 .gennev #pain-points:first-of-type {
   margin-right: 32px;
@@ -511,8 +534,21 @@
   max-width: 400px;
 }
 @media only screen and (min-width: 992px) {
+  .gennev #pain-points h5 {
+    margin-bottom: 60px;
+  }
+  .gennev #pain-points .image {
+    margin-bottom: unset;
+  }
   .gennev #pain-points img {
     max-height: 670px;
+  }
+  .gennev #pain-points .full {
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+  .gennev #pain-points .full:first-child {
+    margin-right: 16px;
   }
 }
 .gennev #video #backlink {
