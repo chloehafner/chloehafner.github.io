@@ -207,21 +207,5 @@ body {
     display: unset;
   }
 }
-.tiles {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-}
-.tiles a, .tiles .tile {
-  max-width: 325px;
-  max-height: 325px;
-  text-decoration: none;
-}
-
-.tile {
-  aspect-ratio: 1;
-  margin-bottom: 40px;
-  border-radius: 50%;
-}
 
 /*# sourceMappingURL=global.css.map */

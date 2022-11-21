@@ -86,12 +86,32 @@
   max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
+  background: url("./../img/light-background.png");
+  background-size: contain;
 }
 @media only screen and (min-width: 20px) and (max-width: 1399px) {
   .home {
     margin-left: 40px;
     margin-right: 40px;
   }
+}
+.home .tiles {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.home .tiles a, .home .tiles .tile {
+  width: 325px;
+  height: 325px;
+  text-decoration: none;
+  aspect-ratio: 1;
+}
+.home .tile.image {
+  background-size: contain;
+}
+.home .tile.text {
+  border-radius: 50%;
+  margin-bottom: 40px;
 }
 .home .intro {
   margin-top: 60px;
@@ -129,6 +149,14 @@
   margin-top: 10%;
   margin-left: 10%;
   fill: orange;
+}
+@media only screen and (min-width: 992px) {
+  .home p {
+    font-size: 34px;
+  }
+  .home .tile p, .home .tile h3 {
+    font-size: 28px;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */

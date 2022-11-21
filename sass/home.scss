@@ -7,11 +7,36 @@
   margin-left: auto;
   margin-right: auto;
 
+  background: url("./../img/light-background.png");
+  background-size: contain;
+
   @media only screen and (min-width: 20px) and (max-width: 1400 - 1px) {
     margin-left: 40px;
     margin-right: 40px;
   }
 
+  // --- Tiles ---
+  .tiles {
+    display:         flex;
+    flex-flow:       row wrap;
+    justify-content: center;
+
+    a, .tile {
+      width: 325px;
+      height: 325px;
+      text-decoration: none;
+      aspect-ratio: 1;
+    }
+  }
+
+  .tile.image {
+    background-size: contain;
+  }
+
+  .tile.text {
+    border-radius: 50%;
+    margin-bottom: 40px;
+  }
 
   .intro {
     margin-top: 60px;
@@ -58,5 +83,17 @@
     margin-top:  10%;
     margin-left: 10%;
     fill:        orange;
+  }
+
+  @media only screen and (min-width: $bp-desktop) {
+    p {
+      font-size: 34px;
+    }
+
+    .tile {
+      p, h3 {
+        font-size: 28px;
+      }
+    }
   }
 }

@@ -321,7 +321,7 @@
 @media only screen and (min-width: 992px) {
   .gennev #cover {
     margin-top: 40px;
-    background-image: url("./../img/gennev-cover.png");
+    background-image: url("../img/gennev/gennev-cover.png");
     background-position: right 105px bottom 20%;
     background-repeat: no-repeat;
     margin-right: 105px;
