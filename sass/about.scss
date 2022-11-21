@@ -1,0 +1,81 @@
+@import "./_variables.scss";
+@import "./custom-styles";
+
+.about {
+
+  margin-left: 20px;
+  margin-right: 20px;
+
+  @media only screen and (min-width: $bp-desktop) {
+    max-width: $max-width-desktop;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h1, h2, h3, h4, h5 {
+    margin: 0;
+  }
+
+  p + p {
+    margin-top: 0;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  #profile {
+    align-items: center;
+
+    img {
+      border-radius: 50%;
+      max-width: 90vw;
+    }
+
+    @media only screen and (min-width: $bp-desktop) {
+      img {
+        max-width:     400px;
+      }
+    }
+  }
+
+  // --- Tiles ---
+  .tiles {
+    display:         flex;
+    flex-flow:       row wrap;
+    justify-content: space-between;
+    margin-top: 60px;
+
+    .tile {
+      text-decoration: none;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    img {
+      width: 100%;
+      aspect-ratio: 1;
+    }
+
+    p {
+      @extend .bold;
+      margin: 0;
+      text-align: center;
+    }
+
+    @media only screen and (min-width: $bp-desktop) {
+      .tile {
+        max-width: 290px;
+        margin-bottom: 90px;
+      }
+    }
+  }
+
+  #social {
+    align-items: center;
+  }
+
+}

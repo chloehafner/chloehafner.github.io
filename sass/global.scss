@@ -56,19 +56,19 @@ p {
 }
 
 .bg-pink {
-  background: lightpink;
+  background: #FA92C4;
 }
 .bg-orange {
-  background: orangered;
+  background: #F4483D;
 }
 .bg-green {
-  background: darkolivegreen;
+  background: #8C8E1C;
 }
 .bg-black {
-  background: #1C1C1C;
+  background: #000000;
 }
 .bg-blue {
-  background: dodgerblue;
+  background: #4EAAFF;
 }
 
 //--- Header ---
@@ -79,6 +79,10 @@ p {
 
   .logo {
     max-width: 108px;
+  }
+
+  img {
+    max-width: 100%;
   }
 
   .nav-links {
@@ -105,10 +109,6 @@ p {
 
     .logo {
       max-width: unset;
-    }
-
-    a {
-      margin: 0 0 0 56px;
     }
 
     .nav-links {
@@ -138,4 +138,23 @@ body {
 @media only screen and (min-width: $bp-desktop) {
   .mobile-only {display: none;}
   .desktop-only {display: unset;}
+}
+
+// --- Tiles ---
+.tiles {
+  display:         flex;
+  flex-flow:       row wrap;
+  justify-content: center;
+
+  a, .tile {
+    max-width: 325px;
+    max-height: 325px;
+    text-decoration: none;
+  }
+}
+
+.tile {
+  aspect-ratio: 1;
+  margin-bottom: 40px;
+  border-radius: 50%;
 }

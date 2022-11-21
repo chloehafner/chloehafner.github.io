@@ -134,23 +134,23 @@ p {
 }
 
 .bg-pink {
-  background: lightpink;
+  background: #FA92C4;
 }
 
 .bg-orange {
-  background: orangered;
+  background: #F4483D;
 }
 
 .bg-green {
-  background: darkolivegreen;
+  background: #8C8E1C;
 }
 
 .bg-black {
-  background: #1C1C1C;
+  background: #000000;
 }
 
 .bg-blue {
-  background: dodgerblue;
+  background: #4EAAFF;
 }
 
 .header-wrapper {
@@ -160,6 +160,9 @@ p {
 }
 .header-wrapper .logo {
   max-width: 108px;
+}
+.header-wrapper img {
+  max-width: 100%;
 }
 .header-wrapper .nav-links {
   display: flex;
@@ -174,9 +177,6 @@ p {
 @media only screen and (min-width: 992px) {
   .header-wrapper .logo {
     max-width: unset;
-  }
-  .header-wrapper a {
-    margin: 0 0 0 56px;
   }
   .header-wrapper .nav-links {
     font-size: 32px;
@@ -206,6 +206,22 @@ body {
   .desktop-only {
     display: unset;
   }
+}
+.tiles {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.tiles a, .tiles .tile {
+  max-width: 325px;
+  max-height: 325px;
+  text-decoration: none;
+}
+
+.tile {
+  aspect-ratio: 1;
+  margin-bottom: 40px;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=global.css.map */
