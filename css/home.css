@@ -101,21 +101,6 @@
   display: flex;
   justify-content: center;
 }
-.home .tiles {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-}
-.home .tiles a, .home .tiles .tile {
-  width: 325px;
-  height: 325px;
-  text-decoration: none;
-}
-.home .tile {
-  aspect-ratio: 1;
-  margin-bottom: 40px;
-  border-radius: 50%;
-}
 .home h3 {
   font-family: "Open Sans", sans-serif;
   text-align: center;
