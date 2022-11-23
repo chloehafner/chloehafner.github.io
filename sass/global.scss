@@ -18,7 +18,7 @@ h1, h2 {
 }
 
 h3, h5 {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 h1 {
@@ -45,9 +45,9 @@ h3 {
   letter-spacing: 0.1em;
 
   @media only screen and (min-width: $bp-desktop) {
-    font-size:     40px;
-    line-height:   54px;
-    margin-bottom: 16px;
+    font-size:     25px;
+    line-height:   24px;
+    margin-bottom: 12px;
   }
 }
 
