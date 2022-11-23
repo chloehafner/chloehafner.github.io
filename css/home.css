@@ -26,15 +26,15 @@
   text-align: center;
 }
 
-.flex, .flex-center-center, .home .text, .flex-vert-center, .flex-horiz-center {
+.flex, .flex-center-center, .home .tile.text, .flex-vert-center, .flex-horiz-center {
   display: flex;
 }
 
-.flex-horiz-center, .flex-center-center, .home .text {
+.flex-horiz-center, .flex-center-center, .home .tile.text {
   justify-content: center;
 }
 
-.flex-vert-center, .flex-center-center, .home .text {
+.flex-vert-center, .flex-center-center, .home .tile.text {
   align-items: center;
 }
 
@@ -91,8 +91,25 @@
 }
 @media only screen and (min-width: 20px) and (max-width: 1399px) {
   .home {
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 28px;
+    margin-right: 28px;
+  }
+}
+.home .intro p {
+  font-weight: 700;
+  font-size: 22px;
+  text-align: center;
+}
+.home .intro b {
+  font-weight: 800;
+  font-size: 24px;
+}
+@media only screen and (min-width: 992px) {
+  .home .intro p {
+    font-size: 33px;
+  }
+  .home .intro b {
+    font-size: 35px;
   }
 }
 .home .tiles {
@@ -101,17 +118,47 @@
   justify-content: center;
 }
 .home .tiles a, .home .tiles .tile {
-  width: 325px;
-  height: 325px;
+  max-width: 275px;
+  max-height: 275px;
+  width: 100%;
   text-decoration: none;
   aspect-ratio: 1;
+  padding-bottom: 0;
+}
+@media only screen and (min-width: 992px) {
+  .home .tiles a, .home .tiles .tile {
+    max-width: 325px;
+    max-height: 325px;
+  }
+}
+.home .tiles .tile {
+  margin-bottom: 20px;
 }
 .home .tile.image {
   background-size: contain;
 }
 .home .tile.text {
   border-radius: 50%;
-  margin-bottom: 40px;
+  flex-flow: column;
+}
+.home .tile.text h2, .home .tile.text p {
+  text-align: center;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 24px;
+  max-width: 285px;
+}
+@media only screen and (min-width: 992px) {
+  .home .tile.text h2, .home .tile.text p {
+    font-size: 32px;
+  }
+}
+.home .tile.text.bg-pink:hover {
+  background-color: #F962AB;
+}
+.home .tile.text.bg-green:hover {
+  background-color: #BDC02B;
 }
 .home .intro {
   margin-top: 60px;
@@ -121,20 +168,8 @@
   display: flex;
   justify-content: center;
 }
-.home h3 {
-  font-family: "Open Sans", sans-serif;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-.home p {
-  font-size: 24px;
-  padding: 0;
-  margin-top: 0;
-  text-align: center;
-}
-.home .text {
-  flex-flow: column;
+.home h2 {
+  line-height: unset;
 }
 .home .diamond {
   height: 60%;
@@ -149,14 +184,6 @@
   margin-top: 10%;
   margin-left: 10%;
   fill: orange;
-}
-@media only screen and (min-width: 992px) {
-  .home p {
-    font-size: 34px;
-  }
-  .home .tile p, .home .tile h3 {
-    font-size: 28px;
-  }
 }
 
 /*# sourceMappingURL=home.css.map */

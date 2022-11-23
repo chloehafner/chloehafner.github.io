@@ -82,31 +82,117 @@
     font-size: 60px;
   }
 }
-h1 {
+h1, h2, h3, h4, h5, p, ul, li {
+  margin-top: 0;
   font-family: "Open Sans", sans-serif;
-  font-size: 50px;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #13151A;
+}
+
+h1, h2 {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+h3, h5 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 22px;
+  line-height: 32px;
+}
+@media only screen and (min-width: 992px) {
+  h1 {
+    font-size: 60px;
+    line-height: 82px;
+  }
 }
 
 h2 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 42px;
+  font-size: 22px;
+  line-height: 30px;
+}
+@media only screen and (min-width: 992px) {
+  h2 {
+    font-size: 52px;
+    line-height: 72px;
+  }
 }
 
 h3 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 36px;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+}
+@media only screen and (min-width: 992px) {
+  h3 {
+    font-size: 40px;
+    line-height: 54px;
+    margin-bottom: 16px;
+  }
 }
 
-body, p, li, a {
+h4 {
+  font-weight: 400;
+  color: #13151A;
+  font-size: 15px;
+  letter-spacing: -0.02em;
+}
+@media only screen and (min-width: 992px) {
+  h4 {
+    font-size: 34px;
+  }
+}
+
+h5 {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+@media only screen and (min-width: 992px) {
+  h5 {
+    font-size: 32px;
+    line-height: 42px;
+    margin-bottom: 18px;
+  }
+}
+
+p {
+  font-weight: 400;
+  color: #13151A;
+  font-size: 14px;
+}
+p.caps {
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  line-height: 18px;
+  margin-bottom: 8px;
+}
+@media only screen and (min-width: 992px) {
+  p {
+    font-size: 26px;
+  }
+  p.caps {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 24px;
+  }
+}
+
+body, li, a {
   font-family: "Open Sans", sans-serif;
   color: black;
   text-decoration: none;
   text-underline: none;
 }
-body:visited, p:visited, li:visited, a:visited {
+body:visited, li:visited, a:visited {
   color: black;
 }
-body:hover, p:hover, li:hover, a:hover {
+body:hover, li:hover, a:hover {
   color: black;
 }
 

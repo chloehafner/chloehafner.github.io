@@ -94,103 +94,20 @@
     margin-right: auto;
   }
 }
-.gennev h1, .gennev h2, .gennev h3, .gennev h4, .gennev h5, .gennev p, .gennev ul, .gennev li {
-  margin-top: 0;
-  font-family: "Open Sans", sans-serif;
-}
-.gennev h1, .gennev h2, .gennev h3, .gennev h4, .gennev h5 {
-  color: #13151A;
-}
-.gennev h1, .gennev h2 {
-  font-weight: 700;
-  margin-bottom: 8px;
-}
-.gennev h3, .gennev h5 {
-  font-weight: 600;
-}
-.gennev h1 {
-  font-size: 22px;
-  line-height: 32px;
-}
-@media only screen and (min-width: 992px) {
-  .gennev h1 {
-    font-size: 60px;
-    line-height: 82px;
-  }
-}
-.gennev h2 {
-  font-size: 22px;
-  line-height: 30px;
-}
-@media only screen and (min-width: 992px) {
-  .gennev h2 {
-    font-size: 52px;
-    line-height: 72px;
-  }
-}
-.gennev h3 {
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 0.1em;
-}
-@media only screen and (min-width: 992px) {
-  .gennev h3 {
-    font-size: 40px;
-    line-height: 54px;
-    margin-bottom: 16px;
-  }
-}
 .gennev h4 {
-  font-weight: 400;
   color: #5E6B81;
-  font-size: 15px;
-  letter-spacing: -0.02em;
-}
-@media only screen and (min-width: 992px) {
-  .gennev h4 {
-    font-size: 34px;
-  }
-}
-.gennev h5 {
-  font-size: 16px;
-  line-height: 20px;
-  margin-bottom: 8px;
-}
-@media only screen and (min-width: 992px) {
-  .gennev h5 {
-    font-size: 32px;
-    line-height: 42px;
-    margin-bottom: 18px;
-  }
 }
 .gennev p {
-  font-weight: 400;
   color: #5E6B81;
-  font-size: 14px;
 }
 .gennev p.blue {
   font-weight: 700;
   line-height: 18px;
 }
-.gennev p.caps {
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  line-height: 18px;
-  margin-bottom: 8px;
-}
 @media only screen and (min-width: 992px) {
-  .gennev p {
-    font-size: 26px;
-  }
   .gennev p.blue {
     line-height: 36px;
     margin-bottom: 30px;
-  }
-  .gennev p.caps {
-    font-size: 24px;
-    line-height: 32px;
-    margin-bottom: 24px;
   }
 }
 .gennev ul {
