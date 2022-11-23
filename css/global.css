@@ -265,7 +265,7 @@ p {
     max-width: unset;
   }
   .header-wrapper .nav-links {
-    font-size: 32px;
+    font-size: 24px;
     flex-flow: row;
   }
 }

@@ -96,7 +96,7 @@
   }
 }
 .home .intro p {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 22px;
   text-align: center;
 }
@@ -106,10 +106,10 @@
 }
 @media only screen and (min-width: 992px) {
   .home .intro p {
-    font-size: 33px;
+    font-size: 28px;
   }
   .home .intro b {
-    font-size: 35px;
+    font-size: 28px;
   }
 }
 .home .tiles {
