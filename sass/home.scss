@@ -44,8 +44,8 @@
     justify-content: center;
 
     a, .tile {
-      max-width:       275px;
-      max-height:      275px;
+      max-width:       167px;
+      max-height:      167px;
       width:           100%;
       text-decoration: none;
       aspect-ratio:    1;
@@ -76,7 +76,7 @@
       padding:       0;
       margin-top:    0;
       margin-bottom: 0;
-      font-size:     24px;
+      font-size:     18px;
       max-width:     285px;
 
       @media only screen and (min-width: $bp-desktop) {
