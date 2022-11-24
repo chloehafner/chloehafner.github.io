@@ -127,8 +127,8 @@
 }
 @media only screen and (min-width: 992px) {
   .gennev ul li {
-    font-size: 26px;
-    line-height: 32px;
+    font-size: 17px;
+    line-height: 20px;
   }
 }
 .gennev .section {
@@ -232,8 +232,8 @@
   margin-top: 16px;
 }
 .gennev #cover .logo {
-  width: 176px;
-  margin-bottom: 25px;
+  width: 145px;
+  margin-bottom: 15px;
 }
 @media only screen and (min-width: 992px) {
   .gennev #cover {
