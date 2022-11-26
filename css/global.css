@@ -82,6 +82,14 @@
     font-size: 60px;
   }
 }
+/***
+ *      _____ _______  _______
+ *     |_   _| ____\ \/ /_   _|
+ *       | | |  _|  \  /  | |
+ *       | | | |___ /  \  | |
+ *       |_| |_____/_/\_\ |_|
+ *
+ */
 h1, h2, h3, h4, h5, p, ul, li {
   margin-top: 0;
   font-family: "Open Sans", sans-serif;
@@ -207,18 +215,76 @@ p {
   font-size: 18px;
 }
 
-.back-button {
-  position: absolute;
-  left: 30px;
-  top: 30px;
-  user-select: none;
+/***
+ *      _   _    ___     ______    _    ____
+ *     | \ | |  / \ \   / / __ )  / \  |  _ \
+ *     |  \| | / _ \ \ / /|  _ \ / _ \ | |_) |
+ *     | |\  |/ ___ \ V / | |_) / ___ \|  _ <
+ *     |_| \_/_/   \_\_/  |____/_/   \_\_| \_\
+ *
+ */
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
-.back-button a {
-  color: #333333;
-  font-size: 46px;
+.header-wrapper .logo {
+  max-width: 108px;
+}
+.header-wrapper img {
+  max-width: 100%;
+}
+.header-wrapper .nav-links {
+  display: flex;
+  font-size: 20px;
+  margin-top: 24px;
+}
+.header-wrapper a {
   text-decoration: none;
 }
+.header-wrapper a + a {
+  margin-left: 20px;
+}
+@media only screen and (min-width: 992px) {
+  .header-wrapper {
+    align-items: center;
+  }
+  .header-wrapper .logo {
+    max-width: 239px;
+  }
+  .header-wrapper .nav-links {
+    font-size: 24px;
+    flex-flow: row;
+    margin-top: 0;
+  }
+}
 
+/***
+ *      ____   ___  ______   __
+ *     | __ ) / _ \|  _ \ \ / /
+ *     |  _ \| | | | | | \ V /
+ *     | |_) | |_| | |_| || |
+ *     |____/ \___/|____/ |_|
+ *
+ */
+body {
+  background: #FFFFFF;
+  margin-top: 24px;
+}
+@media only screen and (min-width: 992px) {
+  body {
+    padding-top: 40px;
+  }
+}
+
+/***
+ *       ____ _        _    ____ ____  _____ ____
+ *      / ___| |      / \  / ___/ ___|| ____/ ___|
+ *     | |   | |     / _ \ \___ \___ \|  _| \___ \
+ *     | |___| |___ / ___ \ ___) |__) | |___ ___) |
+ *      \____|_____/_/   \_\____/____/|_____|____/
+ *
+ */
 .bg-pink {
   background: #FA92C4;
 }
@@ -237,47 +303,6 @@ p {
 
 .bg-blue {
   background: #4EAAFF;
-}
-
-.header-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.header-wrapper .logo {
-  max-width: 108px;
-}
-.header-wrapper img {
-  max-width: 100%;
-}
-.header-wrapper .nav-links {
-  display: flex;
-  font-size: 20px;
-}
-.header-wrapper a {
-  text-decoration: none;
-}
-.header-wrapper a + a {
-  margin-left: 20px;
-}
-@media only screen and (min-width: 992px) {
-  .header-wrapper .logo {
-    max-width: unset;
-  }
-  .header-wrapper .nav-links {
-    font-size: 24px;
-    flex-flow: row;
-  }
-}
-
-body {
-  background: #FFFFFF;
-  margin-top: 24px;
-}
-@media only screen and (min-width: 992px) {
-  body {
-    padding-top: 40px;
-  }
 }
 
 .desktop-only {

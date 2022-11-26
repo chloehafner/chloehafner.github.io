@@ -83,16 +83,32 @@
   }
 }
 .home {
-  max-width: 1300px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 1100px;
+  margin-left: 24px;
+  margin-right: 24px;
   background: url("./../img/light-background.png");
   background-size: contain;
+  /***
+   *      ___ _   _ _____ ____   ___
+   *     |_ _| \ | |_   _|  _ \ / _ \
+   *      | ||  \| | | | | |_) | | | |
+   *      | || |\  | | | |  _ <| |_| |
+   *     |___|_| \_| |_| |_| \_\\___/
+   *
+   */
+  /***
+   *      _____ ___ _     _____ ____
+   *     |_   _|_ _| |   | ____/ ___|
+   *       | |  | || |   |  _| \___ \
+   *       | |  | || |___| |___ ___) |
+   *       |_| |___|_____|_____|____/
+   *
+   */
 }
-@media only screen and (min-width: 20px) and (max-width: 1399px) {
+@media only screen and (min-width: 992px) {
   .home {
-    margin-left: 28px;
-    margin-right: 28px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .home .intro p {
@@ -131,9 +147,6 @@
     max-height: 275px;
   }
 }
-.home .tiles .tile {
-  margin-bottom: 20px;
-}
 .home .tile.image {
   background-size: contain;
 }
@@ -147,7 +160,7 @@
   margin-top: 0;
   margin-bottom: 0;
   font-size: 18px;
-  max-width: 285px;
+  max-width: 236px;
 }
 @media only screen and (min-width: 992px) {
   .home .tile.text h2, .home .tile.text p {

@@ -1,7 +1,14 @@
 @import "./_variables.scss";
 @import "./custom-styles";
 
-// Headings
+/***
+ *      _____ _______  _______
+ *     |_   _| ____\ \/ /_   _|
+ *       | | |  _|  \  /  | |
+ *       | | | |___ /  \  | |
+ *       |_| |_____/_/\_\ |_|
+ *
+ */
 
 h1, h2, h3, h4, h5, p, ul, li {
   margin-top:  0;
@@ -124,40 +131,18 @@ p {
   font-size: 18px;
 }
 
-.back-button {
-  position:    absolute;
-  left:        30px;
-  top:         30px;
-  user-select: none;
-
-  a {
-    color:           #333333;
-    font-size:       46px;
-    text-decoration: none;
-  }
-}
-
-.bg-pink {
-  background: #FA92C4;
-}
-.bg-orange {
-  background: #F4483D;
-}
-.bg-green {
-  background: #8C8E1C;
-}
-.bg-black {
-  background: #000000;
-}
-.bg-blue {
-  background: #4EAAFF;
-}
-
-//--- Header ---
+/***
+ *      _   _    ___     ______    _    ____
+ *     | \ | |  / \ \   / / __ )  / \  |  _ \
+ *     |  \| | / _ \ \ / /|  _ \ / _ \ | |_) |
+ *     | |\  |/ ___ \ V / | |_) / ___ \|  _ <
+ *     |_| \_/_/   \_\_/  |____/_/   \_\_| \_\
+ *
+ */
 .header-wrapper {
   display:         flex;
   justify-content: space-between;
-  align-items:     center;
+  align-items:     flex-start;
 
   .logo {
     max-width: 108px;
@@ -168,11 +153,9 @@ p {
   }
 
   .nav-links {
-    display:   flex;
-    // flex-flow: column;
-    font-size: 20px;
-    // justify-content: space-between;
-
+    display:    flex;
+    font-size:  20px;
+    margin-top: 24px;
   }
 
   a {
@@ -188,20 +171,29 @@ p {
   }
 
   @media only screen and (min-width: $bp-desktop) {
+    align-items: center;
 
     .logo {
-      max-width: unset;
+      max-width: 239px;
     }
 
     .nav-links {
-      font-size: 24px;
-      flex-flow: row;
+      font-size:  24px;
+      flex-flow:  row;
+      margin-top: 0;
     }
 
   }
 }
 
-//--- Body ---
+/***
+ *      ____   ___  ______   __
+ *     | __ ) / _ \|  _ \ \ / /
+ *     |  _ \| | | | | | \ V /
+ *     | |_) | |_| | |_| || |
+ *     |____/ \___/|____/ |_|
+ *
+ */
 body {
   background: $white;
   //margin-left: 50px;
@@ -213,6 +205,31 @@ body {
     //margin-right: 64px;
     padding-top: 40px;
   }
+}
+
+/***
+ *       ____ _        _    ____ ____  _____ ____
+ *      / ___| |      / \  / ___/ ___|| ____/ ___|
+ *     | |   | |     / _ \ \___ \___ \|  _| \___ \
+ *     | |___| |___ / ___ \ ___) |__) | |___ ___) |
+ *      \____|_____/_/   \_\____/____/|_____|____/
+ *
+ */
+
+.bg-pink {
+  background: #FA92C4;
+}
+.bg-orange {
+  background: #F4483D;
+}
+.bg-green {
+  background: #8C8E1C;
+}
+.bg-black {
+  background: #000000;
+}
+.bg-blue {
+  background: #4EAAFF;
 }
 
 .desktop-only {display: none;}
