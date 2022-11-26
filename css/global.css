@@ -231,6 +231,9 @@ p {
 .header-wrapper .logo {
   max-width: 108px;
 }
+.header-wrapper .logo a {
+  height: 0;
+}
 .header-wrapper img {
   max-width: 100%;
 }
@@ -256,6 +259,7 @@ p {
     font-size: 24px;
     flex-flow: row;
     margin-top: 0;
+    margin-right: 5px;
   }
 }
 

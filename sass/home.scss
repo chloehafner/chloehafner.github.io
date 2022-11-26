@@ -8,11 +8,13 @@
   margin-right: $mobile-margin;
   background:      url("./../img/light-background.png");
   background-size: contain;
-  
+
   @media only screen and (min-width: $bp-desktop) {
     margin-left:  auto;
     margin-right: auto;
   }
+
+
 
   /***
    *      ___ _   _ _____ ____   ___
@@ -23,7 +25,10 @@
    *
    */
   .intro {
-    p {
+    margin-top:    40px;
+    margin-bottom: 30px;
+
+    h1 {
       font-weight: 500;
       font-size:   22px;
       text-align:  center;
@@ -34,11 +39,17 @@
     }
 
     @media only screen and (min-width: $bp-desktop) {
-      p {
+      h1 {
         font-size: 28px;
+        line-height: 38px;
       }
       b {
         font-size: 28px;
+      }
+
+      @media only screen and (min-height: 800px) {
+        margin-top:    60px;
+        margin-bottom: 50px;
       }
     }
   }
@@ -100,20 +111,6 @@
     &.bg-green:hover {
       background-color: #BDC02B;
     }
-  }
-
-  .intro {
-    margin-top:    60px;
-    margin-bottom: 60px;
-  }
-
-  .img-container {
-    display:         flex;
-    justify-content: center;
-  }
-
-  h2 {
-    line-height: unset;
   }
 
   // Credit to Nick Else: https://codepen.io/nickelse

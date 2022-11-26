@@ -146,6 +146,9 @@ p {
 
   .logo {
     max-width: 108px;
+    a {
+      height: 0;
+    }
   }
 
   img {
@@ -181,6 +184,7 @@ p {
       font-size:  24px;
       flex-flow:  row;
       margin-top: 0;
+      margin-right: 5px;
     }
 
   }
