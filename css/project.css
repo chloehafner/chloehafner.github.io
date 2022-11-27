@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap");
-.bold, .gennev #current-design .analytic-1 .answer, .gennev #current-design .analytic-2 .answer, .gennev #current-design .analytic-3 .answer {
+.bold, .project #current-design .analytic-1 .answer, .project #current-design .analytic-2 .answer, .project #current-design .analytic-3 .answer {
   font-weight: 700;
 }
 
@@ -22,7 +22,7 @@
   color: #5E6B81;
 }
 
-.txt-center, .gennev #current-design .analytic-1, .gennev #current-design .analytic-2, .gennev #current-design .analytic-3 {
+.txt-center, .project #current-design .analytic-1, .project #current-design .analytic-2, .project #current-design .analytic-3 {
   text-align: center;
 }
 
@@ -41,7 +41,7 @@
 /*
     Text Sizes
  */
-.txt-sm, .gennev #current-design .analytic-1 .question, .gennev #current-design .analytic-2 .question, .gennev #current-design .analytic-3 .question {
+.txt-sm, .project #current-design .analytic-1 .question, .project #current-design .analytic-2 .question, .project #current-design .analytic-3 .question {
   font-size: 16px;
 }
 
@@ -62,7 +62,7 @@
 }
 
 @media only screen and (min-width: 992px) {
-  .txt-sm, .gennev #current-design .analytic-1 .question, .gennev #current-design .analytic-2 .question, .gennev #current-design .analytic-3 .question {
+  .txt-sm, .project #current-design .analytic-1 .question, .project #current-design .analytic-2 .question, .project #current-design .analytic-3 .question {
     font-size: 26px;
   }
 
@@ -82,43 +82,75 @@
     font-size: 60px;
   }
 }
-.gennev {
+.project {
   max-width: 1100px;
   background: #FFFFFF;
   margin-left: 24px;
   margin-right: 24px;
+  /***
+   *      _____ _______  _______
+   *     |_   _| ____\ \/ /_   _|
+   *       | | |  _|  \  /  | |
+   *       | | | |___ /  \  | |
+   *       |_| |_____/_/\_\ |_|
+   *
+   */
+  /***
+   *       ____ ___  _   _ _____  _    ___ _   _ _____ ____  ____
+   *      / ___/ _ \| \ | |_   _|/ \  |_ _| \ | | ____|  _ \/ ___|
+   *     | |  | | | |  \| | | | / _ \  | ||  \| |  _| | |_) \___ \
+   *     | |__| |_| | |\  | | |/ ___ \ | || |\  | |___|  _ < ___) |
+   *      \____\___/|_| \_| |_/_/   \_\___|_| \_|_____|_| \_\____/
+   *
+   */
+  /***
+   *      _____ _     _____ __  __ _____ _   _ _____ ____
+   *     | ____| |   | ____|  \/  | ____| \ | |_   _/ ___|
+   *     |  _| | |   |  _| | |\/| |  _| |  \| | | | \___ \
+   *     | |___| |___| |___| |  | | |___| |\  | | |  ___) |
+   *     |_____|_____|_____|_|  |_|_____|_| \_| |_| |____/
+   *
+   */
+  /***
+   *      ____  _____ ____ _____ ___ ___  _   _ ____
+   *     / ___|| ____/ ___|_   _|_ _/ _ \| \ | / ___|
+   *     \___ \|  _|| |     | |  | | | | |  \| \___ \
+   *      ___) | |__| |___  | |  | | |_| | |\  |___) |
+   *     |____/|_____\____| |_| |___\___/|_| \_|____/
+   *
+   */
 }
 @media only screen and (min-width: 992px) {
-  .gennev {
+  .project {
     margin-left: auto;
     margin-right: auto;
   }
 }
-.gennev h4 {
+.project h4 {
   color: #5E6B81;
 }
-.gennev p {
+.project p {
   color: #5E6B81;
 }
-.gennev p.blue {
+.project p.blue {
   font-weight: 700;
   line-height: 18px;
 }
 @media only screen and (min-width: 992px) {
-  .gennev p.blue {
+  .project p.blue {
     line-height: 36px;
     margin-bottom: 30px;
   }
 }
-.gennev ul {
+.project ul {
   list-style-type: disc;
   color: #D2A570;
   margin-bottom: 0;
 }
-.gennev ul li::before {
+.project ul li::before {
   color: #D2A570;
 }
-.gennev ul li {
+.project ul li {
   color: #5E6B81;
   font-weight: 400;
   font-size: 14px;
@@ -126,357 +158,363 @@
   margin-bottom: 8px;
 }
 @media only screen and (min-width: 992px) {
-  .gennev ul li {
+  .project ul li {
     font-size: 17px;
     line-height: 20px;
   }
 }
-.gennev .section {
+.project .section {
   width: 100%;
   margin-bottom: 30px;
 }
 @media only screen and (min-width: 992px) {
-  .gennev .section {
+  .project .section {
     margin-bottom: 150px;
   }
 }
-.gennev .full {
+.project .full {
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
 }
 @media only screen and (min-width: 992px) {
-  .gennev .full {
+  .project .full {
     width: 100%;
     flex-direction: row;
+    margin-bottom: 0;
   }
 }
-.gennev .half {
+.project .half {
   display: flex;
   flex-direction: column;
 }
 @media only screen and (min-width: 992px) {
-  .gennev .half {
+  .project .half {
     width: 50%;
     flex-direction: row;
   }
 }
-.gennev .third {
+.project .third {
   display: flex;
   flex-direction: column;
 }
 @media only screen and (min-width: 992px) {
-  .gennev .third {
+  .project .third {
     width: 33%;
   }
 }
-.gennev .text {
+.project .text {
   display: flex;
   flex-flow: column;
 }
-.gennev .list {
+.project .list {
   display: flex;
   flex-flow: column;
 }
-.gennev .image {
+.project .image {
   margin-left: auto;
   margin-right: auto;
 }
-.gennev img {
-  max-width: 100%;
+.project .text-image {
+  flex-direction: column;
 }
 @media only screen and (min-width: 992px) {
-  .gennev img {
-    max-width: 1100px;
+  .project .text-image {
+    flex-direction: row;
   }
 }
-.gennev .double-image img {
+.project .text-image-flip {
+  flex-direction: column-reverse;
+}
+@media only screen and (min-width: 992px) {
+  .project .text-image-flip {
+    flex-direction: row;
+  }
+}
+.project .double-image img {
   margin-left: auto;
   margin-right: auto;
   max-width: 45%;
 }
 @media only screen and (min-width: 992px) {
-  .gennev .double-image img {
+  .project .double-image img {
     max-width: 550px;
   }
 }
-.gennev .underline {
+.project .underline {
   width: 95px;
   border: 3px solid #D2A570;
   border-radius: 3px;
   margin-bottom: 14px;
 }
 @media only screen and (min-width: 992px) {
-  .gennev .underline {
+  .project .underline {
     width: 165px;
     margin-bottom: 24px;
   }
 }
-.gennev .text-image {
-  flex-direction: column;
+.project img {
+  max-width: 100%;
 }
 @media only screen and (min-width: 992px) {
-  .gennev .text-image {
-    flex-direction: row;
+  .project img {
+    max-width: 1100px;
   }
 }
-.gennev .text-image-flip {
-  flex-direction: column-reverse;
-}
-@media only screen and (min-width: 992px) {
-  .gennev .text-image-flip {
-    flex-direction: row;
-  }
-}
-.gennev #cover {
+.project #cover {
   flex-direction: column;
   margin-top: 16px;
 }
-.gennev #cover .logo {
-  width: 145px;
-  margin-bottom: 15px;
+.project #cover .logo {
+  width: 100px;
+  margin-bottom: 8px;
 }
 @media only screen and (min-width: 992px) {
-  .gennev #cover {
+  .project #cover {
     margin-top: 40px;
-    background-image: url("../img/gennev/gennev-cover.png");
-    background-position: right 105px bottom 20%;
-    background-repeat: no-repeat;
-    margin-right: 105px;
-    height: 100vh;
   }
-  .gennev #cover h1 {
+  .project #cover .logo {
+    width: 145px;
+    margin-bottom: 15px;
+  }
+  .project #cover h1 {
     max-width: 1152px;
   }
-  .gennev #cover h4 {
+  .project #cover h4 {
     margin-bottom: 600px;
   }
-  .gennev #cover .image {
-    display: none;
-  }
 }
-.gennev #overview h2 {
+.project #overview h2 {
   max-width: 1060px;
 }
-.gennev #overview p {
+.project #overview p {
   margin-bottom: 24px;
 }
-.gennev #overview .skill-lists {
+.project #overview .skill-lists {
   display: flex;
   flex-direction: column;
 }
 @media only screen and (min-width: 992px) {
-  .gennev #overview .skill-lists {
+  .project #overview .skill-lists {
     flex-flow: row;
   }
 }
-.gennev #overview .text {
+.project #overview .text {
   width: 100%;
 }
-.gennev #overview img {
+.project #overview img {
   max-width: 80vw;
 }
-.gennev #overview .part-2 .text {
+.project #overview .part-2 .text {
   padding-right: 16px;
 }
 @media only screen and (min-width: 992px) {
-  .gennev #overview {
+  .project #overview {
     margin-bottom: 128px;
   }
-  .gennev #overview .list {
+  .project #overview .list {
     margin-top: 40px;
   }
-  .gennev #overview img {
+  .project #overview img {
     max-height: 832px;
   }
 }
-.gennev #goals .image {
+.project #goals .image {
   margin-top: 20px;
   justify-content: center;
 }
-.gennev #goals img {
+.project #goals img {
   max-width: 154px;
 }
-.gennev #goals .text {
+.project #goals .text {
   justify-content: center;
 }
 @media only screen and (min-width: 992px) {
-  .gennev #goals {
+  .project #goals {
     margin-bottom: 90px;
   }
-  .gennev #goals .image {
+  .project #goals .image {
     margin-top: unset;
   }
 }
-.gennev #current-design .icon svg {
+.project #current-design .icon svg {
   max-width: 74px;
   max-height: 74px;
 }
-.gennev #current-design .analytics {
+.project #current-design .analytics {
   max-width: 60vw;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
 }
-.gennev #current-design .analytic-1, .gennev #current-design .analytic-2, .gennev #current-design .analytic-3 {
+.project #current-design .analytic-1, .project #current-design .analytic-2, .project #current-design .analytic-3 {
   border-bottom: solid 18px;
 }
-.gennev #current-design .analytic-1 .question, .gennev #current-design .analytic-2 .question, .gennev #current-design .analytic-3 .question {
+.project #current-design .analytic-1 .question, .project #current-design .analytic-2 .question, .project #current-design .analytic-3 .question {
   text-transform: uppercase;
   font-weight: 500;
 }
-.gennev #current-design .analytic-1 .answer, .gennev #current-design .analytic-2 .answer, .gennev #current-design .analytic-3 .answer {
+.project #current-design .analytic-1 .answer, .project #current-design .analytic-2 .answer, .project #current-design .analytic-3 .answer {
   margin-top: 0;
   color: #072D4B;
 }
-.gennev #current-design .third + .third {
+.project #current-design .third + .third {
   margin-top: 20px;
 }
-.gennev #current-design .analytic-1 {
+.project #current-design .analytic-1 {
   border-color: #E8CFB3;
 }
-.gennev #current-design .analytic-2 {
+.project #current-design .analytic-2 {
   border-color: #D2A570;
 }
-.gennev #current-design .analytic-3 {
+.project #current-design .analytic-3 {
   border-color: #FABAAC;
 }
 @media only screen and (min-width: 992px) {
-  .gennev #current-design .analytics {
+  .project #current-design .analytics {
     justify-content: space-between;
     margin-bottom: 105px;
   }
-  .gennev #current-design .analytic-1, .gennev #current-design .analytic-2, .gennev #current-design .analytic-3 {
+  .project #current-design .analytic-1, .project #current-design .analytic-2, .project #current-design .analytic-3 {
     max-width: 300px;
     border-bottom: solid 24px;
   }
-  .gennev #current-design .analytic-1 .question, .gennev #current-design .analytic-2 .question, .gennev #current-design .analytic-3 .question {
+  .project #current-design .analytic-1 .question, .project #current-design .analytic-2 .question, .project #current-design .analytic-3 .question {
     margin-bottom: 16px;
   }
-  .gennev #current-design .analytic-1 .answer, .gennev #current-design .analytic-2 .answer, .gennev #current-design .analytic-3 .answer {
+  .project #current-design .analytic-1 .answer, .project #current-design .analytic-2 .answer, .project #current-design .analytic-3 .answer {
     margin-top: 0;
     margin-bottom: 30px;
   }
 }
-.gennev #meet-robyn h3 {
-  margin-bottom: 8px;
+.project #meet-robyn h3 {
+  margin-bottom: 12px;
 }
-.gennev #meet-robyn .part-1 {
+.project #meet-robyn .part-1 {
   margin-top: 20px;
 }
-.gennev #meet-robyn .part-1 img {
+.project #meet-robyn .part-1 img {
   max-width: 60vw;
   max-height: 60vh;
   margin-bottom: 20px;
 }
-.gennev #meet-robyn .part-2 {
+.project #meet-robyn .part-2 {
   margin-top: 20px;
 }
-.gennev #meet-robyn .part-2 img {
+.project #meet-robyn .part-2 .image {
+  margin-bottom: 20px;
+}
+.project #meet-robyn .part-2 img {
   max-height: 40vh;
 }
-.gennev #meet-robyn .part-2 .full {
+.project #meet-robyn .part-2 .full {
   margin-bottom: 15px;
 }
-.gennev #meet-robyn .part-2 br {
+.project #meet-robyn .part-2 br {
   display: none;
 }
 @media only screen and (min-width: 992px) {
-  .gennev #meet-robyn {
+  .project #meet-robyn {
     margin-top: unset;
   }
-  .gennev #meet-robyn h3 {
-    margin-bottom: 12px;
-  }
-  .gennev #meet-robyn .part-1 img {
+  .project #meet-robyn .part-1 img {
     max-height: 365px;
     max-width: 355px;
     margin-bottom: unset;
   }
-  .gennev #meet-robyn .part-1 h5 {
+  .project #meet-robyn .part-1 h5 {
     max-width: 530px;
   }
-  .gennev #meet-robyn .part-2 {
+  .project #meet-robyn .part-2 {
     margin-top: unset;
   }
-  .gennev #meet-robyn .part-2 img {
+  .project #meet-robyn .part-2 img {
     max-height: 670px;
   }
-  .gennev #meet-robyn .part-2 .full {
+  .project #meet-robyn .part-2 .full {
     justify-content: space-between;
     margin-bottom: 80px;
   }
-  .gennev #meet-robyn .part-2 .full .text {
+  .project #meet-robyn .part-2 .full .text {
     max-width: 650px;
   }
 }
-.gennev #usability-testing #sticky-notes {
+.project #usability-testing #sticky-notes {
   display: flex;
   width: 100%;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.gennev #usability-testing #sticky-notes img {
+.project #usability-testing #sticky-notes img {
   max-width: 50%;
 }
-.gennev #usability-testing .image {
+.project #usability-testing .image {
   display: flex;
   gap: 24px;
 }
-.gennev #usability-testing .double-image {
+.project #usability-testing .double-image {
   margin-bottom: 20px;
 }
 @media only screen and (min-width: 992px) {
-  .gennev #usability-testing {
+  .project #usability-testing {
     max-width: unset;
   }
-  .gennev #usability-testing .image {
+  .project #usability-testing .image {
     display: flex;
     gap: 24px;
   }
-  .gennev #usability-testing img {
+  .project #usability-testing img {
     max-height: 670px;
   }
 }
-.gennev #pain-points .image {
+.project #user-centered {
+  margin-bottom: 0;
+}
+@media only screen and (min-width: 992px) {
+  .project #user-centered {
+    margin-bottom: 30px;
+  }
+}
+.project #pain-points .image {
   display: flex;
   gap: 24px;
   margin-bottom: 20px;
 }
-.gennev #pain-points:first-of-type {
+.project #pain-points:first-of-type {
   margin-right: 32px;
 }
-.gennev #pain-points .text {
+.project #pain-points .text {
   justify-content: center;
   max-width: 400px;
 }
 @media only screen and (min-width: 992px) {
-  .gennev #pain-points h5 {
+  .project #pain-points h5 {
     margin-bottom: 60px;
   }
-  .gennev #pain-points .image {
+  .project #pain-points .image {
     margin-bottom: unset;
   }
-  .gennev #pain-points img {
+  .project #pain-points img {
     max-height: 670px;
   }
-  .gennev #pain-points .full {
+  .project #pain-points .full {
     justify-content: space-between;
     margin-bottom: 60px;
   }
-  .gennev #pain-points .full:first-child {
+  .project #pain-points .full:first-child {
     margin-right: 16px;
   }
 }
-.gennev #video video {
+.project #video video {
   max-width: 1100px;
   max-height: 620px;
 }
-.gennev #takeaways img {
+.project #takeaways img {
   display: none;
 }
 @media only screen and (min-width: 992px) {
-  .gennev #takeaways img {
+  .project #takeaways img {
     display: block;
     max-width: 340px;
   }
