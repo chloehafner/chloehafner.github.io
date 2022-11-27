@@ -52,9 +52,9 @@ h3 {
   letter-spacing: 0.1em;
 
   @media only screen and (min-width: $bp-desktop) {
-    font-size:     25px;
-    line-height:   24px;
-    margin-bottom: 12px;
+    font-size:   25px;
+    line-height: 24px;
+    // margin-bottom: 12px;
   }
 }
 
@@ -181,9 +181,9 @@ p {
     }
 
     .nav-links {
-      font-size:  24px;
-      flex-flow:  row;
-      margin-top: 0;
+      font-size:    24px;
+      flex-flow:    row;
+      margin-top:   0;
       margin-right: 5px;
     }
 

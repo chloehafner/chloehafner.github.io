@@ -1,8 +1,6 @@
 @import "./_variables";
 @import "./custom-styles";
 
-$cover-bottom-margin: -670px;
-
 .project {
   max-width:    $max-width-desktop;
   background:   $bg-color;
@@ -22,6 +20,12 @@ $cover-bottom-margin: -670px;
    *       |_| |_____/_/\_\ |_|
    *
    */
+
+  h3 {
+    @media only screen and (min-width: $bp-desktop) {
+      margin-bottom: 50px;
+    }
+  }
 
   h4 {
     color: $grey;
@@ -88,12 +92,12 @@ $cover-bottom-margin: -670px;
   .full {
     display:        flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom:  20px;
 
     @media only screen and (min-width: $bp-desktop) {
       width:          100%;
       flex-direction: row;
-      margin-bottom: 0;
+      margin-bottom:  0;
     }
   }
 
@@ -178,10 +182,6 @@ $cover-bottom-margin: -670px;
 
   img {
     max-width: 100%;
-
-    @media only screen and (min-width: $bp-desktop) {
-      max-width: $max-width-desktop;
-    }
   }
 
   /***
@@ -202,7 +202,7 @@ $cover-bottom-margin: -670px;
     }
 
     @media only screen and (min-width: $bp-desktop) {
-      margin-top:          40px;
+      margin-top: 40px;
 
       .logo {
         width:         145px;
@@ -210,11 +210,16 @@ $cover-bottom-margin: -670px;
       }
 
       h1 {
-        max-width: 1152px;
+        max-width: 900px;
       }
 
       h4 {
-        margin-bottom: 600px;
+        margin-bottom: 0;
+      }
+
+      .image {
+        text-align: right;
+        margin-top: -70px;
       }
     }
   }
@@ -246,21 +251,19 @@ $cover-bottom-margin: -670px;
       max-width: 80vw;
     }
 
-    .part-2 .text {
-      padding-right: 16px;
-    }
-
-
     @media only screen and (min-width: $bp-desktop) {
       margin-bottom: 128px;
 
+      h3 {
+        max-width: 450px;
+      }
 
-      .list {
-        margin-top: 40px;
+      .part-2 .text {
+        max-width: 600px;
       }
 
       img {
-        max-height: 832px;
+        max-height: 600px;
       }
     }
   }
@@ -272,7 +275,7 @@ $cover-bottom-margin: -670px;
     }
 
     img {
-      max-width: 154px;
+      max-width: 250px;
     }
 
     .text {
@@ -307,7 +310,7 @@ $cover-bottom-margin: -670px;
       border-bottom: solid 18px;
 
       .question {
-        @extend .txt-sm;
+        font-size: 25px;
         text-transform: uppercase;
         font-weight:    500;
       }
@@ -335,12 +338,16 @@ $cover-bottom-margin: -670px;
     @media only screen and (min-width: $bp-desktop) {
       .analytics {
         justify-content: space-between;
-        margin-bottom:   105px;
+        margin-bottom:   50px;
+        max-width: unset;
+      }
+
+      .third + .third {
+        margin-top: 0;
       }
 
       .analytic-1, .analytic-2, .analytic-3 {
         max-width:     300px;
-        border-bottom: solid 24px;
 
         .question {
           margin-bottom: 16px;
@@ -350,14 +357,14 @@ $cover-bottom-margin: -670px;
           margin-bottom: 30px;
         }
       }
+
+      h3 {
+        margin-bottom: 20px;
+      }
     }
   }
 
   #meet-robyn {
-    h3 {
-      margin-bottom: 12px;
-    }
-
     .part-1 {
       margin-top: 20px;
 
@@ -389,7 +396,14 @@ $cover-bottom-margin: -670px;
     }
 
     @media only screen and (min-width: $bp-desktop) {
-      margin-top: unset;
+      .image {
+        margin: 0;
+      }
+
+      .full {
+        justify-content: space-between;
+      }
+
       .part-1 {
         img {
           max-height:    365px;
@@ -402,18 +416,20 @@ $cover-bottom-margin: -670px;
         }
       }
       .part-2 {
-        margin-top: unset;
-
         img {
-          max-height: 670px;
+          max-width: 325px;
+          max-height: unset;
         }
 
-        .full {
-          justify-content: space-between;
-          margin-bottom:   80px;
-          .text {
-            max-width: 650px;
-          }
+        .text {
+          max-width: 650px;
+          align-self: center;
+        }
+      }
+
+      .part-3 {
+        h3 {
+          margin-bottom: 12px;
         }
       }
     }
@@ -430,6 +446,7 @@ $cover-bottom-margin: -670px;
       flex-direction:  row;
       flex-wrap:       wrap;
       justify-content: space-between;
+      margin-bottom: 0;
 
       img {
         max-width: 50%;
@@ -446,16 +463,32 @@ $cover-bottom-margin: -670px;
     }
 
     @media only screen and (min-width: $bp-desktop) {
+      max-width: unset;
+
       .image {
         display: flex;
         gap:     24px;
       }
 
-      img {
-        max-height: 670px;
+      .full {
+        justify-content: space-between;
+        margin-bottom: 50px;
       }
 
-      max-width: unset;
+      .double-image {
+        margin:0;
+        gap: 40px;
+
+        img {
+          max-width:  250px;
+          max-height: unset;
+        }
+      }
+
+      .text {
+        max-width: 371px;
+        align-self: center;
+      }
     }
   }
 
@@ -464,6 +497,10 @@ $cover-bottom-margin: -670px;
 
     @media only screen and (min-width: $bp-desktop) {
       margin-bottom: 30px;
+
+      .image + h3 {
+        margin-top: 40px;
+      }
     }
   }
 
@@ -486,25 +523,20 @@ $cover-bottom-margin: -670px;
     }
 
     @media only screen and (min-width: $bp-desktop) {
-      h5 {
-        margin-bottom: 60px;
-      }
-
-      .image {
-        margin-bottom: unset;
-      }
-
-      img {
-        max-height: 670px;
-      }
 
       .full {
         justify-content: space-between;
-        margin-bottom:   60px;
+        margin-bottom: 50px;
       }
 
-      .full:first-child {
-        margin-right: 16px;
+      .double-image {
+        margin:0;
+        gap: 40px;
+
+        img {
+          max-width:  250px;
+          max-height: unset;
+        }
       }
     }
   }
@@ -524,7 +556,7 @@ $cover-bottom-margin: -670px;
     @media only screen and (min-width: $bp-desktop) {
       img {
         display:   block;
-        max-width: 340px;
+        max-width: 180px;
       }
     }
   }
