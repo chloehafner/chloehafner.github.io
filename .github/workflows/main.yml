@@ -66,7 +66,7 @@ jobs:
           branch: pr-scss
 
       - name: Initialize Pull Request
-        uses: gha-utilities/init-pull-request@master
+        uses: gha-utilities/init-pull-request@v0.0.4
         with:
           pull_request_token: ${{ secrets.GITHUB_TOKEN }}
           head: pr-scss
@@ -75,3 +75,5 @@ jobs:
           body: >
             Perhaps a multi-line description
             about latest features and such.
+            
+            
