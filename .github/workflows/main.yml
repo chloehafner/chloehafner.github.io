@@ -64,11 +64,11 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: pr-scss
-          
+
       - name: Initialize Pull Request
         uses: gha-utilities/init-pull-request@v0.0.4
         with:
-          pull_request_token: ${{ secrets.GITHUB_TOKEN }}
+          pull_request_token: ${{ secrets.PULL_REQUEST_TOKEN }}
           head: pr-scss
           base: main
           title: 'Updates site files from latest Actions build'
