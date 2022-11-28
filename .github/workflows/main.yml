@@ -50,7 +50,7 @@ jobs:
       - name: Move compiled CSS to path within main branch
         run: |
           rm -rf css/*
-          mv -f /tmp/chloehafner/assets/css .
+          mv /tmp/chloehafner/assets/css .
 
       - name: Add and Commit changes to main branch
         run: |
@@ -64,16 +64,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: pr-scss
-
-      - name: Initialize Pull Request
-        uses: gha-utilities/init-pull-request@v0.0.4
-        with:
-          pull_request_token: ${{ secrets.GITHUB_TOKEN }}
-          head: pr-scss
-          base: gh-pages
-          title: 'Updates site files from latest Actions build'
-          body: >
-            Perhaps a multi-line description
-            about latest features and such.
-            
-            
