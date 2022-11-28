@@ -1,0 +1,66 @@
+name: Build Sass
+
+on:
+  push:
+    branches: main
+    
+  workflow_dispatch:
+
+jobs:
+  build_css:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source Git branch
+        uses: actions/checkout@v2
+        with:
+            ref: main
+            fetch-depth: 10
+            submodules: true
+
+      - name: Make destination directory for compiled CSS
+        run: mkdir -vp /tmp/chloehafner/assets/css
+
+      - name: Compile CSS from SCSS files
+        uses: gha-utilities/sass-build@v0.4.10
+        with:
+          source: |
+            sass/_fonts.scss
+            sass/_variables.scss
+            sass/about.scss
+            sass/custom-styles.scss
+            sass/global.scss
+            sass/home.scss
+            sass/project.scss
+          destination: |
+            /tmp/chloehafner/assets/css/_fonts.css
+            /tmp/chloehafner/assets/css/_variables.css
+            /tmp/chloehafner/assets/css/about.css
+            /tmp/chloehafner/assets/css/custom-styles.css
+            /tmp/chloehafner/assets/css/global.css
+            /tmp/chloehafner/assets/css/home.css
+            /tmp/chloehafner/assets/css/project.css
+
+      - name: Checkout destination Git branch
+        uses: actions/checkout@v2
+        with:
+            ref: pr-scss
+            fetch-depth: 1
+
+      - name: Move compiled CSS to path within main branch
+        run: |
+          rm -rf css/*
+          mv /tmp/chloehafner/assets/css .
+
+      - name: Add and Commit changes to main branch
+        run: |
+          git config --local user.email 'action@github.com'
+          git config --local user.name 'GitHub Action'
+          git add css/*
+          git commit -m 'Update compiled CSS files'
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: pr-scss
