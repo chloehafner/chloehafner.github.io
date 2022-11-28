@@ -19,7 +19,7 @@ jobs:
             submodules: true
 
       - name: Make destination directory for compiled CSS
-        run: mkdir -vp /tmp/repo-name/assets/css
+        run: mkdir -vp /tmp/chloehafner/assets/css
 
       - name: Compile CSS from SCSS files
         uses: gha-utilities/sass-build@v0.4.10
@@ -44,13 +44,13 @@ jobs:
       - name: Checkout destination Git branch
         uses: actions/checkout@v2
         with:
-            ref: pr-pages
+            ref: main
             fetch-depth: 1
 
-      - name: Move compiled CSS to path within pr-pages branch
-        run: mv /tmp/repo-name/assets/css assets/
+      - name: Move compiled CSS to path within main branch
+        run: mv /tmp/chloehafner/assets/css css/
 
-      - name: Add and Commit changes to pr-pages branch
+      - name: Add and Commit changes to main branch
         run: |
           git config --local user.email 'action@github.com'
           git config --local user.name 'GitHub Action'
@@ -61,15 +61,4 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: pr-pages
-
-      - name: Initialize Pull Request
-        uses: gha-utilities/init-pull-request@v0.0.4
-        with:
-          pull_request_token: ${{ secrets.GITHUB_TOKEN }}
-          head: pr-pages
-          base: gh-pages
-          title: 'Update site files from latest Actions build'
-          body: >
-            Perhaps a multi-line description
-            about latest features and such.
+          branch: main
