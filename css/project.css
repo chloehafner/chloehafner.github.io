@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap");
-.bold, .project #current-design .analytic-1 .answer, .project #current-design .analytic-2 .answer, .project #current-design .analytic-3 .answer {
+.bold, .project #current-design .answer {
   font-weight: 700;
 }
 
@@ -157,6 +157,15 @@
 .project.gennev #goals img {
   max-width: 250px;
 }
+.project.gennev #current-design .analytic-1 {
+  border-color: #E8CFB3;
+}
+.project.gennev #current-design .analytic-2 {
+  border-color: #D2A570;
+}
+.project.gennev #current-design .analytic-3 {
+  border-color: #FABAAC;
+}
 .project.house-numbers li::marker {
   color: #5CA29F;
 }
@@ -179,6 +188,79 @@
 }
 .project.house-numbers #goals img {
   max-height: 515px;
+}
+.project.house-numbers #current-design .image {
+  margin-bottom: 60px;
+}
+.project.house-numbers #current-design .analytics {
+  margin-top: 50px;
+  justify-content: center;
+  gap: 150px;
+}
+.project.house-numbers #current-design .analytic-1 {
+  border-color: #5CA29F;
+}
+.project.house-numbers #current-design .analytic-2 {
+  border-color: #FFC38C;
+}
+.project.house-numbers #current-design .half {
+  flex-flow: column;
+}
+@media only screen and (min-width: 992px) {
+  .project.house-numbers #current-design .question {
+    margin-bottom: 24px;
+  }
+  .project.house-numbers #current-design ul {
+    margin-bottom: 60px;
+  }
+}
+.project.house-numbers #current-design p b, .project.house-numbers #wireframes p b {
+  color: #13151A;
+}
+@media only screen and (min-width: 992px) {
+  .project.house-numbers #current-design p b, .project.house-numbers #wireframes p b {
+    font-size: 25px;
+  }
+  .project.house-numbers #current-design .image, .project.house-numbers #wireframes .image {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.project.house-numbers #usability-testing li {
+  list-style: number;
+  color: #13151A;
+}
+.project.house-numbers #usability-testing li::marker {
+  color: #13151A;
+}
+@media only screen and (min-width: 992px) {
+  .project.house-numbers #usability-testing .image {
+    max-width: 225px;
+  }
+  .project.house-numbers #usability-testing .text {
+    max-width: 460px;
+  }
+  .project.house-numbers #usability-testing li {
+    font-size: 24px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .project.house-numbers #user-centered .image:nth-child(4) {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .project.house-numbers #pain-points img {
+    max-height: 515px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .project.house-numbers #takeaways img {
+    max-width: none;
+  }
 }
 @media only screen and (min-width: 992px) {
   .project {
@@ -420,26 +502,17 @@
 .project #current-design .analytic-1, .project #current-design .analytic-2, .project #current-design .analytic-3 {
   border-bottom: solid 18px;
 }
-.project #current-design .analytic-1 .question, .project #current-design .analytic-2 .question, .project #current-design .analytic-3 .question {
+.project #current-design .question {
   font-size: 25px;
   text-transform: uppercase;
   font-weight: 500;
 }
-.project #current-design .analytic-1 .answer, .project #current-design .analytic-2 .answer, .project #current-design .analytic-3 .answer {
+.project #current-design .answer {
   margin-top: 0;
   color: #072D4B;
 }
-.project #current-design .third {
+.project #current-design .third, .project #current-design .half {
   margin-bottom: 40px;
-}
-.project #current-design .analytic-1 {
-  border-color: #E8CFB3;
-}
-.project #current-design .analytic-2 {
-  border-color: #D2A570;
-}
-.project #current-design .analytic-3 {
-  border-color: #FABAAC;
 }
 @media only screen and (min-width: 992px) {
   .project #current-design .analytics {
@@ -447,16 +520,16 @@
     margin-bottom: 50px;
     max-width: unset;
   }
-  .project #current-design .third + .third {
+  .project #current-design .third + .third, .project #current-design .half + .half {
     margin-top: 0;
   }
   .project #current-design .analytic-1, .project #current-design .analytic-2, .project #current-design .analytic-3 {
     max-width: 300px;
   }
-  .project #current-design .analytic-1 .question, .project #current-design .analytic-2 .question, .project #current-design .analytic-3 .question {
+  .project #current-design .question {
     margin-bottom: 16px;
   }
-  .project #current-design .analytic-1 .answer, .project #current-design .analytic-2 .answer, .project #current-design .analytic-3 .answer {
+  .project #current-design .answer {
     margin-top: 0;
     margin-bottom: 30px;
   }

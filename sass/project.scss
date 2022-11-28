@@ -34,6 +34,18 @@ $ipad-height-desktop: 515px;
         max-width: 250px;
       }
     }
+
+    #current-design {
+      .analytic-1 {
+        border-color: $light-gold;
+      }
+      .analytic-2 {
+        border-color: $gold;
+      }
+      .analytic-3 {
+        border-color: $pink;
+      }
+    }
   }
 
   /***
@@ -59,8 +71,8 @@ $ipad-height-desktop: 515px;
         width: 300px;
       }
       .image {
-        margin-top: 20px;
-        max-width: 700px;
+        margin-top:  20px;
+        max-width:   700px;
         margin-left: auto;
       }
     }
@@ -77,6 +89,110 @@ $ipad-height-desktop: 515px;
     #goals {
       img {
         max-height: $ipad-height-desktop;
+      }
+    }
+
+    #current-design {
+
+      .image {
+        margin-bottom: 60px;
+      }
+
+      .analytics {
+        margin-top: 50px;
+        justify-content: center;
+        gap:             150px;
+      }
+
+      .analytic-1 {
+        border-color: $turquoise;
+      }
+
+      .analytic-2 {
+        border-color: $orange;
+      }
+
+      .half {
+        flex-flow: column;
+      }
+
+      @media only screen and (min-width: $bp-desktop) {
+        .question {
+          margin-bottom: 24px;
+        }
+
+        ul {
+          margin-bottom: 60px;
+        }
+      }
+    }
+
+    #current-design, #wireframes {
+      p b {
+        color: $black;
+      }
+
+      @media only screen and (min-width: $bp-desktop) {
+        p b {
+          font-size: 25px;
+        }
+
+        .image {
+          max-width: 1000px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    }
+
+    #usability-testing {
+      li {
+        list-style: number;
+        color: $black;
+      }
+
+      li::marker {
+        color: $black;
+      }
+
+      @media only screen and (min-width: $bp-desktop) {
+        .image {
+          max-width: 225px;
+        }
+
+        .text {
+          max-width: 460px;
+        }
+
+        li {
+          font-size: 24px;
+        }
+      }
+    }
+
+    #user-centered {
+      @media only screen and (min-width: $bp-desktop) {
+        .image:nth-child(4) {
+          max-width: 1000px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    }
+
+    #pain-points {
+      @media only screen and (min-width: $bp-desktop) {
+        img {
+          max-height: $ipad-height-desktop;
+        }
+      }
+    }
+
+    #takeaways {
+      @media only screen and (min-width: $bp-desktop) {
+        img {
+          max-width: none;
+        }
       }
     }
   }
@@ -399,31 +515,22 @@ $ipad-height-desktop: 515px;
     .analytic-1, .analytic-2, .analytic-3 {
       @extend .txt-center;
       border-bottom: solid 18px;
-
-      .question {
-        font-size:      25px;
-        text-transform: uppercase;
-        font-weight:    500;
-      }
-      .answer {
-        margin-top: 0;
-        color:      $blue;
-        @extend .bold;
-      }
     }
 
-    .third {
+    .question {
+      font-size:      25px;
+      text-transform: uppercase;
+      font-weight:    500;
+    }
+
+    .answer {
+      margin-top: 0;
+      color:      $blue;
+      @extend .bold;
+    }
+
+    .third, .half {
       margin-bottom: 40px;
-    }
-
-    .analytic-1 {
-      border-color: $light-gold;
-    }
-    .analytic-2 {
-      border-color: $gold;
-    }
-    .analytic-3 {
-      border-color: $pink;
     }
 
     @media only screen and (min-width: $bp-desktop) {
@@ -433,20 +540,21 @@ $ipad-height-desktop: 515px;
         max-width:       unset;
       }
 
-      .third + .third {
+      .third + .third, .half + .half {
         margin-top: 0;
       }
 
       .analytic-1, .analytic-2, .analytic-3 {
         max-width: 300px;
+      }
 
-        .question {
-          margin-bottom: 16px;
-        }
-        .answer {
-          margin-top:    0;
-          margin-bottom: 30px;
-        }
+      .question {
+        margin-bottom: 16px;
+      }
+
+      .answer {
+        margin-top:    0;
+        margin-bottom: 30px;
       }
 
       h3 {
