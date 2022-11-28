@@ -39,7 +39,7 @@ jobs:
             /tmp/chloehafner/assets/css/custom-styles.css
             /tmp/chloehafner/assets/css/global.css
             /tmp/chloehafner/assets/css/home.css
-            /tmp/chloehafner/assets/css/project
+            /tmp/chloehafner/assets/css/project.css
 
       - name: Checkout destination Git branch
         uses: actions/checkout@v2
