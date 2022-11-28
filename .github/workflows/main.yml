@@ -48,7 +48,9 @@ jobs:
             fetch-depth: 1
 
       - name: Move compiled CSS to path within main branch
-        run: mv -f /tmp/chloehafner/assets/css .
+        run: |
+          rm -rf css/*
+          mv -f /tmp/chloehafner/assets/css .
 
       - name: Add and Commit changes to main branch
         run: |
