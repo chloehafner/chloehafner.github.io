@@ -44,7 +44,7 @@ jobs:
       - name: Checkout destination Git branch
         uses: actions/checkout@v2
         with:
-            ref: main
+            ref: pr-scss
             fetch-depth: 1
 
       - name: Move compiled CSS to path within main branch
@@ -61,4 +61,15 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main
+          branch: pr-scss
+          
+      - name: Initialize Pull Request
+        uses: gha-utilities/init-pull-request@v0.0.4
+        with:
+          pull_request_token: ${{ secrets.GITHUB_TOKEN }}
+          head: pr-scss
+          base: main
+          title: 'Updates site files from latest Actions build'
+          body: >
+            Perhaps a multi-line description
+            about latest features and such.
