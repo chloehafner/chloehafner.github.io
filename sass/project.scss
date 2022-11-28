@@ -1,7 +1,94 @@
 @import "./_variables";
 @import "./custom-styles";
 
+$ipad-height-desktop: 515px;
+
 .project {
+  /***
+   *       ____ _____ _   _ _   _ _______     __
+   *      / ___| ____| \ | | \ | | ____\ \   / /
+   *     | |  _|  _| |  \| |  \| |  _|  \ \ / /
+   *     | |_| | |___| |\  | |\  | |___  \ V /
+   *      \____|_____|_| \_|_| \_|_____|  \_/
+   *
+   */
+
+  &.gennev {
+    li::marker {
+      color: $gold;
+    }
+
+    .underline {
+      border: 3px solid $gold;
+    }
+
+    #cover {
+      .image {
+        max-height: 600px;
+        margin-top: -50px;
+      }
+    }
+
+    #goals {
+      img {
+        max-width: 250px;
+      }
+    }
+  }
+
+  /***
+   *      _   _  ___  _   _ ____  _____    _   _ _   _ __  __ ____  _____ ____  ____
+   *     | | | |/ _ \| | | / ___|| ____|  | \ | | | | |  \/  | __ )| ____|  _ \/ ___|
+   *     | |_| | | | | | | \___ \|  _|    |  \| | | | | |\/| |  _ \|  _| | |_) \___ \
+   *     |  _  | |_| | |_| |___) | |___   | |\  | |_| | |  | | |_) | |___|  _ < ___) |
+   *     |_| |_|\___/ \___/|____/|_____|  |_| \_|\___/|_|  |_|____/|_____|_| \_\____/
+   *
+   */
+
+  &.house-numbers {
+    li::marker {
+      color: $turquoise;
+    }
+
+    .underline {
+      border: 3px solid $turquoise;
+    }
+
+    #cover {
+      .logo {
+        width: 300px;
+      }
+      .image {
+        margin-top: 20px;
+        max-width: 700px;
+        margin-left: auto;
+      }
+    }
+
+    #overview {
+      h2 {
+        max-width: 660px;
+      }
+      img {
+        max-height: $ipad-height-desktop;
+      }
+    }
+
+    #goals {
+      img {
+        max-height: $ipad-height-desktop;
+      }
+    }
+  }
+
+  /***
+   *      ____  ____   ___      _ _____ ____ _____
+   *     |  _ \|  _ \ / _ \    | | ____/ ___|_   _|
+   *     | |_) | |_) | | | |_  | |  _|| |     | |
+   *     |  __/|  _ <| |_| | |_| | |__| |___  | |
+   *     |_|   |_| \_\\___/ \___/|_____\____| |_|
+   *
+   */
   max-width:    $max-width-desktop;
   background:   $bg-color;
   margin-left:  $mobile-margin;
@@ -53,10 +140,6 @@
     list-style-type: disc;
     color:           $gold;
     margin-bottom:   0;
-
-    li::marker {
-      color: $gold;
-    }
 
     li {
       color:         $grey;
@@ -184,7 +267,6 @@
 
   .underline {
     width:         95px;
-    border:        3px solid $gold;
     border-radius: 3px;
     margin-bottom: 14px;
 
@@ -233,7 +315,6 @@
 
       .image {
         text-align: right;
-        margin-top: -50px;
       }
     }
   }
@@ -278,7 +359,7 @@
       }
 
       img {
-        max-height: 600px;
+        max-width: unset;
       }
     }
   }
@@ -287,10 +368,6 @@
     .image {
       margin-top:      20px;
       justify-content: center;
-    }
-
-    img {
-      max-width: 250px;
     }
 
     .text {

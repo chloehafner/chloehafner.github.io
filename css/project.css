@@ -83,6 +83,30 @@
   }
 }
 .project {
+  /***
+   *       ____ _____ _   _ _   _ _______     __
+   *      / ___| ____| \ | | \ | | ____\ \   / /
+   *     | |  _|  _| |  \| |  \| |  _|  \ \ / /
+   *     | |_| | |___| |\  | |\  | |___  \ V /
+   *      \____|_____|_| \_|_| \_|_____|  \_/
+   *
+   */
+  /***
+   *      _   _  ___  _   _ ____  _____    _   _ _   _ __  __ ____  _____ ____  ____
+   *     | | | |/ _ \| | | / ___|| ____|  | \ | | | | |  \/  | __ )| ____|  _ \/ ___|
+   *     | |_| | | | | | | \___ \|  _|    |  \| | | | | |\/| |  _ \|  _| | |_) \___ \
+   *     |  _  | |_| | |_| |___) | |___   | |\  | |_| | |  | | |_) | |___|  _ < ___) |
+   *     |_| |_|\___/ \___/|____/|_____|  |_| \_|\___/|_|  |_|____/|_____|_| \_\____/
+   *
+   */
+  /***
+   *      ____  ____   ___      _ _____ ____ _____
+   *     |  _ \|  _ \ / _ \    | | ____/ ___|_   _|
+   *     | |_) | |_) | | | |_  | |  _|| |     | |
+   *     |  __/|  _ <| |_| | |_| | |__| |___  | |
+   *     |_|   |_| \_\\___/ \___/|_____\____| |_|
+   *
+   */
   max-width: 1100px;
   background: #FFFFFF;
   margin-left: 24px;
@@ -120,6 +144,42 @@
    *
    */
 }
+.project.gennev li::marker {
+  color: #D2A570;
+}
+.project.gennev .underline {
+  border: 3px solid #D2A570;
+}
+.project.gennev #cover .image {
+  max-height: 600px;
+  margin-top: -50px;
+}
+.project.gennev #goals img {
+  max-width: 250px;
+}
+.project.house-numbers li::marker {
+  color: #5CA29F;
+}
+.project.house-numbers .underline {
+  border: 3px solid #5CA29F;
+}
+.project.house-numbers #cover .logo {
+  width: 300px;
+}
+.project.house-numbers #cover .image {
+  margin-top: 20px;
+  max-width: 700px;
+  margin-left: auto;
+}
+.project.house-numbers #overview h2 {
+  max-width: 660px;
+}
+.project.house-numbers #overview img {
+  max-height: 515px;
+}
+.project.house-numbers #goals img {
+  max-height: 515px;
+}
 @media only screen and (min-width: 992px) {
   .project {
     margin-left: auto;
@@ -154,9 +214,6 @@
   list-style-type: disc;
   color: #D2A570;
   margin-bottom: 0;
-}
-.project ul li::marker {
-  color: #D2A570;
 }
 .project ul li {
   color: #5E6B81;
@@ -262,7 +319,6 @@
 }
 .project .underline {
   width: 95px;
-  border: 3px solid #D2A570;
   border-radius: 3px;
   margin-bottom: 14px;
 }
@@ -299,7 +355,6 @@
   }
   .project #cover .image {
     text-align: right;
-    margin-top: -50px;
   }
 }
 .project #overview h2 {
@@ -335,15 +390,12 @@
     max-width: 600px;
   }
   .project #overview img {
-    max-height: 600px;
+    max-width: unset;
   }
 }
 .project #goals .image {
   margin-top: 20px;
   justify-content: center;
-}
-.project #goals img {
-  max-width: 250px;
 }
 .project #goals .text {
   justify-content: center;
