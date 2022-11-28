@@ -33,13 +33,13 @@ jobs:
             sass/home.scss
             sass/project.scss
           destination: |
-            css/_fonts.css
-            css/_variables.css
-            css/about.css
-            css/custom-styles.css
-            css/global.css
-            css/home.css
-            css/project
+            /tmp/chloehafner/assets/css/_fonts.css
+            /tmp/chloehafner/assets/css/_variables.css
+            /tmp/chloehafner/assets/css/about.css
+            /tmp/chloehafner/assets/css/custom-styles.css
+            /tmp/chloehafner/assets/css/global.css
+            /tmp/chloehafner/assets/css/home.css
+            /tmp/chloehafner/assets/css/project
 
       - name: Checkout destination Git branch
         uses: actions/checkout@v2
