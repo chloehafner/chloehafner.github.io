@@ -96,7 +96,7 @@
   }
 }
 .about h1, .about h2, .about h3, .about h4, .about h5 {
-  margin: 0;
+  margin: 0 0 12px 0;
 }
 .about p + p {
   margin-top: 0;
@@ -111,7 +111,7 @@
 }
 .about #profile img {
   border-radius: 50%;
-  max-width: 90vw;
+  max-width: 70vw;
 }
 @media only screen and (min-width: 992px) {
   .about #profile img {
@@ -122,11 +122,11 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  margin-top: 60px;
+  margin-bottom: 30px;
 }
 .about .tiles .tile {
   text-decoration: none;
-  max-width: 400px;
+  max-width: 45%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -146,6 +146,11 @@
 }
 .about #social {
   align-items: center;
+}
+@media only screen and (min-width: 992px) {
+  .about #social {
+    margin-top: 40px;
+  }
 }
 
 /*# sourceMappingURL=about.css.map */
