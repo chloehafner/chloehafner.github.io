@@ -48,13 +48,13 @@ jobs:
             fetch-depth: 1
 
       - name: Move compiled CSS to path within main branch
-        run: mv /tmp/chloehafner/assets/css css/
+        run: mv /tmp/chloehafner/assets/css /
 
       - name: Add and Commit changes to main branch
         run: |
           git config --local user.email 'action@github.com'
           git config --local user.name 'GitHub Action'
-          git add css/*
+          git add /*
           git commit -m 'Update compiled CSS files'
 
       - name: Push changes
