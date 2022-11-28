@@ -67,13 +67,20 @@ $ipad-height-desktop: 515px;
     }
 
     #cover {
+
       .logo {
-        width: 300px;
+        width: 200px;
       }
-      .image {
-        margin-top:  20px;
-        max-width:   700px;
-        margin-left: auto;
+
+      @media only screen and (min-width: $bp-desktop) {
+        .logo {
+          width: 300px;
+        }
+        .image {
+          margin-top:  20px;
+          max-width:   700px;
+          margin-left: auto;
+        }
       }
     }
 
@@ -83,6 +90,7 @@ $ipad-height-desktop: 515px;
       }
       img {
         max-height: $ipad-height-desktop;
+        max-width:  unset;
       }
     }
 
@@ -94,14 +102,9 @@ $ipad-height-desktop: 515px;
 
     #current-design {
 
-      .image {
-        margin-bottom: 60px;
-      }
-
       .analytics {
-        margin-top: 50px;
+        margin-top:      50px;
         justify-content: center;
-        gap:             150px;
       }
 
       .analytic-1 {
@@ -116,9 +119,22 @@ $ipad-height-desktop: 515px;
         flex-flow: column;
       }
 
+      .question {
+        font-size: 18px;
+      }
+
+      ul {
+        margin-bottom: 40px;
+      }
+
       @media only screen and (min-width: $bp-desktop) {
+        .analytics {
+          gap: 150px;
+        }
+
         .question {
           margin-bottom: 24px;
+          font-size: 25px;
         }
 
         ul {
@@ -132,15 +148,20 @@ $ipad-height-desktop: 515px;
         color: $black;
       }
 
+      .image {
+        margin-bottom: 40px;
+      }
+
       @media only screen and (min-width: $bp-desktop) {
         p b {
           font-size: 25px;
         }
 
         .image {
-          max-width: 1000px;
-          margin-left: auto;
+          max-width:    1000px;
+          margin-left:  auto;
           margin-right: auto;
+          margin-bottom: 60px;
         }
       }
     }
@@ -148,16 +169,22 @@ $ipad-height-desktop: 515px;
     #usability-testing {
       li {
         list-style: number;
-        color: $black;
+        color:      $black;
       }
 
       li::marker {
         color: $black;
       }
 
+      .image {
+        max-width: 60vw;
+        margin-bottom: 20px;
+      }
+
       @media only screen and (min-width: $bp-desktop) {
         .image {
           max-width: 225px;
+          margin-bottom: unset;
         }
 
         .text {
@@ -173,8 +200,8 @@ $ipad-height-desktop: 515px;
     #user-centered {
       @media only screen and (min-width: $bp-desktop) {
         .image:nth-child(4) {
-          max-width: 1000px;
-          margin-left: auto;
+          max-width:    1000px;
+          margin-left:  auto;
           margin-right: auto;
         }
       }

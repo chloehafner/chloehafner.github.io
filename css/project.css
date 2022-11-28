@@ -173,29 +173,31 @@
   border: 3px solid #5CA29F;
 }
 .project.house-numbers #cover .logo {
-  width: 300px;
+  width: 200px;
 }
-.project.house-numbers #cover .image {
-  margin-top: 20px;
-  max-width: 700px;
-  margin-left: auto;
+@media only screen and (min-width: 992px) {
+  .project.house-numbers #cover .logo {
+    width: 300px;
+  }
+  .project.house-numbers #cover .image {
+    margin-top: 20px;
+    max-width: 700px;
+    margin-left: auto;
+  }
 }
 .project.house-numbers #overview h2 {
   max-width: 660px;
 }
 .project.house-numbers #overview img {
   max-height: 515px;
+  max-width: unset;
 }
 .project.house-numbers #goals img {
   max-height: 515px;
 }
-.project.house-numbers #current-design .image {
-  margin-bottom: 60px;
-}
 .project.house-numbers #current-design .analytics {
   margin-top: 50px;
   justify-content: center;
-  gap: 150px;
 }
 .project.house-numbers #current-design .analytic-1 {
   border-color: #5CA29F;
@@ -206,9 +208,19 @@
 .project.house-numbers #current-design .half {
   flex-flow: column;
 }
+.project.house-numbers #current-design .question {
+  font-size: 18px;
+}
+.project.house-numbers #current-design ul {
+  margin-bottom: 40px;
+}
 @media only screen and (min-width: 992px) {
+  .project.house-numbers #current-design .analytics {
+    gap: 150px;
+  }
   .project.house-numbers #current-design .question {
     margin-bottom: 24px;
+    font-size: 25px;
   }
   .project.house-numbers #current-design ul {
     margin-bottom: 60px;
@@ -216,6 +228,9 @@
 }
 .project.house-numbers #current-design p b, .project.house-numbers #wireframes p b {
   color: #13151A;
+}
+.project.house-numbers #current-design .image, .project.house-numbers #wireframes .image {
+  margin-bottom: 40px;
 }
 @media only screen and (min-width: 992px) {
   .project.house-numbers #current-design p b, .project.house-numbers #wireframes p b {
@@ -225,6 +240,7 @@
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 60px;
   }
 }
 .project.house-numbers #usability-testing li {
@@ -234,9 +250,14 @@
 .project.house-numbers #usability-testing li::marker {
   color: #13151A;
 }
+.project.house-numbers #usability-testing .image {
+  max-width: 60vw;
+  margin-bottom: 20px;
+}
 @media only screen and (min-width: 992px) {
   .project.house-numbers #usability-testing .image {
     max-width: 225px;
+    margin-bottom: unset;
   }
   .project.house-numbers #usability-testing .text {
     max-width: 460px;
