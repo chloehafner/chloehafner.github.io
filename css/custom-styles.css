@@ -1,1 +1,78 @@
-@import"https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap";@import"https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap";.bold{font-weight:700}.light{font-weight:600}.blue{color:#072d4b}.black{color:#13151a}.grey{color:#5e6b81}.txt-center{text-align:center}.flex,.flex-center-center,.flex-vert-center,.flex-horiz-center{display:flex}.flex-horiz-center,.flex-center-center{justify-content:center}.flex-vert-center,.flex-center-center{align-items:center}.txt-sm{font-size:16px}.txt-md{font-size:24px}.txt-lg{font-size:32px}.txt-xl{font-size:40px}.txt-xxl{font-size:52px}@media only screen and (min-width: 992px){.txt-sm{font-size:26px}.txt-md{font-size:32px}.txt-lg{font-size:40px}.txt-xl{font-size:52px}.txt-xxl{font-size:60px}}
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap");
+.bold {
+  font-weight: 700;
+}
+
+.light {
+  font-weight: 600;
+}
+
+.blue {
+  color: #072D4B;
+}
+
+.black {
+  color: #13151A;
+}
+
+.grey {
+  color: #5E6B81;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.flex, .flex-center-center, .flex-vert-center, .flex-horiz-center {
+  display: flex;
+}
+
+.flex-horiz-center, .flex-center-center {
+  justify-content: center;
+}
+
+.flex-vert-center, .flex-center-center {
+  align-items: center;
+}
+
+/*
+    Text Sizes
+ */
+.txt-sm {
+  font-size: 16px;
+}
+
+.txt-md {
+  font-size: 24px;
+}
+
+.txt-lg {
+  font-size: 32px;
+}
+
+.txt-xl {
+  font-size: 40px;
+}
+
+.txt-xxl {
+  font-size: 52px;
+}
+
+@media only screen and (min-width: 992px) {
+  .txt-sm {
+    font-size: 26px;
+  }
+  .txt-md {
+    font-size: 32px;
+  }
+  .txt-lg {
+    font-size: 40px;
+  }
+  .txt-xl {
+    font-size: 52px;
+  }
+  .txt-xxl {
+    font-size: 60px;
+  }
+}
