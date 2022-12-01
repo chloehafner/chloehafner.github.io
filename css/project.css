@@ -179,6 +179,17 @@
 .project.house-numbers .underline {
   border: 3px solid #5CA29F;
 }
+.project.house-numbers .full {
+  margin-bottom: 32px;
+}
+.project.house-numbers #overview img, .project.house-numbers #goals img, .project.house-numbers #pain-points img {
+  max-height: 350px;
+}
+@media only screen and (min-width: 992px) {
+  .project.house-numbers #overview img, .project.house-numbers #goals img, .project.house-numbers #pain-points img {
+    max-height: 473px;
+  }
+}
 .project.house-numbers #cover .logo {
   width: 200px;
 }
@@ -192,15 +203,13 @@
     margin-left: auto;
   }
 }
-.project.house-numbers #overview h2 {
-  max-width: 660px;
-}
-.project.house-numbers #overview img {
-  max-height: 473px;
-  max-width: unset;
-}
-.project.house-numbers #goals img {
-  max-height: 473px;
+@media only screen and (min-width: 992px) {
+  .project.house-numbers #overview h2 {
+    max-width: 660px;
+  }
+  .project.house-numbers #overview img {
+    max-width: unset;
+  }
 }
 .project.house-numbers #current-design .analytics {
   margin-top: 50px;
@@ -244,7 +253,7 @@
     font-size: 25px;
   }
   .project.house-numbers #current-design .image, .project.house-numbers #wireframes .image {
-    max-width: 1000px;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 60px;
@@ -280,14 +289,25 @@
     margin-right: auto;
   }
 }
+.project.house-numbers #pain-points img {
+  max-height: 370px;
+}
 @media only screen and (min-width: 992px) {
   .project.house-numbers #pain-points img {
-    max-height: 473px;
+    max-height: 513px;
   }
 }
 @media only screen and (min-width: 992px) {
   .project.house-numbers #takeaways img {
     max-width: none;
+  }
+}
+.project.house-numbers #video video {
+  max-width: 100%;
+}
+@media only screen and (min-width: 992px) {
+  .project.house-numbers #video video {
+    max-height: unset;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -713,6 +733,10 @@
     text-transform: uppercase;
     font-weight: 500;
   }
+}
+.project #video .image, .project #video video {
+  margin-left: auto;
+  margin-right: auto;
 }
 .project #video video {
   max-width: 1000px;
