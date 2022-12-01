@@ -363,7 +363,8 @@ $ipad-height-desktop: 473px;
     margin-right: auto;
 
     @media only screen and (min-width: $bp-desktop) {
-      margin: 0;
+      margin-left: 0px;
+      margin-right:48px;
     }
   }
 
