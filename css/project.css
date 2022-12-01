@@ -155,7 +155,13 @@
   margin-top: -20px;
 }
 .project.gennev #goals img {
-  max-width: 250px;
+  max-height: 48vh;
+}
+@media only screen and (min-width: 992px) {
+  .project.gennev #goals img {
+    max-height: unset;
+    max-width: 250px;
+  }
 }
 .project.gennev #current-design .analytic-1 {
   border-color: #E8CFB3;
@@ -166,8 +172,10 @@
 .project.gennev #current-design .analytic-3 {
   border-color: #FABAAC;
 }
-.project.gennev img {
-  max-height: 650px;
+@media only screen and (min-width: 992px) {
+  .project.gennev img {
+    max-height: 650px;
+  }
 }
 .project.house-numbers li::marker {
   color: #5CA29F;
@@ -501,7 +509,6 @@
 }
 .project #goals .image {
   margin-top: 20px;
-  margin-right: 48px;
   justify-content: center;
 }
 .project #goals .text {
@@ -513,6 +520,7 @@
   }
   .project #goals .image {
     margin-top: unset;
+    margin-right: 48px;
   }
 }
 .project #current-design .icon svg {
@@ -526,11 +534,6 @@
 }
 .project #current-design .analytic-1, .project #current-design .analytic-2, .project #current-design .analytic-3 {
   border-bottom: solid 18px;
-}
-.project #current-design .question {
-  font-size: 22px;
-  text-transform: uppercase;
-  font-weight: 500;
 }
 .project #current-design .answer {
   margin-top: 0;
@@ -562,6 +565,9 @@
     margin-bottom: 32px;
   }
 }
+.project #meet-robyn .part-0 .image {
+  margin-bottom: 90px;
+}
 .project #meet-robyn .part-1 {
   margin-top: 20px;
 }
@@ -577,7 +583,7 @@
   margin-bottom: 20px;
 }
 .project #meet-robyn .part-2 img {
-  max-height: 40vh;
+  max-height: 48vh;
 }
 .project #meet-robyn .part-2 .full {
   margin-bottom: 15px;
@@ -601,8 +607,8 @@
     max-width: 530px;
   }
   .project #meet-robyn .part-2 img {
+    max-height: unset;
     max-width: 250px;
-    max-height: 507.52px;
   }
   .project #meet-robyn .part-2 .text {
     max-width: 650px;
@@ -648,7 +654,6 @@
   }
   .project #usability-testing .double-image img {
     max-width: 250px;
-    max-height: 507.52px;
   }
   .project #usability-testing .text {
     max-width: 371px;
@@ -662,8 +667,11 @@
   .project #user-centered {
     margin-bottom: 30px;
   }
+  .project #user-centered img {
+    max-height: unset;
+  }
   .project #user-centered .image + h3 {
-    margin-top: 40px;
+    margin-top: 90px;
   }
 }
 .project #pain-points .double-image {
@@ -701,8 +709,8 @@
     display: flex;
   }
   .project #pain-points .double-image img {
-    max-width: 250px;
-    max-height: 507.52px;
+    width: 250px;
+    height: 512px;
   }
   .project #pain-points .image p {
     font-size: 25px;

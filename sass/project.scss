@@ -2,6 +2,8 @@
 @import "./custom-styles";
 
 $ipad-height-desktop: 473px;
+$iphone-width-desktop: 250px;
+$iphone-height-mobile: 48vh;
 
 .project {
   /***
@@ -31,7 +33,12 @@ $ipad-height-desktop: 473px;
 
     #goals {
       img {
-        max-width: 250px;
+        max-height: $iphone-height-mobile;
+
+        @media only screen and (min-width: $bp-desktop) {
+          max-height: unset;
+          max-width: $iphone-width-desktop;
+        }
       }
     }
 
@@ -48,7 +55,10 @@ $ipad-height-desktop: 473px;
     }
 
     img {
-      max-height: 650px;
+
+      @media only screen and (min-width: $bp-desktop) {
+        max-height: 650px;
+      }
     }
   }
 
@@ -514,7 +524,6 @@ $ipad-height-desktop: 473px;
   #goals {
     .image {
       margin-top:      20px;
-      margin-right: 48px;
       justify-content: center;
     }
 
@@ -527,6 +536,7 @@ $ipad-height-desktop: 473px;
 
       .image {
         margin-top: unset;
+        margin-right: 48px;
       }
     }
   }
@@ -547,12 +557,6 @@ $ipad-height-desktop: 473px;
     .analytic-1, .analytic-2, .analytic-3 {
       @extend .txt-center;
       border-bottom: solid 18px;
-    }
-
-    .question {
-      font-size:      22px;
-      text-transform: uppercase;
-      font-weight:    500;
     }
 
     .answer {
@@ -596,6 +600,12 @@ $ipad-height-desktop: 473px;
   }
 
   #meet-robyn {
+    .part-0 {
+      .image {
+        margin-bottom: 90px;
+      }
+    }
+
     .part-1 {
       margin-top: 20px;
 
@@ -614,7 +624,7 @@ $ipad-height-desktop: 473px;
       }
 
       img {
-        max-height: 40vh;
+        max-height: $iphone-height-mobile;
       }
 
       .full {
@@ -648,8 +658,8 @@ $ipad-height-desktop: 473px;
       }
       .part-2 {
         img {
-          max-width:  250px;
-          max-height: 507.52px;
+          max-height: unset;
+          max-width:  $iphone-width-desktop;
         }
 
         .text {
@@ -711,8 +721,7 @@ $ipad-height-desktop: 473px;
         gap:    40px;
 
         img {
-          max-width:  250px;
-          max-height: 507.52px;
+          max-width:  $iphone-width-desktop;
         }
       }
 
@@ -729,8 +738,12 @@ $ipad-height-desktop: 473px;
     @media only screen and (min-width: $bp-desktop) {
       margin-bottom: 30px;
 
+      img {
+        max-height: unset;
+      }
+
       .image + h3 {
-        margin-top: 40px;
+        margin-top: 90px;
       }
     }
   }
@@ -781,8 +794,8 @@ $ipad-height-desktop: 473px;
         display: flex;
 
         img {
-          max-width:  250px;
-          max-height: 507.52px;
+          width: 250px;
+          height: 512px;
         }
       }
 
