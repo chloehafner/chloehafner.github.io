@@ -625,8 +625,7 @@ $ipad-height-desktop: 473px;
 
     @media only screen and (min-width: $bp-desktop) {
       .image {
-        margin-left: 0px;
-        margin-right: 48px;
+        margin: 0px;
       }
 
       .full {
