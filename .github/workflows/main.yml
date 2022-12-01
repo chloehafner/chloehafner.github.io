@@ -24,7 +24,7 @@ jobs:
       - name: Compile CSS from SCSS files
         uses: gha-utilities/sass-build@v0.4.10
         with:
-          outputStyle: "compact"
+          outputStyle: compact
           source: |
             sass/_fonts.scss
             sass/_variables.scss
