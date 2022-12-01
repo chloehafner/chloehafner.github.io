@@ -173,6 +173,11 @@
   font-size: 18px;
   max-width: 236px;
 }
+@media only screen and (max-width: 991px) {
+  .home .tile.text h2, .home .tile.text p {
+    line-height: 20px;
+  }
+}
 @media only screen and (min-width: 992px) {
   .home .tile.text h2, .home .tile.text p {
     font-size: 25px;
@@ -183,20 +188,6 @@
 }
 .home .tile.text.bg-green:hover {
   background-color: #BDC02B;
-}
-.home .diamond {
-  height: 60%;
-  width: 60%;
-  text-align: center;
-  transform: rotate(45deg);
-  margin-left: 20%;
-  margin-top: 20%;
-}
-.home .star {
-  width: 80%;
-  margin-top: 10%;
-  margin-left: 10%;
-  fill: orange;
 }
 
 /*# sourceMappingURL=home.css.map */
