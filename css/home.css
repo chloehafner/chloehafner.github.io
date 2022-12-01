@@ -1,1 +1,202 @@
-@import"https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap";@import"https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap";@import"https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap";@import"https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap";.bold{font-weight:700}.light{font-weight:600}.blue{color:#072d4b}.black{color:#13151a}.grey{color:#5e6b81}.txt-center{text-align:center}.flex,.flex-center-center,.home .tile.text,.flex-vert-center,.flex-horiz-center{display:flex}.flex-horiz-center,.flex-center-center,.home .tile.text{justify-content:center}.flex-vert-center,.flex-center-center,.home .tile.text{align-items:center}.txt-sm{font-size:16px}.txt-md{font-size:24px}.txt-lg{font-size:32px}.txt-xl{font-size:40px}.txt-xxl{font-size:52px}@media only screen and (min-width: 992px){.txt-sm{font-size:26px}.txt-md{font-size:32px}.txt-lg{font-size:40px}.txt-xl{font-size:52px}.txt-xxl{font-size:60px}}.home{max-width:1000px;margin-left:24px;margin-right:24px;background:url("./../img/light-background.png");background-size:contain}@media only screen and (min-width: 992px){.home{margin-left:auto;margin-right:auto}}.home .intro{margin-top:40px;margin-bottom:30px}.home .intro h1{font-weight:500;font-size:20px;text-align:center}.home .intro b{font-weight:800;font-size:20px}@media only screen and (min-width: 992px){.home .intro h1{font-size:25px;line-height:38px}.home .intro b{font-size:25px}}@media only screen and (min-width: 992px)and (min-height: 800px){.home .intro{margin-top:60px;margin-bottom:50px}}.home .tiles{display:flex;flex-flow:row wrap;justify-content:center}.home .tiles a,.home .tiles .tile{max-width:167px;max-height:167px;width:100%;text-decoration:none;aspect-ratio:1;padding-bottom:0}@media only screen and (min-width: 992px){.home .tiles a,.home .tiles .tile{max-width:240px;max-height:240px}}.home .tile.image{background-size:contain}.home .tile.text{border-radius:50%;flex-flow:column}.home .tile.text h2,.home .tile.text p{text-align:center;padding:0;margin-top:0;margin-bottom:0;font-size:18px;max-width:236px}@media only screen and (min-width: 992px){.home .tile.text h2,.home .tile.text p{font-size:25px}}.home .tile.text.bg-pink:hover{background-color:#f962ab}.home .tile.text.bg-green:hover{background-color:#bdc02b}.home .diamond{height:60%;width:60%;text-align:center;transform:rotate(45deg);margin-left:20%;margin-top:20%}.home .star{width:80%;margin-top:10%;margin-left:10%;fill:orange}
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap");
+.bold {
+  font-weight: 700;
+}
+
+.light {
+  font-weight: 600;
+}
+
+.blue {
+  color: #072D4B;
+}
+
+.black {
+  color: #13151A;
+}
+
+.grey {
+  color: #5E6B81;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.flex, .flex-center-center, .home .tile.text, .flex-vert-center, .flex-horiz-center {
+  display: flex;
+}
+
+.flex-horiz-center, .flex-center-center, .home .tile.text {
+  justify-content: center;
+}
+
+.flex-vert-center, .flex-center-center, .home .tile.text {
+  align-items: center;
+}
+
+/*
+    Text Sizes
+ */
+.txt-sm {
+  font-size: 16px;
+}
+
+.txt-md {
+  font-size: 24px;
+}
+
+.txt-lg {
+  font-size: 32px;
+}
+
+.txt-xl {
+  font-size: 40px;
+}
+
+.txt-xxl {
+  font-size: 52px;
+}
+
+@media only screen and (min-width: 992px) {
+  .txt-sm {
+    font-size: 26px;
+  }
+
+  .txt-md {
+    font-size: 32px;
+  }
+
+  .txt-lg {
+    font-size: 40px;
+  }
+
+  .txt-xl {
+    font-size: 52px;
+  }
+
+  .txt-xxl {
+    font-size: 60px;
+  }
+}
+.home {
+  max-width: 1000px;
+  margin-left: 24px;
+  margin-right: 24px;
+  background: url("./../img/light-background.png");
+  background-size: contain;
+  /***
+   *      ___ _   _ _____ ____   ___
+   *     |_ _| \ | |_   _|  _ \ / _ \
+   *      | ||  \| | | | | |_) | | | |
+   *      | || |\  | | | |  _ <| |_| |
+   *     |___|_| \_| |_| |_| \_\\___/
+   *
+   */
+  /***
+   *      _____ ___ _     _____ ____
+   *     |_   _|_ _| |   | ____/ ___|
+   *       | |  | || |   |  _| \___ \
+   *       | |  | || |___| |___ ___) |
+   *       |_| |___|_____|_____|____/
+   *
+   */
+}
+@media only screen and (min-width: 992px) {
+  .home {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.home .intro {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.home .intro h1 {
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+}
+.home .intro b {
+  font-weight: 800;
+  font-size: 20px;
+}
+@media only screen and (min-width: 992px) {
+  .home .intro h1 {
+    font-size: 25px;
+    line-height: 38px;
+  }
+  .home .intro b {
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 992px) and (min-height: 800px) {
+  .home .intro {
+    margin-top: 60px;
+    margin-bottom: 50px;
+  }
+}
+.home .tiles {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.home .tiles a, .home .tiles .tile {
+  max-width: 167px;
+  max-height: 167px;
+  width: 100%;
+  text-decoration: none;
+  aspect-ratio: 1;
+  padding-bottom: 0;
+}
+@media only screen and (min-width: 992px) {
+  .home .tiles a, .home .tiles .tile {
+    max-width: 240px;
+    max-height: 240px;
+  }
+}
+.home .tile.image {
+  background-size: contain;
+}
+.home .tile.text {
+  border-radius: 50%;
+  flex-flow: column;
+}
+.home .tile.text h2, .home .tile.text p {
+  text-align: center;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+  max-width: 236px;
+}
+@media only screen and (min-width: 992px) {
+  .home .tile.text h2, .home .tile.text p {
+    font-size: 25px;
+  }
+}
+.home .tile.text.bg-pink:hover {
+  background-color: #F962AB;
+}
+.home .tile.text.bg-green:hover {
+  background-color: #BDC02B;
+}
+.home .diamond {
+  height: 60%;
+  width: 60%;
+  text-align: center;
+  transform: rotate(45deg);
+  margin-left: 20%;
+  margin-top: 20%;
+}
+.home .star {
+  width: 80%;
+  margin-top: 10%;
+  margin-left: 10%;
+  fill: orange;
+}
+
+/*# sourceMappingURL=home.css.map */
