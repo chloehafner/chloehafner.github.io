@@ -65,7 +65,6 @@
   .txt-sm {
     font-size: 26px;
   }
-
   .txt-md {
     font-size: 32px;
   }
@@ -75,7 +74,6 @@
   .txt-xl {
     font-size: 52px;
   }
-
   .txt-xxl {
     font-size: 60px;
   }
@@ -186,9 +184,4 @@
 }
 .home .tile.text.bg-green:hover {
   background-color: #BDC02B;
-
 }
-
-}
-
-/*# sourceMappingURL=home.css.map */
