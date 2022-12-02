@@ -252,7 +252,7 @@ $ipad-height-mobile:   350px;
     #takeaways {
       @media only screen and (min-width: $bp-desktop) {
         img {
-          max-width: none;
+          max-width: 322px;
         }
       }
     }
