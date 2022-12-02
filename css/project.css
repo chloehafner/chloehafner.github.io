@@ -299,7 +299,7 @@
 }
 @media only screen and (min-width: 992px) {
   .project.house-numbers #takeaways img {
-    max-width: none;
+    max-width: 322px;
   }
 }
 .project.house-numbers #video video {
