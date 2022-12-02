@@ -3,9 +3,9 @@
 
 .home {
 
-  max-width:       1100px;
-  margin-left:  $mobile-margin;
-  margin-right: $mobile-margin;
+  max-width:       1000px;
+  margin-left:     $mobile-margin;
+  margin-right:    $mobile-margin;
   background:      url("./../img/light-background.png");
   background-size: contain;
 
@@ -13,7 +13,6 @@
     margin-left:  auto;
     margin-right: auto;
   }
-
 
 
   /***
@@ -30,21 +29,21 @@
 
     h1 {
       font-weight: 500;
-      font-size:   22px;
+      font-size:   20px;
       text-align:  center;
     }
     b {
       font-weight: 800;
-      font-size:   24px;
+      font-size:   20px;
     }
 
     @media only screen and (min-width: $bp-desktop) {
       h1 {
-        font-size: 28px;
+        font-size:   25px;
         line-height: 38px;
       }
       b {
-        font-size: 28px;
+        font-size: 25px;
       }
 
       @media only screen and (min-height: 800px) {
@@ -76,8 +75,8 @@
       padding-bottom:  0;
 
       @media only screen and (min-width: $bp-desktop) {
-        max-width:  275px;
-        max-height: 275px;
+        max-width:  240px;
+        max-height: 240px;
       }
     }
   }
@@ -99,6 +98,10 @@
       font-size:     18px;
       max-width:     236px;
 
+      @media only screen and (max-width: $bp-desktop - 1) {
+        line-height: 20px;
+      }
+
       @media only screen and (min-width: $bp-desktop) {
         font-size: 25px;
       }
@@ -111,22 +114,5 @@
     &.bg-green:hover {
       background-color: #BDC02B;
     }
-  }
-
-  // Credit to Nick Else: https://codepen.io/nickelse
-  .diamond {
-    height:      60%;
-    width:       60%;
-    text-align:  center;
-    transform:   rotate(45deg);
-    margin-left: 20%;
-    margin-top:  20%;
-  }
-
-  .star {
-    width:       80%;
-    margin-top:  10%;
-    margin-left: 10%;
-    fill:        orange;
   }
 }

@@ -3,6 +3,10 @@
 
 .about {
 
+  .header-wrapper {
+    margin-bottom: 34px;
+  }
+
   @media only screen and (min-width: $bp-desktop) {
     max-width:    $max-width-desktop;
     margin-left:  auto;
@@ -22,9 +26,18 @@
     margin-top: 0;
   }
 
+  p {
+    color: $grey;
+  }
+
   section {
     display:        flex;
     flex-direction: column;
+    margin-bottom:  20px;
+
+    @media only screen and (min-width: $bp-desktop) {
+      margin-bottom: 40px;
+    }
   }
 
   #profile {
@@ -38,7 +51,7 @@
 
     @media only screen and (min-width: $bp-desktop) {
       img {
-        max-width: 400px;
+        max-width:  340px;
       }
     }
   }
@@ -48,7 +61,7 @@
     display:         flex;
     flex-flow:       row wrap;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom:   30px;
 
     .tile {
       text-decoration: none;
@@ -64,20 +77,29 @@
 
     p {
       @extend .bold;
+      color:      $black;
       margin:     0;
       text-align: center;
     }
 
     @media only screen and (min-width: $bp-desktop) {
       .tile {
-        max-width:     290px;
+        max-width:     unset;
         margin-bottom: 30px;
+        flex-basis:    33.33%;
+      }
+
+      img, p {
+        width: 240px;
       }
     }
   }
 
   #social {
     align-items: center;
+    p {
+      color: $black;
+    }
 
     @media only screen and (min-width: $bp-desktop) {
       margin-top: 40px;

@@ -1,7 +1,11 @@
 @import "./_variables";
 @import "./custom-styles";
 
-$ipad-height-desktop: 515px;
+$iphone-width-desktop: 250px;
+$iphone-height-mobile: 48vh;
+
+$ipad-height-desktop:  473px;
+$ipad-height-mobile:   350px;
 
 .project {
   /***
@@ -25,13 +29,18 @@ $ipad-height-desktop: 515px;
     #cover {
       .image {
         max-height: 600px;
-        margin-top: -50px;
+        margin-top: -20px;
       }
     }
 
     #goals {
       img {
-        max-width: 250px;
+        max-height: $iphone-height-mobile;
+
+        @media only screen and (min-width: $bp-desktop) {
+          max-height: unset;
+          max-width:  $iphone-width-desktop;
+        }
       }
     }
 
@@ -44,6 +53,13 @@ $ipad-height-desktop: 515px;
       }
       .analytic-3 {
         border-color: $pink;
+      }
+    }
+
+    img {
+
+      @media only screen and (min-width: $bp-desktop) {
+        max-height: 650px;
       }
     }
   }
@@ -66,6 +82,23 @@ $ipad-height-desktop: 515px;
       border: 3px solid $turquoise;
     }
 
+    .full {
+      margin-bottom: 32px;
+    }
+
+    #overview, #goals, #pain-points {
+
+      img {
+        max-height: $ipad-height-mobile;
+      }
+
+      @media only screen and (min-width: $bp-desktop) {
+        img {
+          max-height: $ipad-height-desktop;
+        }
+      }
+    }
+
     #cover {
 
       .logo {
@@ -85,20 +118,17 @@ $ipad-height-desktop: 515px;
     }
 
     #overview {
-      h2 {
-        max-width: 660px;
-      }
-      img {
-        max-height: $ipad-height-desktop;
-        max-width:  unset;
+      @media only screen and (min-width: $bp-desktop) {
+        h2 {
+          max-width: 660px;
+        }
+        img {
+          max-width: unset;
+        }
       }
     }
 
-    #goals {
-      img {
-        max-height: $ipad-height-desktop;
-      }
-    }
+    #goals {}
 
     #current-design {
 
@@ -134,7 +164,7 @@ $ipad-height-desktop: 515px;
 
         .question {
           margin-bottom: 24px;
-          font-size: 25px;
+          font-size:     25px;
         }
 
         ul {
@@ -158,9 +188,9 @@ $ipad-height-desktop: 515px;
         }
 
         .image {
-          max-width:    1000px;
-          margin-left:  auto;
-          margin-right: auto;
+          max-width:     900px;
+          margin-left:   auto;
+          margin-right:  auto;
           margin-bottom: 60px;
         }
       }
@@ -177,13 +207,13 @@ $ipad-height-desktop: 515px;
       }
 
       .image {
-        max-width: 60vw;
+        max-width:     60vw;
         margin-bottom: 20px;
       }
 
       @media only screen and (min-width: $bp-desktop) {
         .image {
-          max-width: 225px;
+          max-width:     225px;
           margin-bottom: unset;
         }
 
@@ -208,9 +238,13 @@ $ipad-height-desktop: 515px;
     }
 
     #pain-points {
+      img {
+        max-height: $ipad-height-mobile + 20px;
+      }
+
       @media only screen and (min-width: $bp-desktop) {
         img {
-          max-height: $ipad-height-desktop;
+          max-height: $ipad-height-desktop + 40px;
         }
       }
     }
@@ -219,6 +253,16 @@ $ipad-height-desktop: 515px;
       @media only screen and (min-width: $bp-desktop) {
         img {
           max-width: none;
+        }
+      }
+    }
+
+    #video {
+      video {
+        max-width: 100%;
+
+        @media only screen and (min-width: $bp-desktop) {
+          max-height: unset;
         }
       }
     }
@@ -294,8 +338,8 @@ $ipad-height-desktop: 515px;
 
     @media only screen and (min-width: $bp-desktop) {
       li {
-        font-size:   17px;
-        line-height: 20px;
+        font-size:   18px;
+        line-height: 32px;
       }
     }
   }
@@ -363,7 +407,7 @@ $ipad-height-desktop: 515px;
     margin-right: auto;
 
     @media only screen and (min-width: $bp-desktop) {
-      margin: 0;
+      margin: 0px;
     }
   }
 
@@ -502,7 +546,7 @@ $ipad-height-desktop: 515px;
       }
 
       img {
-        max-width: unset;
+        max-width: 350px;
       }
     }
   }
@@ -521,7 +565,8 @@ $ipad-height-desktop: 515px;
       margin-bottom: 90px;
 
       .image {
-        margin-top: unset;
+        margin-top:   unset;
+        margin-right: 48px;
       }
     }
   }
@@ -542,12 +587,6 @@ $ipad-height-desktop: 515px;
     .analytic-1, .analytic-2, .analytic-3 {
       @extend .txt-center;
       border-bottom: solid 18px;
-    }
-
-    .question {
-      font-size:      25px;
-      text-transform: uppercase;
-      font-weight:    500;
     }
 
     .answer {
@@ -585,12 +624,18 @@ $ipad-height-desktop: 515px;
       }
 
       h3 {
-        margin-bottom: 20px;
+        margin-bottom: 32px;
       }
     }
   }
 
   #meet-robyn {
+    .part-0 {
+      .image {
+        margin-bottom: 90px;
+      }
+    }
+
     .part-1 {
       margin-top: 20px;
 
@@ -609,7 +654,7 @@ $ipad-height-desktop: 515px;
       }
 
       img {
-        max-height: 40vh;
+        max-height: $iphone-height-mobile;
       }
 
       .full {
@@ -623,7 +668,7 @@ $ipad-height-desktop: 515px;
 
     @media only screen and (min-width: $bp-desktop) {
       .image {
-        margin: 0;
+        margin: 0px;
       }
 
       .full {
@@ -632,9 +677,9 @@ $ipad-height-desktop: 515px;
 
       .part-1 {
         img {
-          max-height:    275px;
-          max-width:     275px;
-          margin-bottom: unset;
+          max-height:    245px;
+          max-width:     245px;
+          margin-bottom: 56px;
         }
 
         h5 {
@@ -643,8 +688,8 @@ $ipad-height-desktop: 515px;
       }
       .part-2 {
         img {
-          max-width:  325px;
           max-height: unset;
+          max-width:  $iphone-width-desktop;
         }
 
         .text {
@@ -675,7 +720,7 @@ $ipad-height-desktop: 515px;
       margin-bottom:   0;
 
       img {
-        max-width: 50%;
+        max-width: 33%;
       }
     }
 
@@ -706,8 +751,7 @@ $ipad-height-desktop: 515px;
         gap:    40px;
 
         img {
-          max-width:  250px;
-          max-height: unset;
+          max-width: $iphone-width-desktop;
         }
       }
 
@@ -724,8 +768,12 @@ $ipad-height-desktop: 515px;
     @media only screen and (min-width: $bp-desktop) {
       margin-bottom: 30px;
 
+      img {
+        max-height: unset;
+      }
+
       .image + h3 {
-        margin-top: 40px;
+        margin-top: 90px;
       }
     }
   }
@@ -776,8 +824,8 @@ $ipad-height-desktop: 515px;
         display: flex;
 
         img {
-          max-width:  250px;
-          max-height: unset;
+          width:  250px;
+          height: 512px;
         }
       }
 
@@ -792,8 +840,13 @@ $ipad-height-desktop: 515px;
   }
 
   #video {
+    .image, video {
+      margin-left:  auto;
+      margin-right: auto;
+    }
+
     video {
-      max-width:  1100px;
+      max-width:  1000px;
       max-height: 620px;
     }
   }
@@ -806,7 +859,7 @@ $ipad-height-desktop: 515px;
     @media only screen and (min-width: $bp-desktop) {
       img {
         display:   block;
-        max-width: 180px;
+        max-width: 233px;
       }
     }
   }

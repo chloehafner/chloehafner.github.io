@@ -74,7 +74,7 @@ h5 {
   margin-bottom: 8px;
 
   @media only screen and (min-width: $bp-desktop) {
-    font-size:     25px;
+    font-size:     22px;
     line-height:   32px;
     margin-bottom: 12px;
   }
@@ -82,15 +82,14 @@ h5 {
 
 p {
   font-weight: 400;
-  color:       $black;
   font-size:   14px;
 
   &.caps {
     font-weight:    600;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    line-height:    28px;
-    margin-bottom:  8px;
+    line-height:    32px;
+    margin-bottom:  16px;
   }
 
   @media only screen and (min-width: $bp-desktop) {
@@ -128,6 +127,7 @@ a {
 
 p {
   font-size: 18px;
+  line-height:   28px;
 }
 
 /***
@@ -174,13 +174,14 @@ p {
 
   @media only screen and (min-width: $bp-desktop) {
     align-items: center;
+    margin-bottom: 90px;
 
     .logo {
-      max-width: 239px;
+      max-width: 205px;
     }
 
     .nav-links {
-      font-size:    24px;
+      font-size:    20px;
       flex-flow:    row;
       margin-top:   0;
       margin-right: 5px;
