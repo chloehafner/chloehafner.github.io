@@ -74,7 +74,6 @@
   .txt-xl {
     font-size: 52px;
   }
-
   .txt-xxl {
     font-size: 60px;
   }
@@ -314,11 +313,7 @@ body {
   .mobile-only {
     display: none;
   }
-
-
   .desktop-only {
     display: unset;
   }
 }
-
-/*# sourceMappingURL=global.css.map */
