@@ -69,11 +69,9 @@
   .txt-md {
     font-size: 32px;
   }
-
   .txt-lg {
     font-size: 40px;
   }
-
   .txt-xl {
     font-size: 52px;
   }
@@ -188,6 +186,9 @@
 }
 .home .tile.text.bg-green:hover {
   background-color: #BDC02B;
+
+}
+
 }
 
 /*# sourceMappingURL=home.css.map */

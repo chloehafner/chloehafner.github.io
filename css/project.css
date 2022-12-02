@@ -69,11 +69,9 @@
   .txt-md {
     font-size: 32px;
   }
-
   .txt-lg {
     font-size: 40px;
   }
-
   .txt-xl {
     font-size: 52px;
   }
@@ -754,6 +752,10 @@
     display: block;
     max-width: 233px;
   }
+
+}
+
 }
 
 /*# sourceMappingURL=project.css.map */
+

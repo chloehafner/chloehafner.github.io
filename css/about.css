@@ -65,19 +65,15 @@
   .txt-sm {
     font-size: 26px;
   }
-
   .txt-md {
     font-size: 32px;
   }
-
   .txt-lg {
     font-size: 40px;
   }
-
   .txt-xl {
     font-size: 52px;
   }
-
   .txt-xxl {
     font-size: 60px;
   }
@@ -171,6 +167,7 @@
   .about #social {
     margin-top: 40px;
   }
+
 }
 
 /*# sourceMappingURL=about.css.map */
