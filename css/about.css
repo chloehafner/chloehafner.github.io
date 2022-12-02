@@ -152,9 +152,12 @@
     max-width: unset;
     margin-bottom: 30px;
     flex-basis: 33.33%;
+    display: flex;
+    flex-flow: column;
   }
   .about .tiles img, .about .tiles p {
     width: 240px;
+    margin: auto;
   }
 }
 .about #social {
