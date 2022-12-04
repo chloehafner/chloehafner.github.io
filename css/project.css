@@ -553,7 +553,6 @@
 }
 .project #current-design .answer {
   margin-top: 0;
-  color: #072D4B;
 }
 .project #current-design .third, .project #current-design .half {
   margin-bottom: 40px;
@@ -576,6 +575,7 @@
   .project #current-design .answer {
     margin-top: 45px;
     margin-bottom: 45px;
+    font-size: 20px;
   }
   .project #current-design h3 {
     margin-bottom: 32px;
