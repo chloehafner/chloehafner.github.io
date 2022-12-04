@@ -591,7 +591,6 @@ $ipad-height-mobile:   350px;
 
     .answer {
       margin-top: 0;
-      color:      $blue;
       @extend .bold;
     }
 
@@ -621,6 +620,7 @@ $ipad-height-mobile:   350px;
       .answer {
         margin-top:    45px;
         margin-bottom: 45px;
+        font-size:20px;
       }
 
       h3 {
