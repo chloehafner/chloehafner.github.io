@@ -859,6 +859,11 @@ $ipad-height-mobile:   350px;
       max-width: 322px;
     }
 
+    a {
+      font-size: 25px;
+      text-align: center;
+    }
+
     @media only screen and (min-width: $bp-desktop) {
       img {
         display:   block;
