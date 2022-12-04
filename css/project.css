@@ -542,6 +542,7 @@
 .project #current-design .icon svg {
   max-width: 74px;
   max-height: 74px;
+  margin-top: 45px;
 }
 .project #current-design .analytics {
   max-width: 70vw;
