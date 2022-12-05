@@ -306,9 +306,6 @@
     max-width: 322px;
   }
 }
-.project.house-numbers #video video {
-  max-width: 100%;
-}
 @media only screen and (min-width: 992px) {
   .project.house-numbers #video video {
     max-height: unset;
@@ -745,8 +742,13 @@
   margin-right: auto;
 }
 .project #video video {
-  max-width: 1000px;
-  max-height: 620px;
+  max-width: 100%;
+}
+@media only screen and (min-width: 992px) {
+  .project #video video {
+    max-width: 1000px;
+    max-height: 620px;
+  }
 }
 .project #takeaways img {
   display: none;

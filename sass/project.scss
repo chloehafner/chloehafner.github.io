@@ -259,8 +259,6 @@ $ipad-height-mobile:   350px;
 
     #video {
       video {
-        max-width: 100%;
-
         @media only screen and (min-width: $bp-desktop) {
           max-height: unset;
         }
@@ -850,8 +848,14 @@ $ipad-height-mobile:   350px;
     }
 
     video {
-      max-width:  1000px;
-      max-height: 620px;
+      max-width:  100%;
+    }
+
+    @media only screen and (min-width: $bp-desktop) {
+      video {
+        max-width:  1000px;
+        max-height: 620px;
+      }
     }
   }
 
