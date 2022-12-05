@@ -124,17 +124,17 @@
 @media only screen and (min-width: 992px) {
   .home .intro h1 {
     font-size: 100px;
-    line-height: 120px;
+    line-height: 105px;
     letter-spacing: -5px;
-    width: 840px;
+    width: 900px;
     font-weight: 600;
     text-align: left;
   }
   .home .intro b {
     font-size: 100px;
-    line-height: 120px;
+    line-height: 105px;
     letter-spacing: -5px;
-    width: 740px;
+    width: 900px;
     font-weight: 600;
     text-align: left;
   }
@@ -151,8 +151,8 @@
   justify-content: space-around;
 }
 .home .tiles a, .home .tiles .tile {
-  max-width: 168px;
-  max-height: 168px;
+  max-width: 240px;
+  max-height: 240px;
   width: 100%;
   text-decoration: none;
   aspect-ratio: 1;
