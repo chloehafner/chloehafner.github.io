@@ -65,15 +65,19 @@
   .txt-sm {
     font-size: 26px;
   }
+
   .txt-md {
     font-size: 32px;
   }
+
   .txt-lg {
     font-size: 40px;
   }
+
   .txt-xl {
     font-size: 52px;
   }
+
   .txt-xxl {
     font-size: 60px;
   }
@@ -282,6 +286,7 @@ body {
   25% {
     background-color: linear-gradient(90deg, #D4E2E2 4612%, #6A82FB 11057%);
   }
+
   25% {
     background-color: #E8CFB3;
   }
@@ -289,6 +294,7 @@ body {
     background-color: linear-gradient(90deg, #D4E2E2 4612%, #6A82FB 11057%);
   }
   45% {
+
     background-color: #FFF0ED;
   }
 }
@@ -328,7 +334,10 @@ body {
   .mobile-only {
     display: none;
   }
+
   .desktop-only {
     display: unset;
   }
 }
+
+/*# sourceMappingURL=global.css.map */

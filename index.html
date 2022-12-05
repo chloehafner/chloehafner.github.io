@@ -5,7 +5,11 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JCJBXXSW31"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() {dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
     gtag("js", new Date());
     gtag("config", "G-JCJBXXSW31");
   </script>
@@ -45,32 +49,43 @@
 <body class="home">
 
 <!-- Intro Block -->
-<div class="intro">
+<section class="intro">
   <h1>UX designer,</h1>
-  <h1>creative problem solver,</h1>
-  <h1>driven by empathy</h1>
+  <h1>creative problem solver</h1>
 
-</div>
+</section>
 
 <!-- Project Area -->
-<div class="tiles">
+<section class="tiles">
 
-  <a href="./gennev">
-    <div class="tile bg-pink text">
-      <h2>Gennev</h2>
-      <p>Empowering women in menopause</p>
+  <div class="tile">
+    <a href="./gennev" class="image">
+      <img class="bg-pink" src="./img/navbar-logo.png" alt="Icon for Gennev">
+    </a>
+    <div class="text">
+      <h2>Empowering women in menopause</h2>
+      <p>Gennev</p>
     </div>
-  </a>
+  </div>
 
-
-  <a href="./house-numbers">
-    <div class="tile bg-green text">
-      <h2>House Numbers</h2>
-      <p>Helping homeowners in retirement</p>
+  <div class="tile">
+    <a href="./house-numbers" class="image">
+      <img class="bg-green" src="./img/navbar-logo.png" alt="Icon for House Numbers">
+    </a>
+    <div class="text">
+      <h2>Helping homeowners in retirement</h2>
+      <p>House Numbers</p>
     </div>
-  </a>
+  </div>
+
+</section>
 
 
-</div>
+<!-- Social plug -->
+<section id="social">
+  <p class="bold">📫 Want to connect? Reach out to me on <a href="https://www.linkedin.com/in/chloehafner"
+                                                           target="_blank" rel="noopener noreferrer">LinkedIn</a>!</p>
+</section>
+
 </body>
 </html>

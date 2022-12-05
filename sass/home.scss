@@ -1,13 +1,24 @@
 @import "./_variables.scss";
 @import "./custom-styles.scss";
 
+$tile-max-width-mobile:   240px;
+$tile-max-height-mobile:  240px;
+
+$tile-max-width-desktop:  340px;
+$tile-max-height-desktop: 300px;
+
+$icon-size-mobile:        150px;
+$icon-size-desktop:       250px;
+
 .home {
 
   max-width:       1000px;
   margin-left:     $mobile-margin;
   margin-right:    $mobile-margin;
+  margin-bottom:   56px;
   background:      url("./../img/light-background.png");
   background-size: contain;
+
 
   @media only screen and (min-width: $bp-desktop) {
     margin-left:  auto;
@@ -24,39 +35,44 @@
    *
    */
   .intro {
-    margin-top:    40px;
-    margin-bottom: 30px;
+    margin-top:    20px;
+    margin-bottom: 72px;
+    text-align:    left;
 
     h1 {
-      font-weight: 500;
-      font-size:   20px;
-      text-align:  center;
+      font-weight:    600;
+      font-size:      42px;
+      line-height:    42px;
+      text-align:     left;
+      letter-spacing: -4px;
     }
     b {
-      font-weight: 800;
-      font-size:   20px;
+      font-weight:    600;
+      font-size:      42px;
+      line-height:    42px;
+      letter-spacing: -4px;
     }
 
     @media only screen and (min-width: $bp-desktop) {
       h1 {
-        font-size:   100px;
-        line-height: 120px;
-        letter-spacing: -5px;
-        width: 740px;
-        font-weight:600;
-        text-align: left;
+        font-size:      95px;
+        line-height:    105px;
+        letter-spacing: -6px;
+        width:          900px;
+        font-weight:    600;
+        text-align:     left;
       }
       b {
-        font-size: 100px;
-        line-height: 120px; 
-        letter-spacing: -5px;
-        width: 740px;
-        font-weight:600;
-        text-align: left;
+        font-size:      95px;
+        line-height:    105px;
+        letter-spacing: -6px;
+        width:          900px;
+        font-weight:    600;
+        text-align:     left;
       }
 
       @media only screen and (min-height: 800px) {
-        margin-top:    60px;
+        margin-top:    32px;
         margin-bottom: 50px;
       }
     }
@@ -75,53 +91,71 @@
     flex-flow:       row wrap;
     justify-content: space-around;
 
-    a, .tile {
-      max-width:       168px;
-      max-height:      168px;
-      width:           100%;
-      text-decoration: none;
-      aspect-ratio:    1;
-      padding-bottom:  0;
+    .tile {
+      display:   flex;
+      flex-flow: column;
+      max-width: $tile-max-width-mobile;
+      width:     100%;
 
       @media only screen and (min-width: $bp-desktop) {
-        max-width:  340px;
-        max-height: 340px;
+        max-width: $tile-max-width-desktop;
       }
     }
-  }
 
-  .tile.image {
-    background-size: contain;
-  }
+    .image {
+      display:    flex;
+      // flex-flow:     column;
+      max-width:  $tile-max-width-mobile;
+      max-height: $tile-max-height-mobile;
+      width:      100%;
 
-  .tile.text {
-    @extend .flex-center-center;
-    border-radius: 25%;
-    flex-flow:     column;
+      img {
+        max-width:     $icon-size-mobile;
+        box-shadow:    0 4px 10px 0 rgb(0 0 0 / 8%);
+        border-radius: 22%;
+      }
+
+      @media only screen and (min-width: $bp-desktop) {
+        max-width:  $tile-max-width-desktop;
+        max-height: $tile-max-height-desktop;
+
+        img {
+          max-width: $icon-size-desktop;
+        }
+      }
+    }
 
     h2, p {
-      text-align:    center;
+      text-align:    left;
       padding:       0;
       margin-top:    0;
       margin-bottom: 0;
       font-size:     18px;
-      max-width:     236px;
+      max-width:     $tile-max-width-mobile;
 
       @media only screen and (max-width: $bp-desktop - 1) {
-        line-height: 20px;
+        line-height: 28px;
       }
 
       @media only screen and (min-width: $bp-desktop) {
-        font-size: 25px;
+        font-size: 17px;
+        max-width: $tile-max-width-desktop;
       }
     }
+  }
 
-    &.bg-pink:hover {
-      background-color: #F962AB;
+  #social {
+    p {
+      color:           $black;
+      margin-top:      72px;
+      margin-bottom:   300px;
+      justify-content: center;
     }
 
-    &.bg-green:hover {
-      background-color: #BDC02B;
+    @media only screen and (min-width: $bp-desktop) {
+      margin-top:      72px;
+      margin-bottom:   300px;
+      justify-content: center;
     }
   }
 }

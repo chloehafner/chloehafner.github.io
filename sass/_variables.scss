@@ -4,26 +4,33 @@
 $font-regular:      "Open Sans", sans-serif;
 $font-medium:       "Open Sans", sans-serif;
 $font-bold:         "Open Sans", sans-serif;
-$font-light:        "Open Sans", sans-serif;
-$font-bold-italic:  "Open Sans", sans-serif;
+$font-light:       "Open Sans", sans-serif;
+$font-bold-italic: "Open Sans", sans-serif;
 
 // Colors
-$light-pink:        #FFF0ED;
-$pink:              #FABAAC;
-$light-blue:        linear-gradient(90deg, #D4E2E2 4612%, #6A82FB 11057%);
-$blue:              #072D4B;
-$white:             #FFFFFF;
-$light-gold:        #E8CFB3;
-$gold:              #D2A570;
-$turquoise:         #5CA29F;
-$orange:            #FFC38C;
+$pink-light:       #FFF0ED;
+$pink:             #FABAAC;
+
+$blue-light:       linear-gradient(90deg, #D4E2E2 4612%, #6A82FB 11057%);
+$blue:             #072D4B;
+
+$gold-light:       #E8CFB3;
+$gold:             #D2A570;
+
+$white:            #FFFFFF;
+$turquoise:        #5CA29F;
+$orange:           #FFC38C;
 
 // Text colors
-$black:             #13151A;
-$grey:              #5E6B81;
+$black:            #13151A;
+$grey:             #5E6B81;
 
 // Backgrounds
 $bg-color:          $white;
+$bg-pink:           #FA92C4;
+$bg-pink-hover:     #F962AB;
+$bg-green:          #8C8E1C;
+$bg-green-hover:    #BDC02B;
 
 // Breakpoints
 $bp-desktop:        992px;

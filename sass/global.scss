@@ -130,8 +130,8 @@ a {
 }
 
 p {
-  font-size: 18px;
-  line-height:   28px;
+  font-size:   18px;
+  line-height: 28px;
 }
 
 /***
@@ -177,7 +177,7 @@ p {
   }
 
   @media only screen and (min-width: $bp-desktop) {
-    align-items: center;
+    align-items:   center;
     margin-bottom: 90px;
 
     .logo {
@@ -203,8 +203,17 @@ p {
  *
  */
 body {
-  background: $white;
+  // background: $white;
   margin-top: 24px;
+  animation: colorchange 20s infinite;
+
+  @keyframes colorchange {
+    0%   {background-color: $pink-light;}
+    25%  {background-color: $blue-light;}
+    25%  {background-color: $gold-light;}
+    55%  {background-color: $blue-light;}
+    45% {background-color: $pink-light;}
+  }
 
   @media only screen and (min-width: $bp-desktop) {
     padding-top: 40px;
@@ -221,19 +230,19 @@ body {
  */
 
 .bg-pink {
-  background: #FA92C4;
+  background: $bg-pink;
+
+  &:hover {
+    background: $bg-pink-hover;
+  }
 }
-.bg-orange {
-  background: #F4483D;
-}
+
 .bg-green {
-  background: #8C8E1C;
-}
-.bg-black {
-  background: #000000;
-}
-.bg-blue {
-  background: #4EAAFF;
+  background: $bg-green;
+
+  &:hover {
+    background: $bg-green-hover;
+  }
 }
 
 .desktop-only {display: none;}
