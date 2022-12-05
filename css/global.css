@@ -272,8 +272,25 @@ p {
  *
  */
 body {
-  background: #FFFFFF;
   margin-top: 24px;
+  animation: colorchange 20s infinite;
+}
+@keyframes colorchange {
+  0% {
+    background-color: #FFF0ED;
+  }
+  25% {
+    background-color: linear-gradient(90deg, #D4E2E2 4612%, #6A82FB 11057%);
+  }
+  50% {
+    background-color: #E8CFB3;
+  }
+  75% {
+    background-color: linear-gradient(90deg, #D4E2E2 4612%, #6A82FB 11057%);
+  }
+  100% {
+    background-color: #FFF0ED;
+  }
 }
 @media only screen and (min-width: 992px) {
   body {
