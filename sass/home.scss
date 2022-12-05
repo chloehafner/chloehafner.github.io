@@ -94,7 +94,7 @@
 
   .tile.text {
     @extend .flex-center-center;
-    border-radius: 50%;
+    border-radius: 25%;
     flex-flow:     column;
 
     h2, p {
