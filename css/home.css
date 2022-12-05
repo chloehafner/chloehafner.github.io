@@ -156,23 +156,23 @@
   width: 100%;
   text-decoration: none;
   aspect-ratio: 1;
-  padding-bottom: 0;
+  padding-bottom: 16px;
 }
 @media only screen and (min-width: 992px) {
   .home .tiles a, .home .tiles .tile {
     max-width: 340px;
-    max-height: 340px;
+    max-height: 300px;
   }
 }
 .home .tile.image {
   background-size: contain;
 }
 .home .tile.text {
-  border-radius: 25%;
+  border-radius: 22%;
   flex-flow: column;
 }
 .home .tile.text h2, .home .tile.text p {
-  text-align: end;
+  text-align: center;
   text-align: left;
   padding: 0;
   margin-top: 0;
