@@ -210,9 +210,9 @@ body {
   @keyframes colorchange {
     0%   {background-color: $pink-light;}
     25%  {background-color: $blue-light;}
-    25%  {background-color: $gold-light;}
-    55%  {background-color: $blue-light;}
-    45% {background-color: $pink-light;}
+    50%  {background-color: $gold-light;}
+    75%  {background-color: $blue-light;}
+    100% {background-color: $pink-light;}
   }
 
   @media only screen and (min-width: $bp-desktop) {

@@ -149,13 +149,13 @@ $icon-size-desktop:       250px;
       color:           $black;
       margin-top:      72px;
       margin-bottom:   300px;
-      justify-content: center;
+      text-align: center;
     }
 
     @media only screen and (min-width: $bp-desktop) {
       margin-top:      72px;
       margin-bottom:   300px;
-      justify-content: center;
+      text-align: center;
     }
   }
 }
