@@ -123,19 +123,19 @@
 }
 @media only screen and (min-width: 992px) {
   .home .intro h1 {
-    font-size: 95px;
+    font-size: 100px;
     line-height: 105px;
     letter-spacing: -6px;
     width: 900px;
-    font-weight: 600px;
+    font-weight: 600;
     text-align: left;
   }
   .home .intro b {
-    font-size: 95px;
+    font-size: 100px;
     line-height: 105px;
     letter-spacing: -6px;
     width: 900px;
-    font-weight: 600px;
+    font-weight: 600;
     text-align: left;
   }
 }
