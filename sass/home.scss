@@ -110,7 +110,6 @@
 
     h2, p {
       text-align:    center;
-      text-align: left;
       padding:       0;
       margin-top:    0;
       margin-bottom: 0;
@@ -118,7 +117,7 @@
       max-width:     300px;
 
       @media only screen and (max-width: $bp-desktop - 1) {
-        line-height: 20px;
+        line-height: 28px;
       }
 
       @media only screen and (min-width: $bp-desktop) {
@@ -142,8 +141,8 @@
   
       @media only screen and (min-width: $bp-desktop) {
         margin-top: 72px;
-        margin-bottom: 200px;
-        text-align: center;
+        margin-bottom: 300px;
+        justify-content: center;
       }
     }   
   }
