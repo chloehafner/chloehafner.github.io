@@ -204,6 +204,9 @@
 }
 .home .tile.text #social p {
   color: #13151A;
+  margin-top: 72px;
+  margin-bottom: 300px;
+  justify-content: center;
 }
 @media only screen and (min-width: 992px) {
   .home .tile.text #social {
