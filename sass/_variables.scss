@@ -8,13 +8,17 @@ $font-light:        "Open Sans", sans-serif;
 $font-bold-italic:  "Open Sans", sans-serif;
 
 // Colors
-$light-pink:        #FFF0ED;
+$pink-light:        #FFF0ED;
 $pink:              #FABAAC;
-$light-blue:        linear-gradient(90deg, #D4E2E2 4612%, #6A82FB 11057%);
+$pink-hover:        #F962AB;
+
+$blue-light:        linear-gradient(90deg, #D4E2E2 4612%, #6A82FB 11057%);
 $blue:              #072D4B;
-$white:             #FFFFFF;
+
 $light-gold:        #E8CFB3;
 $gold:              #D2A570;
+
+$white:             #FFFFFF;
 $turquoise:         #5CA29F;
 $orange:            #FFC38C;
 
@@ -24,6 +28,10 @@ $grey:              #5E6B81;
 
 // Backgrounds
 $bg-color:          $white;
+$bg-pink:           #FA92C4;
+$bg-pink-hover:     #F962AB;
+$bg-green:          #8C8E1C;
+$bg-green-hover:    #BDC02B;
 
 // Breakpoints
 $bp-desktop:        992px;

@@ -130,8 +130,8 @@ a {
 }
 
 p {
-  font-size: 18px;
-  line-height:   28px;
+  font-size:   18px;
+  line-height: 28px;
 }
 
 /***
@@ -177,7 +177,7 @@ p {
   }
 
   @media only screen and (min-width: $bp-desktop) {
-    align-items: center;
+    align-items:   center;
     margin-bottom: 90px;
 
     .logo {
@@ -221,19 +221,19 @@ body {
  */
 
 .bg-pink {
-  background: #FA92C4;
+  background: $bg-pink;
+
+  &:hover {
+    background: $bg-pink-hover;
+  }
 }
-.bg-orange {
-  background: #F4483D;
-}
+
 .bg-green {
-  background: #8C8E1C;
-}
-.bg-black {
-  background: #000000;
-}
-.bg-blue {
-  background: #4EAAFF;
+  background: $bg-green;
+
+  &:hover {
+    background: $bg-green-hover;
+  }
 }
 
 .desktop-only {display: none;}
