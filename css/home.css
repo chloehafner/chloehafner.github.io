@@ -82,6 +82,7 @@
   max-width: 1000px;
   margin-left: 24px;
   margin-right: 24px;
+  margin-bottom: 56px;
   background: url("./../img/light-background.png");
   background-size: contain;
   /***
@@ -114,12 +115,16 @@
 }
 .home .intro h1 {
   font-weight: 600;
-  font-size: 20px;
-  text-align: center;
+  font-size: 42px;
+  line-height: 42px;
+  text-align: left;
+  letter-spacing: -4px;
 }
 .home .intro b {
-  font-weight: 800;
-  font-size: 20px;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 42px;
+  letter-spacing: -4px;
 }
 @media only screen and (min-width: 992px) {
   .home .intro h1 {
@@ -157,6 +162,7 @@
   text-decoration: none;
   aspect-ratio: 1;
   padding-bottom: 16px;
+  margin-bottom: 32px;
 }
 @media only screen and (min-width: 992px) {
   .home .tiles a, .home .tiles .tile {
@@ -170,6 +176,7 @@
 .home .tile.text {
   border-radius: 22%;
   flex-flow: column;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.08);
 }
 .home .tile.text h2, .home .tile.text p {
   text-align: center;
