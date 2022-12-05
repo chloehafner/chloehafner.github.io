@@ -30,12 +30,16 @@
 
     h1 {
       font-weight: 600;
-      font-size:   20px;
-      text-align:  center;
+      font-size:   42px;
+      line-height: 42px;
+      text-align:  left;
+      letter-spacing: -4px;
     }
     b {
-      font-weight: 800;
-      font-size:   20px;
+      font-weight: 600;
+      font-size:   42px;
+      line-height: 42px;
+      letter-spacing: -4px;
     }
 
     @media only screen and (min-width: $bp-desktop) {
@@ -83,6 +87,7 @@
       text-decoration: none;
       aspect-ratio:    1;
       padding-bottom:  16px;
+      margin-bottom: 32px;
 
       @media only screen and (min-width: $bp-desktop) {
         max-width:  340px;
@@ -99,6 +104,7 @@
     @extend .flex-center-center;
     border-radius: 22%;
     flex-flow:     column;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 8%);
 
     h2, p {
       text-align:    center;
