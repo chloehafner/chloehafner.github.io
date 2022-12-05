@@ -203,16 +203,14 @@
 .home .tile.text.bg-green:hover {
   background-color: #BDC02B;
 }
-.home .tile.text #social {
-  align-items: center;
-  text-align: center;
-}
 .home .tile.text #social p {
   color: #13151A;
 }
 @media only screen and (min-width: 992px) {
   .home .tile.text #social {
     margin-top: 72px;
-    margin-bottom: 56px;
+    margin-bottom: 200px;
+    align-items: center;
+    text-align: center;
   }
 }
