@@ -103,6 +103,10 @@ p {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body, li, a {
   font-family:     $font-regular;
   color:           black;

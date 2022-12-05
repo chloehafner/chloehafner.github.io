@@ -51,7 +51,7 @@
 
     @media only screen and (min-width: $bp-desktop) {
       img {
-        max-width:  340px;
+        max-width: 340px;
       }
     }
   }
@@ -87,10 +87,13 @@
         max-width:     unset;
         margin-bottom: 30px;
         flex-basis:    33.33%;
+        display:       flex;
+        flex-flow:     column;
       }
 
       img, p {
         width: 240px;
+        margin: auto;
       }
     }
   }
