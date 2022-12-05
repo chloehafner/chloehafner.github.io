@@ -137,6 +137,9 @@
       
       p {
         color: $black;
+        margin-top: 72px;
+        margin-bottom: 300px;
+        justify-content: center;
       }
   
       @media only screen and (min-width: $bp-desktop) {
