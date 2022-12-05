@@ -65,19 +65,15 @@
   .txt-sm {
     font-size: 26px;
   }
-
   .txt-md {
     font-size: 32px;
   }
-
   .txt-lg {
     font-size: 40px;
   }
-
   .txt-xl {
     font-size: 52px;
   }
-
   .txt-xxl {
     font-size: 60px;
   }
@@ -112,8 +108,9 @@
   }
 }
 .home .intro {
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 30px;
+  text-align: left;
 }
 .home .intro h1 {
   font-weight: 500;
@@ -129,12 +126,9 @@
     font-size: 100px;
     line-height: 120px;
     letter-spacing: -5px;
-    width: 740px;
+    width: 840px;
     font-weight: 600;
-
     text-align: left;
-
-
   }
   .home .intro b {
     font-size: 100px;
@@ -142,11 +136,12 @@
     letter-spacing: -5px;
     width: 740px;
     font-weight: 600;
+    text-align: left;
   }
 }
 @media only screen and (min-width: 992px) and (min-height: 800px) {
   .home .intro {
-    margin-top: 60px;
+    margin-top: 32px;
     margin-bottom: 50px;
   }
 }
@@ -200,5 +195,3 @@
 .home .tile.text.bg-green:hover {
   background-color: #BDC02B;
 }
-
-/*# sourceMappingURL=home.css.map */
