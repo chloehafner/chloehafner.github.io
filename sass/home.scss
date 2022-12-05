@@ -6,8 +6,10 @@
   max-width:       1000px;
   margin-left:     $mobile-margin;
   margin-right:    $mobile-margin;
+  margin-bottom: 56px;
   background:      url("./../img/light-background.png");
   background-size: contain;
+
 
   @media only screen and (min-width: $bp-desktop) {
     margin-left:  auto;
