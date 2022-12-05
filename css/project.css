@@ -333,7 +333,7 @@
 }
 .project p.blue {
   font-weight: 400;
-  line-height: 18px;
+  line-height: 22px;
 }
 @media only screen and (min-width: 992px) {
   .project p.blue {
@@ -555,6 +555,7 @@
 }
 .project #current-design .answer {
   margin-top: 0;
+  margin-bottom: 32px;
 }
 .project #current-design .third, .project #current-design .half {
   margin-bottom: 40px;
@@ -706,6 +707,7 @@
 }
 .project #pain-points .image p {
   font-weight: 500;
+  font-size: 16px;
 }
 .project #pain-points img {
   max-width: 100%;
@@ -755,9 +757,10 @@
   max-width: 322px;
 }
 .project #takeaways a {
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
   margin-bottom: 42px;
+  margin-top: 56px;
 }
 @media only screen and (min-width: 992px) {
   .project #takeaways img {

@@ -65,15 +65,19 @@
   .txt-sm {
     font-size: 26px;
   }
+
   .txt-md {
     font-size: 32px;
   }
+
   .txt-lg {
     font-size: 40px;
   }
+
   .txt-xl {
     font-size: 52px;
   }
+
   .txt-xxl {
     font-size: 60px;
   }
@@ -122,11 +126,18 @@
 }
 @media only screen and (min-width: 992px) {
   .home .intro h1 {
-    font-size: 25px;
-    line-height: 38px;
+    font-size: 100px;
+    line-height: 120px;
+    letter-spacing: -5px;
+    width: 740px;
+    font-weight: 600;
   }
   .home .intro b {
-    font-size: 25px;
+    font-size: 100px;
+    line-height: 120px;
+    letter-spacing: -5px;
+    width: 740px;
+    font-weight: 600;
   }
 }
 @media only screen and (min-width: 992px) and (min-height: 800px) {
@@ -141,8 +152,8 @@
   justify-content: center;
 }
 .home .tiles a, .home .tiles .tile {
-  max-width: 167px;
-  max-height: 167px;
+  max-width: 168px;
+  max-height: 168px;
   width: 100%;
   text-decoration: none;
   aspect-ratio: 1;
@@ -158,7 +169,7 @@
   background-size: contain;
 }
 .home .tile.text {
-  border-radius: 50%;
+  border-radius: 25%;
   flex-flow: column;
 }
 .home .tile.text h2, .home .tile.text p {
@@ -185,3 +196,5 @@
 .home .tile.text.bg-green:hover {
   background-color: #BDC02B;
 }
+
+/*# sourceMappingURL=home.css.map */
