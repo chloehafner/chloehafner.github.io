@@ -203,8 +203,17 @@ p {
  *
  */
 body {
-  background: $white;
+  // background: $white;
   margin-top: 24px;
+  animation: colorchange 20s infinite;
+
+  @keyframes colorchange {
+    0%   {background-color: $pink-light;}
+    25%  {background-color: $blue-light;}
+    50%  {background-color: $gold-light;}
+    75%  {background-color: $blue-light;}
+    100% {background-color: $pink-light;}
+  }
 
   @media only screen and (min-width: $bp-desktop) {
     padding-top: 40px;
