@@ -185,6 +185,10 @@ p.caps {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body, li, a {
   font-family: "Open Sans", sans-serif;
   color: black;
