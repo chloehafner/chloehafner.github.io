@@ -292,21 +292,15 @@ body {
 .bg-pink {
   background: #FA92C4;
 }
-
-.bg-orange {
-  background: #F4483D;
+.bg-pink:hover {
+  background: #F962AB;
 }
 
 .bg-green {
   background: #8C8E1C;
 }
-
-.bg-black {
-  background: #000000;
-}
-
-.bg-blue {
-  background: #4EAAFF;
+.bg-green:hover {
+  background: #BDC02B;
 }
 
 .desktop-only {

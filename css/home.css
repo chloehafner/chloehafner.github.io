@@ -26,15 +26,15 @@
   text-align: center;
 }
 
-.flex, .flex-center-center, .home .tile.text, .flex-vert-center, .flex-horiz-center {
+.flex, .flex-center-center, .flex-vert-center, .flex-horiz-center {
   display: flex;
 }
 
-.flex-horiz-center, .flex-center-center, .home .tile.text {
+.flex-horiz-center, .flex-center-center {
   justify-content: center;
 }
 
-.flex-vert-center, .flex-center-center, .home .tile.text {
+.flex-vert-center, .flex-center-center {
   align-items: center;
 }
 
@@ -155,61 +155,64 @@
   flex-flow: row wrap;
   justify-content: space-around;
 }
-.home .tiles a, .home .tiles .tile {
+.home .tiles .tile {
+  display: flex;
+  flex-flow: column;
+  max-width: 240px;
+  width: 100%;
+}
+@media only screen and (min-width: 992px) {
+  .home .tiles .tile {
+    max-width: 340px;
+  }
+}
+.home .tiles .image {
+  display: flex;
   max-width: 240px;
   max-height: 240px;
   width: 100%;
-  text-decoration: none;
-  aspect-ratio: 1;
-  padding-bottom: 16px;
-  margin-bottom: 32px;
+}
+.home .tiles .image img {
+  max-width: 150px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.08);
+  border-radius: 22%;
 }
 @media only screen and (min-width: 992px) {
-  .home .tiles a, .home .tiles .tile {
+  .home .tiles .image {
     max-width: 340px;
     max-height: 300px;
   }
+  .home .tiles .image img {
+    max-width: 250px;
+  }
 }
-.home .tile.image {
-  background-size: contain;
-}
-.home .tile.text {
-  border-radius: 22%;
-  flex-flow: column;
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.08);
-}
-.home .tile.text h2, .home .tile.text p {
-  text-align: center;
+.home .tiles h2, .home .tiles p {
+  text-align: left;
   padding: 0;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 18px;
-  max-width: 300px;
+  max-width: 240px;
 }
 @media only screen and (max-width: 991px) {
-  .home .tile.text h2, .home .tile.text p {
+  .home .tiles h2, .home .tiles p {
     line-height: 28px;
   }
 }
 @media only screen and (min-width: 992px) {
-  .home .tile.text h2, .home .tile.text p {
+  .home .tiles h2, .home .tiles p {
     font-size: 17px;
+    max-width: 340px;
   }
 }
-.home .tile.text.bg-pink:hover {
-  background-color: #F962AB;
-}
-.home .tile.text.bg-green:hover {
-  background-color: #BDC02B;
-}
-.home .tile.text #social p {
+.home #social p {
   color: #13151A;
   margin-top: 72px;
   margin-bottom: 300px;
   justify-content: center;
 }
 @media only screen and (min-width: 992px) {
-  .home .tile.text #social {
+  .home #social {
     margin-top: 72px;
     margin-bottom: 300px;
     justify-content: center;
