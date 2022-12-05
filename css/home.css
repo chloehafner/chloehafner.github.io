@@ -65,19 +65,15 @@
   .txt-sm {
     font-size: 26px;
   }
-
   .txt-md {
     font-size: 32px;
   }
-
   .txt-lg {
     font-size: 40px;
   }
-
   .txt-xl {
     font-size: 52px;
   }
-
   .txt-xxl {
     font-size: 60px;
   }
@@ -222,5 +218,3 @@
     justify-content: center;
   }
 }
-
-/*# sourceMappingURL=home.css.map */
