@@ -109,7 +109,7 @@
 }
 .home .intro {
   margin-top: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 72px;
   text-align: left;
 }
 .home .intro h1 {
@@ -127,7 +127,7 @@
     line-height: 105px;
     letter-spacing: -6px;
     width: 900px;
-    font-weight: 575px;
+    font-weight: 600px;
     text-align: left;
   }
   .home .intro b {
@@ -135,7 +135,7 @@
     line-height: 105px;
     letter-spacing: -6px;
     width: 900px;
-    font-weight: 575px;
+    font-weight: 600px;
     text-align: left;
   }
 }
@@ -186,7 +186,7 @@
 }
 @media only screen and (min-width: 992px) {
   .home .tile.text h2, .home .tile.text p {
-    font-size: 25px;
+    font-size: 17px;
   }
 }
 .home .tile.text.bg-pink:hover {
