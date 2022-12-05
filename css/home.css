@@ -127,6 +127,7 @@
     letter-spacing: -5px;
     width: 740px;
     font-weight: 600;
+    text-align: left;
   }
   .home .intro b {
     font-size: 100px;
@@ -134,6 +135,7 @@
     letter-spacing: -5px;
     width: 740px;
     font-weight: 600;
+    text-align: left;
   }
 }
 @media only screen and (min-width: 992px) and (min-height: 800px) {
@@ -145,7 +147,7 @@
 .home .tiles {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-around;
 }
 .home .tiles a, .home .tiles .tile {
   max-width: 168px;
@@ -157,8 +159,8 @@
 }
 @media only screen and (min-width: 992px) {
   .home .tiles a, .home .tiles .tile {
-    max-width: 240px;
-    max-height: 240px;
+    max-width: 340px;
+    max-height: 340px;
   }
 }
 .home .tile.image {
