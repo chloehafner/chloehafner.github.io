@@ -282,13 +282,13 @@ body {
   25% {
     background-color: linear-gradient(90deg, #D4E2E2 4612%, #6A82FB 11057%);
   }
-  25% {
+  50% {
     background-color: #E8CFB3;
   }
-  55% {
+  75% {
     background-color: linear-gradient(90deg, #D4E2E2 4612%, #6A82FB 11057%);
   }
-  45% {
+  100% {
     background-color: #FFF0ED;
   }
 }
