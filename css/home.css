@@ -123,7 +123,7 @@
 }
 @media only screen and (min-width: 992px) {
   .home .intro h1 {
-    font-size: 100px;
+    font-size: 95px;
     line-height: 105px;
     letter-spacing: -6px;
     width: 900px;
@@ -131,7 +131,7 @@
     text-align: left;
   }
   .home .intro b {
-    font-size: 100px;
+    font-size: 95px;
     line-height: 105px;
     letter-spacing: -6px;
     width: 900px;
@@ -172,7 +172,7 @@
   flex-flow: column;
 }
 .home .tile.text h2, .home .tile.text p {
-  text-align: center;
+  text-align: end;
   padding: 0;
   margin-top: 0;
   margin-bottom: 0;
