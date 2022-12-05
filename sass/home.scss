@@ -134,15 +134,5 @@
       background-color: #BDC02B;
     }
 
-    #social {
-      align-items: center;
-      text-align: center;
-      p {
-        color: $black;
-      }
-  
-      @media only screen and (min-width: $bp-desktop) {
-        margin-top: 72px;
-        margin-bottom: 56px;
-      }
   }
+}
