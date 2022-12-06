@@ -86,7 +86,7 @@
   max-width: 1000px;
   margin-left: 24px;
   margin-right: 24px;
-  margin-bottom: 56px;
+  margin-bottom: 72px;
   background: url("./../img/light-background.png");
   background-size: contain;
   /***
@@ -226,7 +226,7 @@
 @media only screen and (min-width: 992px) {
   .home .tiles .image {
     border-radius: 40px;
-    width: 340px;
+    width: 380px;
     height: 310px;
     max-width: unset;
     max-height: unset;
@@ -261,8 +261,9 @@
 }
 @media only screen and (min-width: 992px) {
   .home .tiles h2, .home .tiles p {
-    font-size: 17px;
+    font-size: 18px;
     max-width: 435px;
+    margin-left: 40px;
   }
 }
 .home #social p {
