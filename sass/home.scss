@@ -162,7 +162,7 @@ $icon-size-desktop:          165px;
 
       @media only screen and (min-width: $bp-desktop) {
         border-radius: $tile-border-radius-desktop;
-        width:  $tile-max-width-desktop - 95px;
+        width:  $tile-max-width-desktop - 55px;
         height: $tile-max-height-desktop - 30px;
         max-width: unset;
         max-height: unset;
@@ -197,8 +197,9 @@ $icon-size-desktop:          165px;
       }
 
       @media only screen and (min-width: $bp-desktop) {
-        font-size: 17px;
+        font-size: 18px;
         max-width: $tile-max-width-desktop;
+        margin-left:40px;
       }
     }
   }
