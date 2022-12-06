@@ -4,8 +4,8 @@
 $tile-max-width-mobile:      240px;
 $tile-max-height-mobile:     240px;
 
-$tile-max-width-desktop:     400px;
-$tile-max-height-desktop:    290px;
+$tile-max-width-desktop:     435px;
+$tile-max-height-desktop:    340px;
 
 $tile-border-radius-mobile:  20px;
 $tile-border-radius-desktop: 40px;
@@ -162,8 +162,8 @@ $icon-size-desktop:          165px;
 
       @media only screen and (min-width: $bp-desktop) {
         border-radius: $tile-border-radius-desktop;
-        width:  $tile-max-width-desktop - 64px;
-        height: $tile-max-height-desktop - 40px;
+        width:  $tile-max-width-desktop - 95px;
+        height: $tile-max-height-desktop - 30px;
         max-width: unset;
         max-height: unset;
       }
@@ -193,6 +193,7 @@ $icon-size-desktop:          165px;
 
       @media only screen and (max-width: $bp-desktop - 1) {
         line-height: 28px;
+        margin-left: 32px;
       }
 
       @media only screen and (min-width: $bp-desktop) {
