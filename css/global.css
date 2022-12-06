@@ -293,13 +293,13 @@ body {
     background-color: #FFF0ED;
   }
   25% {
-    background-color: #b5dbdb5d;
-  }
-  50% {
     background-color: #e8cfb390;
   }
-  75% {
+  50% {
     background-color: #b5dbdb5d;
+  }
+  75% {
+    background-color: #e8cfb390;
   }
   100% {
     background-color: #FFF0ED;
