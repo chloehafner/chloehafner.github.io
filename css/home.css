@@ -65,15 +65,19 @@
   .txt-sm {
     font-size: 26px;
   }
+
   .txt-md {
     font-size: 32px;
   }
+
   .txt-lg {
     font-size: 40px;
   }
+
   .txt-xl {
     font-size: 52px;
   }
+
   .txt-xxl {
     font-size: 60px;
   }
@@ -131,7 +135,7 @@
   background: #F962AB;
 }
 .home .bg-light-pink {
-  background: rgba(250, 146, 196, 0.6980392157);
+  background: #FA92C4B2;
 }
 .home .bg-light-pink:hover {
   background: #F962AB;
@@ -143,28 +147,28 @@
   background: #BDC02B;
 }
 .home .bg-light-green {
-  background: rgba(140, 142, 27, 0.6);
+  background: #8C8E1B99;
 }
 .home .bg-light-green:hover {
   background: #BDC02B;
 }
 .home .intro {
   margin-top: 20px;
-  margin-bottom: 56px;
+  margin-bottom: 72px;
   text-align: left;
 }
 .home .intro h1 {
   font-weight: 600;
-  font-size: 36px;
+  font-size: 38px;
   line-height: 40px;
   text-align: left;
-  letter-spacing: -3px;
+  letter-spacing: -4px;
 }
 .home .intro b {
   font-weight: 600;
-  font-size: 36px;
+  font-size: 38px;
   line-height: 40px;
-  letter-spacing: -3px;
+  letter-spacing: -4px;
 }
 @media only screen and (min-width: 992px) {
   .home .intro h1 {
@@ -204,7 +208,6 @@
   border-radius: 20px;
   width: 240px;
   height: 240px;
-  margin-top: 36px;
 }
 @media only screen and (min-width: 992px) {
   .home .tiles .image-outer {
@@ -213,8 +216,6 @@
     height: 340px;
     max-width: unset;
     max-height: unset;
-    margin-top: 72px;
-    margin-bottom:18px;
   }
 }
 .home .tiles .image {
@@ -225,7 +226,7 @@
 @media only screen and (min-width: 992px) {
   .home .tiles .image {
     border-radius: 40px;
-    width: 375px;
+    width: 340px;
     height: 310px;
     max-width: unset;
     max-height: unset;
@@ -255,14 +256,13 @@
 @media only screen and (max-width: 991px) {
   .home .tiles h2, .home .tiles p {
     line-height: 28px;
-    margin-left: 8px;
+    margin-left: 32px;
   }
 }
 @media only screen and (min-width: 992px) {
   .home .tiles h2, .home .tiles p {
-    font-size: 18px;
+    font-size: 17px;
     max-width: 435px;
-    margin-left:40px;
   }
 }
 .home #social p {
@@ -278,3 +278,5 @@
     text-align: center;
   }
 }
+
+/*# sourceMappingURL=home.css.map */
