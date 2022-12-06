@@ -272,7 +272,16 @@ p {
  *
  */
 body {
+  background: #FFFFFF;
   margin-top: 24px;
+}
+@media only screen and (min-width: 992px) {
+  body {
+    padding-top: 40px;
+  }
+}
+
+.color-changing {
   animation: colorchange 20s infinite;
 }
 @keyframes colorchange {
@@ -292,11 +301,6 @@ body {
     background-color: #FFF0ED;
   }
 }
-@media only screen and (min-width: 992px) {
-  body {
-    padding-top: 40px;
-  }
-}
 
 /***
  *       ____ _        _    ____ ____  _____ ____
@@ -306,20 +310,6 @@ body {
  *      \____|_____/_/   \_\____/____/|_____|____/
  *
  */
-.bg-pink {
-  background: #FA92C4;
-}
-.bg-pink:hover {
-  background: #F962AB;
-}
-
-.bg-green {
-  background: #8C8E1C;
-}
-.bg-green:hover {
-  background: #BDC02B;
-}
-
 .desktop-only {
   display: none;
 }
