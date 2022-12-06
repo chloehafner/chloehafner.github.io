@@ -289,16 +289,13 @@ body {
     background-color: #FFF0ED;
   }
   25% {
-    background-color: #b5dbdb;
+    background-color: rgba(181, 219, 219, 0.3647058824);
   }
   50% {
-
-
-    background-color: #e8cfb384;
-
+    background-color: rgba(232, 207, 179, 0.5647058824);
   }
   75% {
-    background-color: #b5dbdb;
+    background-color: rgba(181, 219, 219, 0.3647058824);
   }
   100% {
     background-color: #FFF0ED;
