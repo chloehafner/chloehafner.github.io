@@ -216,9 +216,9 @@ body {
 
   @keyframes colorchange {
     0%   {background-color: $pink-light;}
-    25%  {background-color: #b5dbdbbd;}
+    25%  {background-color: #b5dbdb5d;}
     50%  {background-color: #e8cfb390;}
-    75%  {background-color: #b5dbdb;}
+    75%  {background-color: #b5dbdb5d;}
     100% {background-color: $pink-light;}
   }
 }
