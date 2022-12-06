@@ -155,16 +155,16 @@
 }
 .home .intro h1 {
   font-weight: 600;
-  font-size: 38px;
+  font-size: 36px;
   line-height: 40px;
   text-align: left;
-  letter-spacing: -4px;
+  letter-spacing: -3px;
 }
 .home .intro b {
   font-weight: 600;
-  font-size: 38px;
+  font-size: 36px;
   line-height: 40px;
-  letter-spacing: -4px;
+  letter-spacing: -3px;
 }
 @media only screen and (min-width: 992px) {
   .home .intro h1 {
@@ -214,6 +214,7 @@
     max-width: unset;
     max-height: unset;
     margin-top: 72px;
+    margin-bottom:18px;
   }
 }
 .home .tiles .image {
@@ -259,8 +260,9 @@
 }
 @media only screen and (min-width: 992px) {
   .home .tiles h2, .home .tiles p {
-    font-size: 17px;
+    font-size: 18px;
     max-width: 435px;
+    margin-left:40px;
   }
 }
 .home #social p {
