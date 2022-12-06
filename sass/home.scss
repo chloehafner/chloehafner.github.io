@@ -83,32 +83,32 @@ $icon-size-desktop:          165px;
 
     h1 {
       font-weight:    600;
-      font-size:      42px;
-      line-height:    42px;
+      font-size:      38px;
+      line-height:    40px;
       text-align:     left;
-      letter-spacing: -4px;
+      letter-spacing: -5px;
     }
     b {
       font-weight:    600;
-      font-size:      42px;
-      line-height:    42px;
-      letter-spacing: -4px;
+      font-size:      38px;
+      line-height:    40px;
+      letter-spacing: -5px;
     }
 
     @media only screen and (min-width: $bp-desktop) {
       h1 {
-        font-size:      95px;
-        line-height:    105px;
-        letter-spacing: -6px;
-        width:          900px;
+        font-size:      90px;
+        line-height:    100px;
+        letter-spacing: -7px;
+        width:          1000px;
         font-weight:    600;
         text-align:     left;
       }
       b {
-        font-size:      95px;
-        line-height:    105px;
-        letter-spacing: -6px;
-        width:          900px;
+        font-size:      90px;
+        line-height:    100px;
+        letter-spacing: -7px;
+        width:          1000px;
         font-weight:    600;
         text-align:     left;
       }
