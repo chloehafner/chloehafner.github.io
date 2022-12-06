@@ -65,19 +65,15 @@
   .txt-sm {
     font-size: 26px;
   }
-
   .txt-md {
     font-size: 32px;
   }
-
   .txt-lg {
     font-size: 40px;
   }
-
   .txt-xl {
     font-size: 52px;
   }
-
   .txt-xxl {
     font-size: 60px;
   }
@@ -135,7 +131,7 @@
   background: #F962AB;
 }
 .home .bg-light-pink {
-  background: #FA92C4B2;
+  background: rgba(250, 146, 196, 0.6980392157);
 }
 .home .bg-light-pink:hover {
   background: #F962AB;
@@ -147,14 +143,14 @@
   background: #BDC02B;
 }
 .home .bg-light-green {
-  background: #8C8E1B99;
+  background: rgba(140, 142, 27, 0.6);
 }
 .home .bg-light-green:hover {
   background: #BDC02B;
 }
 .home .intro {
   margin-top: 20px;
-  margin-bottom: 72px;
+  margin-bottom: 130px;
   text-align: left;
 }
 .home .intro h1 {
@@ -191,7 +187,7 @@
 @media only screen and (min-width: 992px) and (min-height: 800px) {
   .home .intro {
     margin-top: 32px;
-    margin-bottom: 72px;
+    margin-bottom: 50px;
   }
 }
 .home .tiles {
