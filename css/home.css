@@ -131,9 +131,7 @@
   background: #F962AB;
 }
 .home .bg-light-pink {
-
-background: #FA92C4B2;
-
+  background: rgba(250, 146, 196, 0.6980392157);
 }
 .home .bg-light-pink:hover {
   background: #F962AB;
@@ -145,9 +143,7 @@ background: #FA92C4B2;
   background: #BDC02B;
 }
 .home .bg-light-green {
-
-background: #8C8E1B99;
-
+  background: rgba(140, 142, 27, 0.6);
 }
 .home .bg-light-green:hover {
   background: #BDC02B;
@@ -212,13 +208,10 @@ background: #8C8E1B99;
 @media only screen and (min-width: 992px) {
   .home .tiles .image-outer {
     border-radius: 40px;
-
-  width: 435px;
-  height: 340px;
-    
-
-  max-width: unset;
-  max-height: unset;
+    width: 435px;
+    height: 340px;
+    max-width: unset;
+    max-height: unset;
   }
 }
 .home .tiles .image {
@@ -229,12 +222,10 @@ background: #8C8E1B99;
 @media only screen and (min-width: 992px) {
   .home .tiles .image {
     border-radius: 40px;
-
-  width: 340px;
-  height: 310px;
-
-  max-width: unset;
-  max-height: unset;
+    width: 340px;
+    height: 310px;
+    max-width: unset;
+    max-height: unset;
   }
 }
 .home .tiles img {
@@ -267,7 +258,6 @@ background: #8C8E1B99;
 @media only screen and (min-width: 992px) {
   .home .tiles h2, .home .tiles p {
     font-size: 17px;
-
     max-width: 435px;
   }
 }
