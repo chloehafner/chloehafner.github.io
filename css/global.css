@@ -289,13 +289,13 @@ body {
     background-color: #FFF0ED;
   }
   25% {
-    background-color: linear-gradient(90deg, #D4E2E2 4612%, #6A82FB 11057%);
+    background-color: #b5dbdb;
   }
   50% {
-    background-color: #E8CFB3;
+    background-color: rgba(232, 207, 179, 0.6941176471);
   }
   75% {
-    background-color: linear-gradient(90deg, #D4E2E2 4612%, #6A82FB 11057%);
+    background-color: #b5dbdb;
   }
   100% {
     background-color: #FFF0ED;
