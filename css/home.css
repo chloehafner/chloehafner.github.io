@@ -26,15 +26,15 @@
   text-align: center;
 }
 
-.flex, .flex-center-center, .flex-vert-center, .flex-horiz-center {
+.flex, .flex-center-center, .home .tiles .image, .home .tiles .image-outer, .flex-vert-center, .flex-horiz-center {
   display: flex;
 }
 
-.flex-horiz-center, .flex-center-center {
+.flex-horiz-center, .flex-center-center, .home .tiles .image, .home .tiles .image-outer {
   justify-content: center;
 }
 
-.flex-vert-center, .flex-center-center {
+.flex-vert-center, .flex-center-center, .home .tiles .image, .home .tiles .image-outer {
   align-items: center;
 }
 
@@ -90,6 +90,14 @@
   background: url("./../img/light-background.png");
   background-size: contain;
   /***
+   *      ____    _    ____ _  ______ ____   ___  _   _ _   _ ____  ____
+   *     | __ )  / \  / ___| |/ / ___|  _ \ / _ \| | | | \ | |  _ \/ ___|
+   *     |  _ \ / _ \| |   | ' / |  _| |_) | | | | | | |  \| | | | \___ \
+   *     | |_) / ___ \ |___| . \ |_| |  _ <| |_| | |_| | |\  | |_| |___) |
+   *     |____/_/   \_\____|_|\_\____|_| \_\\___/ \___/|_| \_|____/|____/
+   *
+   */
+  /***
    *      ___ _   _ _____ ____   ___
    *     |_ _| \ | |_   _|  _ \ / _ \
    *      | ||  \| | | | | |_) | | | |
@@ -105,12 +113,44 @@
    *       |_| |___|_____|_____|____/
    *
    */
+  /***
+   *      ____   ___   ____ ___    _    _
+   *     / ___| / _ \ / ___|_ _|  / \  | |
+   *     \___ \| | | | |    | |  / _ \ | |
+   *      ___) | |_| | |___ | | / ___ \| |___
+   *     |____/ \___/ \____|___/_/   \_\_____|
+   *
+   */
 }
 @media only screen and (min-width: 992px) {
   .home {
     margin-left: auto;
     margin-right: auto;
   }
+}
+.home .bg-pink {
+  background: #FA92C4;
+}
+.home .bg-pink:hover {
+  background: #F962AB;
+}
+.home .bg-light-pink {
+  background: #FA92C4B2;
+}
+.home .bg-light-pink:hover {
+  background: #F962AB;
+}
+.home .bg-green {
+  background: #8C8E1C;
+}
+.home .bg-green:hover {
+  background: #BDC02B;
+}
+.home .bg-light-green {
+  background: #8C8E1B99;
+}
+.home .bg-light-green:hover {
+  background: #BDC02B;
 }
 .home .intro {
   margin-top: 20px;
@@ -162,33 +202,48 @@
 .home .tiles .tile {
   display: flex;
   flex-flow: column;
-  max-width: 240px;
   width: 100%;
 }
+.home .tiles .image-outer {
+  border-radius: 20px;
+  width: 240px;
+  height: 240px;
+}
 @media only screen and (min-width: 992px) {
-  .home .tiles .tile {
-    max-width: 340px;
+  .home .tiles .image-outer {
+    border-radius: 40px;
+    width: 400px;
+    height: 290px;
+    max-width: unset;
+    max-height: unset;
   }
 }
 .home .tiles .image {
-  display: flex;
-  max-width: 240px;
-  max-height: 240px;
-  width: 100%;
-}
-.home .tiles .image img {
-  max-width: 150px;
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.08);
-  border-radius: 22%;
+  border-radius: 20px;
+  height: 220px;
+  width: 208px;
 }
 @media only screen and (min-width: 992px) {
   .home .tiles .image {
-    max-width: 340px;
-    max-height: 300px;
+    border-radius: 40px;
+    width: 336px;
+    height: 250px;
+    max-width: unset;
+    max-height: unset;
   }
-  .home .tiles .image img {
-    max-width: 250px;
+}
+.home .tiles img {
+  max-width: 100px;
+  max-height: 100px;
+}
+@media only screen and (min-width: 992px) {
+  .home .tiles img {
+    max-width: 165px;
+    max-height: 165px;
   }
+}
+.home .tiles a {
+  text-decoration: none;
 }
 .home .tiles h2, .home .tiles p {
   text-align: left;
@@ -206,20 +261,20 @@
 @media only screen and (min-width: 992px) {
   .home .tiles h2, .home .tiles p {
     font-size: 17px;
-    max-width: 340px;
+    max-width: 400px;
   }
 }
 .home #social p {
   color: #13151A;
   margin-top: 72px;
   margin-bottom: 300px;
-  justify-content: center;
+  text-align: center;
 }
 @media only screen and (min-width: 992px) {
   .home #social {
     margin-top: 72px;
     margin-bottom: 300px;
-    justify-content: center;
+    text-align: center;
   }
 }
 

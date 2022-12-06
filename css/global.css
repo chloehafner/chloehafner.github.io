@@ -276,7 +276,16 @@ p {
  *
  */
 body {
+  background: #FFFFFF;
   margin-top: 24px;
+}
+@media only screen and (min-width: 992px) {
+  body {
+    padding-top: 40px;
+  }
+}
+
+.color-changing {
   animation: colorchange 20s infinite;
 }
 @keyframes colorchange {
@@ -286,21 +295,14 @@ body {
   25% {
     background-color: linear-gradient(90deg, #D4E2E2 4612%, #6A82FB 11057%);
   }
-
-  25% {
+  50% {
     background-color: #E8CFB3;
   }
-  55% {
+  75% {
     background-color: linear-gradient(90deg, #D4E2E2 4612%, #6A82FB 11057%);
   }
-  45% {
-
+  100% {
     background-color: #FFF0ED;
-  }
-}
-@media only screen and (min-width: 992px) {
-  body {
-    padding-top: 40px;
   }
 }
 
@@ -312,20 +314,6 @@ body {
  *      \____|_____/_/   \_\____/____/|_____|____/
  *
  */
-.bg-pink {
-  background: #FA92C4;
-}
-.bg-pink:hover {
-  background: #F962AB;
-}
-
-.bg-green {
-  background: #8C8E1C;
-}
-.bg-green:hover {
-  background: #BDC02B;
-}
-
 .desktop-only {
   display: none;
 }

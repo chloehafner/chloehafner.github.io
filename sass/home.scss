@@ -1,14 +1,17 @@
 @import "./_variables.scss";
 @import "./custom-styles.scss";
 
-$tile-max-width-mobile:   240px;
-$tile-max-height-mobile:  240px;
+$tile-max-width-mobile:      240px;
+$tile-max-height-mobile:     240px;
 
-$tile-max-width-desktop:  340px;
-$tile-max-height-desktop: 300px;
+$tile-max-width-desktop:     400px;
+$tile-max-height-desktop:    290px;
 
-$icon-size-mobile:        150px;
-$icon-size-desktop:       250px;
+$tile-border-radius-mobile:  20px;
+$tile-border-radius-desktop: 40px;
+
+$icon-size-mobile:           100px;
+$icon-size-desktop:          165px;
 
 .home {
 
@@ -25,6 +28,45 @@ $icon-size-desktop:       250px;
     margin-right: auto;
   }
 
+  /***
+   *      ____    _    ____ _  ______ ____   ___  _   _ _   _ ____  ____
+   *     | __ )  / \  / ___| |/ / ___|  _ \ / _ \| | | | \ | |  _ \/ ___|
+   *     |  _ \ / _ \| |   | ' / |  _| |_) | | | | | | |  \| | | | \___ \
+   *     | |_) / ___ \ |___| . \ |_| |  _ <| |_| | |_| | |\  | |_| |___) |
+   *     |____/_/   \_\____|_|\_\____|_| \_\\___/ \___/|_| \_|____/|____/
+   *
+   */
+  .bg-pink {
+    background: $bg-pink;
+
+    &:hover {
+      background: $bg-pink-hover;
+    }
+  }
+
+  .bg-light-pink {
+    background: #FA92C4B2;
+
+    &:hover {
+      background: $bg-pink-hover;
+    }
+  }
+
+  .bg-green {
+    background: $bg-green;
+
+    &:hover {
+      background: $bg-green-hover;
+    }
+  }
+
+  .bg-light-green {
+    background: #8C8E1B99;
+
+    &:hover {
+      background: $bg-green-hover;
+    }
+  }
 
   /***
    *      ___ _   _ _____ ____   ___
@@ -94,35 +136,51 @@ $icon-size-desktop:       250px;
     .tile {
       display:   flex;
       flex-flow: column;
-      max-width: $tile-max-width-mobile;
       width:     100%;
+    }
+
+    .image-outer {
+      @extend .flex-center-center;
+      border-radius: $tile-border-radius-mobile;
+      width:     $tile-max-width-mobile;
+      height:    $tile-max-height-mobile;
 
       @media only screen and (min-width: $bp-desktop) {
-        max-width: $tile-max-width-desktop;
+        border-radius: $tile-border-radius-desktop;
+        width:  $tile-max-width-desktop;
+        height: $tile-max-height-desktop;
+        max-width: unset;
+        max-height: unset;
       }
     }
 
     .image {
-      display:    flex;
-      // flex-flow:     column;
-      max-width:  $tile-max-width-mobile;
-      max-height: $tile-max-height-mobile;
-      width:      100%;
-
-      img {
-        max-width:     $icon-size-mobile;
-        box-shadow:    0 4px 10px 0 rgb(0 0 0 / 8%);
-        border-radius: 22%;
-      }
+      @extend .flex-center-center;
+      border-radius: $tile-border-radius-mobile;
+      height: $tile-max-height-mobile - 20px;
+      width: $tile-max-width-mobile - 32px;
 
       @media only screen and (min-width: $bp-desktop) {
-        max-width:  $tile-max-width-desktop;
-        max-height: $tile-max-height-desktop;
-
-        img {
-          max-width: $icon-size-desktop;
-        }
+        border-radius: $tile-border-radius-desktop;
+        width:  $tile-max-width-desktop - 64px;
+        height: $tile-max-height-desktop - 40px;
+        max-width: unset;
+        max-height: unset;
       }
+    }
+
+    img {
+      max-width: $icon-size-mobile;
+      max-height: $icon-size-mobile;
+
+      @media only screen and (min-width: $bp-desktop) {
+        max-width: $icon-size-desktop;
+        max-height: $icon-size-desktop;
+      }
+    }
+
+    a {
+      text-decoration: none;
     }
 
     h2, p {
@@ -144,18 +202,26 @@ $icon-size-desktop:       250px;
     }
   }
 
+  /***
+   *      ____   ___   ____ ___    _    _
+   *     / ___| / _ \ / ___|_ _|  / \  | |
+   *     \___ \| | | | |    | |  / _ \ | |
+   *      ___) | |_| | |___ | | / ___ \| |___
+   *     |____/ \___/ \____|___/_/   \_\_____|
+   *
+   */
   #social {
     p {
-      color:           $black;
-      margin-top:      72px;
-      margin-bottom:   300px;
-      text-align: center;
+      color:         $black;
+      margin-top:    72px;
+      margin-bottom: 300px;
+      text-align:    center;
     }
 
     @media only screen and (min-width: $bp-desktop) {
-      margin-top:      72px;
-      margin-bottom:   300px;
-      text-align: center;
+      margin-top:    72px;
+      margin-bottom: 300px;
+      text-align:    center;
     }
   }
 }

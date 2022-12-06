@@ -203,8 +203,15 @@ p {
  *
  */
 body {
-  // background: $white;
+  background: $white;
   margin-top: 24px;
+
+  @media only screen and (min-width: $bp-desktop) {
+    padding-top: 40px;
+  }
+}
+
+.color-changing {
   animation: colorchange 20s infinite;
 
   @keyframes colorchange {
@@ -213,10 +220,6 @@ body {
     50%  {background-color: $gold-light;}
     75%  {background-color: $blue-light;}
     100% {background-color: $pink-light;}
-  }
-
-  @media only screen and (min-width: $bp-desktop) {
-    padding-top: 40px;
   }
 }
 
@@ -228,23 +231,6 @@ body {
  *      \____|_____/_/   \_\____/____/|_____|____/
  *
  */
-
-.bg-pink {
-  background: $bg-pink;
-
-  &:hover {
-    background: $bg-pink-hover;
-  }
-}
-
-.bg-green {
-  background: $bg-green;
-
-  &:hover {
-    background: $bg-green-hover;
-  }
-}
-
 .desktop-only {display: none;}
 
 @media only screen and (min-width: $bp-desktop) {
