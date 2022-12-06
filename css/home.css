@@ -222,7 +222,7 @@
 @media only screen and (min-width: 992px) {
   .home .tiles .image {
     border-radius: 40px;
-    width: 340px;
+    width: 380px;
     height: 310px;
     max-width: unset;
     max-height: unset;
@@ -257,8 +257,9 @@
 }
 @media only screen and (min-width: 992px) {
   .home .tiles h2, .home .tiles p {
-    font-size: 17px;
+    font-size: 18px;
     max-width: 435px;
+    margin-left: 40px;
   }
 }
 .home #social p {
