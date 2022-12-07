@@ -18,7 +18,7 @@ $icon-size-desktop:          165px;
   max-width:       1000px;
   margin-left:     $mobile-margin;
   margin-right:    $mobile-margin;
-  margin-bottom:   56px;
+  margin-bottom:   72px;
   background:      url("./../img/light-background.png");
   background-size: contain;
 
@@ -78,7 +78,7 @@ $icon-size-desktop:          165px;
    */
   .intro {
     margin-top:    20px;
-    margin-bottom: 72px;
+    margin-bottom: 130px;
     text-align:    left;
 
     h1 {
@@ -115,7 +115,7 @@ $icon-size-desktop:          165px;
 
       @media only screen and (min-height: 800px) {
         margin-top:    32px;
-        margin-bottom: 50px;
+        margin-bottom: 130px;
       }
     }
   }
@@ -162,7 +162,7 @@ $icon-size-desktop:          165px;
 
       @media only screen and (min-width: $bp-desktop) {
         border-radius: $tile-border-radius-desktop;
-        width:  $tile-max-width-desktop - 95px;
+        width:  $tile-max-width-desktop - 55px;
         height: $tile-max-height-desktop - 30px;
         max-width: unset;
         max-height: unset;
@@ -197,8 +197,9 @@ $icon-size-desktop:          165px;
       }
 
       @media only screen and (min-width: $bp-desktop) {
-        font-size: 17px;
+        font-size: 18px;
         max-width: $tile-max-width-desktop;
+        margin-left:40px;
       }
     }
   }
