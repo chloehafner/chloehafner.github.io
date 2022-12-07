@@ -172,6 +172,25 @@
 .project.gennev #current-design .analytic-3 {
   border-color: #FABAAC;
 }
+.project.gennev #user-centered .image {
+  display: flex;
+  flex-flow: column;
+}
+.project.gennev #user-centered img {
+  max-height: 48vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 992px) {
+  .project.gennev #user-centered .image {
+    flex-flow: row;
+  }
+  .project.gennev #user-centered img {
+    max-height: unset;
+    max-width: 30%;
+  }
+}
 @media only screen and (min-width: 992px) {
   .project.gennev img {
     max-height: 650px;
