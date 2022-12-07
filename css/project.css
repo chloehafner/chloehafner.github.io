@@ -185,6 +185,7 @@
 @media only screen and (min-width: 992px) {
   .project.gennev #user-centered .image {
     flex-flow: row;
+    justify-content: space-between;
   }
   .project.gennev #user-centered img {
     max-height: unset;
@@ -305,11 +306,29 @@
     font-size: 24px;
   }
 }
+.project.house-numbers #user-centered .double-image {
+  flex-flow: column;
+}
+.project.house-numbers #user-centered .part-1 img {
+  margin-bottom: 20px;
+}
 @media only screen and (min-width: 992px) {
-  .project.house-numbers #user-centered .image:nth-child(4) {
-    max-width: 1000px;
+  .project.house-numbers #user-centered .image {
+    display: flex;
+    justify-content: space-between;
+  }
+  .project.house-numbers #user-centered img {
     margin-left: auto;
     margin-right: auto;
+  }
+  .project.house-numbers #user-centered .part-1 img {
+    height: 794px;
+  }
+  .project.house-numbers #user-centered .part-2 img {
+    height: 1390px;
+  }
+  .project.house-numbers #user-centered .part-3 img {
+    height: 1064px;
   }
 }
 .project.house-numbers #pain-points img {
@@ -705,13 +724,6 @@
 @media only screen and (min-width: 992px) {
   .project #user-centered {
     margin-bottom: 30px;
-  }
-  .project #user-centered .image {
-    justify-content: space-between;
-  }
-  .project #user-centered img {
-    max-height: unset;
-    max-width: 30%;
   }
   .project #user-centered .image + h3 {
     margin-top: 90px;
