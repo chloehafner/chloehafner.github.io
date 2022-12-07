@@ -65,15 +65,19 @@
   .txt-sm {
     font-size: 26px;
   }
+
   .txt-md {
     font-size: 32px;
   }
+
   .txt-lg {
     font-size: 40px;
   }
+
   .txt-xl {
     font-size: 52px;
   }
+
   .txt-xxl {
     font-size: 60px;
   }
@@ -683,8 +687,12 @@
   .project #user-centered {
     margin-bottom: 30px;
   }
+  .project #user-centered .image {
+    justify-content: space-between;
+  }
   .project #user-centered img {
     max-height: unset;
+    max-width: 30%;
   }
   .project #user-centered .image + h3 {
     margin-top: 90px;
@@ -764,3 +772,5 @@
     max-width: 233px;
   }
 }
+
+/*# sourceMappingURL=project.css.map */

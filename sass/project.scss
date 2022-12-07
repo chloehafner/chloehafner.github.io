@@ -769,8 +769,13 @@ $ipad-height-mobile:   350px;
     @media only screen and (min-width: $bp-desktop) {
       margin-bottom: 30px;
 
+      .image {
+        justify-content: space-between;
+      }
+
       img {
         max-height: unset;
+        max-width: 30%;
       }
 
       .image + h3 {
