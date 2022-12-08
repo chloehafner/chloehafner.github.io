@@ -208,13 +208,13 @@
   }
 }
 .home .tiles .image-outer {
-  border-radius: 20px;
+  border-radius: 400px;
   width: 240px;
   height: 240px;
 }
 @media only screen and (min-width: 992px) {
   .home .tiles .image-outer {
-    border-radius: 40px;
+    border-radius: 400px;
     width: 340px;
     height: 340px;
     max-width: unset;
@@ -223,13 +223,13 @@
   }
 }
 .home .tiles .image {
-  border-radius: 20px;
+  border-radius: 400px;
   height: 220px;
   width: 208px;
 }
 @media only screen and (min-width: 992px) {
   .home .tiles .image {
-    border-radius: 40px;
+    border-radius: 400px;
     width: 290px;
     height: 290px;
     max-width: unset;
@@ -242,8 +242,8 @@
 }
 @media only screen and (min-width: 992px) {
   .home .tiles img {
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 165px;
+    max-height: 165px;
   }
 }
 .home .tiles a {
