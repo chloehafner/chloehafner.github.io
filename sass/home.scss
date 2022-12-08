@@ -97,20 +97,22 @@ $icon-size-desktop:          165px;
 
     @media only screen and (min-width: $bp-desktop) {
       h1 {
-        font-size:      89px;
+        font-size:      78px;
         line-height:    100px;
         letter-spacing: -8px;
         width:          1000px;
         font-weight:    600;
         text-align:     left;
+        margin-left:    25px;
       }
       b {
-        font-size:      89px;
+        font-size:      78px;
         line-height:    100px;
         letter-spacing: -8px;
         width:          1000px;
         font-weight:    600;
         text-align:     left;
+        margin-left:    25px;
       }
 
       @media only screen and (min-height: 800px) {
