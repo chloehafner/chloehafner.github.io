@@ -65,19 +65,15 @@
   .txt-sm {
     font-size: 26px;
   }
-
   .txt-md {
     font-size: 32px;
   }
-
   .txt-lg {
     font-size: 40px;
   }
-
   .txt-xl {
     font-size: 52px;
   }
-
   .txt-xxl {
     font-size: 60px;
   }
@@ -135,7 +131,7 @@
   background: #F962AB;
 }
 .home .bg-light-pink {
-  background: #FA92C4B2;
+  background: rgba(250, 146, 196, 0.6980392157);
 }
 .home .bg-light-pink:hover {
   background: #F962AB;
@@ -147,28 +143,27 @@
   background: #BDC02B;
 }
 .home .bg-light-green {
-  background: #8C8E1B99;
+  background: rgba(140, 142, 27, 0.6);
 }
 .home .bg-light-green:hover {
   background: #BDC02B;
 }
 .home .intro {
   margin-top: 20px;
-  margin-bottom: 130px;
+  margin-bottom: 65px;
   text-align: left;
+}
+@media only screen and (min-width: 992px) {
+  .home .intro {
+    margin-bottom: 130px;
+  }
 }
 .home .intro h1 {
   font-weight: 600;
   font-size: 38px;
   line-height: 40px;
   text-align: left;
-  letter-spacing: -4px;
-}
-.home .intro b {
-  font-weight: 600;
-  font-size: 38px;
-  line-height: 40px;
-  letter-spacing: -4px;
+  letter-spacing: -3px;
 }
 @media only screen and (min-width: 992px) {
   .home .intro h1 {
@@ -203,6 +198,12 @@
   display: flex;
   flex-flow: column;
   width: 100%;
+  margin-bottom: 28px;
+}
+@media only screen and (min-width: 992px) {
+  .home .tiles .tile {
+    margin-bottom: unset;
+  }
 }
 .home .tiles .image-outer {
   border-radius: 20px;
@@ -216,6 +217,7 @@
     height: 340px;
     max-width: unset;
     max-height: unset;
+    margin-bottom: 24px;
   }
 }
 .home .tiles .image {
@@ -256,7 +258,8 @@
 @media only screen and (max-width: 991px) {
   .home .tiles h2, .home .tiles p {
     line-height: 28px;
-    margin-left: 32px;
+    margin-left: 20px;
+    width: 195px;
   }
 }
 @media only screen and (min-width: 992px) {

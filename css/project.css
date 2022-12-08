@@ -65,19 +65,15 @@
   .txt-sm {
     font-size: 26px;
   }
-
   .txt-md {
     font-size: 32px;
   }
-
   .txt-lg {
     font-size: 40px;
   }
-
   .txt-xl {
     font-size: 52px;
   }
-
   .txt-xxl {
     font-size: 60px;
   }
@@ -451,7 +447,7 @@
 }
 @media only screen and (min-width: 992px) {
   .project .image {
-    margin: 0px;
+    margin: 0;
   }
 }
 .project .text + .image {
@@ -650,7 +646,7 @@
 }
 @media only screen and (min-width: 992px) {
   .project #meet-robyn .image {
-    margin: 0px;
+    margin: 0;
   }
   .project #meet-robyn .full {
     justify-content: space-between;

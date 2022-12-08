@@ -78,21 +78,21 @@ $icon-size-desktop:          165px;
    */
   .intro {
     margin-top:    20px;
-    margin-bottom: 130px;
+    margin-bottom: 65px;
     text-align:    left;
+
+    @media only screen and (min-width: $bp-desktop) {
+      margin-bottom: 130px;
+
+    }
+
 
     h1 {
       font-weight:    600;
       font-size:      38px;
       line-height:    40px;
       text-align:     left;
-      letter-spacing: -4px;
-    }
-    b {
-      font-weight:    600;
-      font-size:      38px;
-      line-height:    40px;
-      letter-spacing: -4px;
+      letter-spacing: -3px;
     }
 
     @media only screen and (min-width: $bp-desktop) {
@@ -137,7 +137,13 @@ $icon-size-desktop:          165px;
       display:   flex;
       flex-flow: column;
       width:     100%;
-    }
+      margin-bottom:28px;
+        @media only screen and (min-width: $bp-desktop) {
+          margin-bottom: unset;
+        }
+      }
+
+
 
     .image-outer {
       @extend .flex-center-center;
@@ -151,6 +157,7 @@ $icon-size-desktop:          165px;
         height: $tile-max-height-desktop;
         max-width: unset;
         max-height: unset;
+        margin-bottom:24px;
       }
     }
 
@@ -191,11 +198,13 @@ $icon-size-desktop:          165px;
       font-size:     18px;
       max-width:     $tile-max-width-mobile;
 
+      // Only for mobile
       @media only screen and (max-width: $bp-desktop - 1) {
         line-height: 28px;
-        margin-left: 32px;
+        margin-left: 20px;
+        width: $tile-max-width-mobile - 45px;
       }
-
+      // Only for desktop
       @media only screen and (min-width: $bp-desktop) {
         font-size: 18px;
         max-width: $tile-max-width-desktop;
