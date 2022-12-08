@@ -215,7 +215,7 @@
 @media only screen and (min-width: 992px) {
   .home .tiles .image-outer {
     border-radius: 40px;
-    width: 435px;
+    width: 340px;
     height: 340px;
     max-width: unset;
     max-height: unset;
@@ -230,8 +230,8 @@
 @media only screen and (min-width: 992px) {
   .home .tiles .image {
     border-radius: 40px;
-    width: 380px;
-    height: 310px;
+    width: 290px;
+    height: 290px;
     max-width: unset;
     max-height: unset;
   }
@@ -242,8 +242,8 @@
 }
 @media only screen and (min-width: 992px) {
   .home .tiles img {
-    max-width: 165px;
-    max-height: 165px;
+    max-width: 400px;
+    max-height: 400px;
   }
 }
 .home .tiles a {
@@ -267,7 +267,7 @@
 @media only screen and (min-width: 992px) {
   .home .tiles h2, .home .tiles p {
     font-size: 18px;
-    max-width: 435px;
+    max-width: 340px;
     margin-left: 40px;
   }
 }

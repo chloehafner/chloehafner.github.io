@@ -4,14 +4,14 @@
 $tile-max-width-mobile:      240px;
 $tile-max-height-mobile:     240px;
 
-$tile-max-width-desktop:     435px;
+$tile-max-width-desktop:     340px;
 $tile-max-height-desktop:    340px;
 
 $tile-border-radius-mobile:  20px;
 $tile-border-radius-desktop: 40px;
 
 $icon-size-mobile:           100px;
-$icon-size-desktop:          165px;
+$icon-size-desktop:          400px;
 
 .home {
 
@@ -171,8 +171,8 @@ $icon-size-desktop:          165px;
 
       @media only screen and (min-width: $bp-desktop) {
         border-radius: $tile-border-radius-desktop;
-        width:  $tile-max-width-desktop - 55px;
-        height: $tile-max-height-desktop - 30px;
+        width:  $tile-max-width-desktop - 50px;
+        height: $tile-max-height-desktop - 50px;
         max-width: unset;
         max-height: unset;
       }
