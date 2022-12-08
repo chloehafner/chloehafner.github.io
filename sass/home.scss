@@ -209,8 +209,8 @@ $icon-size-desktop:          165px;
       // Only for desktop
       @media only screen and (min-width: $bp-desktop) {
         font-size: 18px;
-        max-width: $tile-max-width-desktop;
-        margin-left:40px;
+        max-width: 300px;
+        margin-left:60px;
       }
     }
   }

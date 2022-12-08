@@ -267,8 +267,8 @@
 @media only screen and (min-width: 992px) {
   .home .tiles h2, .home .tiles p {
     font-size: 18px;
-    max-width: 340px;
-    margin-left: 40px;
+    max-width: 300px;
+    margin-left: 60px;
   }
 }
 .home #social p {
