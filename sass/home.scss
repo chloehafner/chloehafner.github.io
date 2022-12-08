@@ -167,7 +167,7 @@ $icon-size-desktop:          165px;
       @extend .flex-center-center;
       border-radius: $tile-border-radius-mobile;
       height: $tile-max-height-mobile - 20px;
-      width: $tile-max-width-mobile - 32px;
+      width: $tile-max-width-mobile - 20px;
 
       @media only screen and (min-width: $bp-desktop) {
         border-radius: $tile-border-radius-desktop;
