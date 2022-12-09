@@ -224,14 +224,14 @@
 }
 .home .tiles .image {
   border-radius: 400px;
-  height: 220px;
-  width: 220px;
+  height: 215px;
+  width: 215px;
 }
 @media only screen and (min-width: 992px) {
   .home .tiles .image {
     border-radius: 400px;
-    width: 290px;
-    height: 290px;
+    width: 305px;
+    height: 305px;
     max-width: unset;
     max-height: unset;
   }
