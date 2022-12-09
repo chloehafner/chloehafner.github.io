@@ -166,13 +166,13 @@ $icon-size-desktop:          165px;
     .image {
       @extend .flex-center-center;
       border-radius: $tile-border-radius-mobile;
-      height: $tile-max-height-mobile - 20px;
-      width: $tile-max-width-mobile - 20px;
+      height: $tile-max-height-mobile - 25px;
+      width: $tile-max-width-mobile - 25px;
 
       @media only screen and (min-width: $bp-desktop) {
         border-radius: $tile-border-radius-desktop;
-        width:  $tile-max-width-desktop - 50px;
-        height: $tile-max-height-desktop - 50px;
+        width:  $tile-max-width-desktop - 35px;
+        height: $tile-max-height-desktop - 35px;
         max-width: unset;
         max-height: unset;
       }
