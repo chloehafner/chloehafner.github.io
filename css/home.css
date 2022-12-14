@@ -137,16 +137,16 @@
   background: #F962AB;
 }
 .home .bg-green {
-  background: #8C8E1C;
+  background: #D2A570;
 }
 .home .bg-green:hover {
-  background: #BDC02B;
+  background: #D89B53;
 }
 .home .bg-light-green {
-  background: rgba(140, 142, 27, 0.6);
+  background: #d2a570a3;
 }
 .home .bg-light-green:hover {
-  background: #BDC02B;
+  background: #D89B53;
 }
 .home .intro {
   margin-top: 20px;
