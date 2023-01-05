@@ -151,13 +151,13 @@
   margin: 0;
   text-align: center;
 }
-.project .underline {
+.about .underline {
   width: 95px;
   border-radius: 3px;
   margin-bottom: 14px;
 }
 @media only screen and (min-width: 992px) {
-  .project .underline {
+  .about .underline {
     width: 165px;
     margin-bottom: 24px;
   }
