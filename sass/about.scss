@@ -31,6 +31,18 @@
     color: $grey;
   }
 
+  .underline {
+    width:         95px;
+    border-radius: 3px;
+    margin-bottom: 14px;
+    border: 3px solid $pink;
+
+    @media only screen and (min-width: $bp-desktop) {
+      width:         165px;
+      margin-bottom: 24px;
+    }
+  }
+
   section {
     display:        flex;
     flex-direction: column;

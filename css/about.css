@@ -65,19 +65,15 @@
   .txt-sm {
     font-size: 26px;
   }
-
   .txt-md {
     font-size: 32px;
   }
-
   .txt-lg {
     font-size: 40px;
   }
-
   .txt-xl {
     font-size: 52px;
   }
-
   .txt-xxl {
     font-size: 60px;
   }
@@ -106,6 +102,18 @@
 }
 .about p {
   color: #5E6B81;
+}
+.about .underline {
+  width: 95px;
+  border-radius: 3px;
+  margin-bottom: 14px;
+  border: 3px solid #FABAAC;
+}
+@media only screen and (min-width: 992px) {
+  .about .underline {
+    width: 165px;
+    margin-bottom: 24px;
+  }
 }
 .about section {
   display: flex;
@@ -151,17 +159,6 @@
   margin: 0;
   text-align: center;
 }
-.about .underline {
-  width: 95px;
-  border-radius: 3px;
-  margin-bottom: 14px;
-}
-@media only screen and (min-width: 992px) {
-  .about .underline {
-    width: 165px;
-    margin-bottom: 24px;
-  }
-}
 @media only screen and (min-width: 992px) {
   .about .tiles .tile {
     max-width: unset;
@@ -188,7 +185,5 @@
     margin-top: 40px;
   }
 }
-
-
 
 /*# sourceMappingURL=about.css.map */
