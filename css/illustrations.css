@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap");
-.bold, .about .tiles p {
+.bold {
   font-weight: 700;
 }
 
@@ -78,111 +78,92 @@
     font-size: 60px;
   }
 }
-.about .header-wrapper {
+.illustrations .header-wrapper {
   margin-bottom: 34px;
 }
 @media only screen and (min-width: 992px) {
-  .about {
+  .illustrations {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 @media only screen and (min-width: 20px) and (max-width: 1040px) {
-  .about {
+  .illustrations {
     margin-left: 20px;
     margin-right: 20px;
   }
 }
-.about h1, .about h2, .about h3, .about h4, .about h5 {
+.illustrations h1, .illustrations h2, .illustrations h3, .illustrations h4, .illustrations h5 {
   margin: 0 0 12px 0;
 }
-.about p + p {
+.illustrations p + p {
   margin-top: 0;
 }
-.about p {
+.illustrations p {
   color: #5E6B81;
 }
-.about .underline {
+.illustrations .underline {
   width: 95px;
   border-radius: 3px;
   margin-bottom: 14px;
   border: 3px solid #FA92C4;
 }
 @media only screen and (min-width: 992px) {
-  .about .underline {
+  .illustrations .underline {
     width: 165px;
     margin-bottom: 24px;
   }
 }
-.about section {
+.illustrations section {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
 }
 @media only screen and (min-width: 992px) {
-  .about section {
+  .illustrations section {
     margin-bottom: 40px;
   }
 }
-.about #profile {
-  align-items: center;
-  margin-bottom: 20px;
-}
-.about #profile img {
-  border-radius: 50%;
-  max-width: 70vw;
-}
-@media only screen and (min-width: 992px) {
-  .about #profile img {
-    max-width: 340px;
-  }
-}
-.about .tiles {
+.illustrations .tiles {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   margin-bottom: 30px;
 }
-.about .tiles .tile {
+.illustrations .tiles .tile {
   text-decoration: none;
   max-width: 45%;
   margin-left: auto;
   margin-right: auto;
 }
-.about .tiles img {
+.illustrations .tiles img {
   width: 100%;
-  aspect-ratio: 1;
-}
-.about .tiles p {
-  color: #13151A;
-  margin: 0;
-  text-align: center;
+  border-radius: 20px;
 }
 @media only screen and (min-width: 992px) {
-  .about .tiles .tile {
+  .illustrations .tiles .tile {
     max-width: unset;
     margin-bottom: 30px;
-    flex-basis: 33.33%;
+    flex-basis: 30%;
     display: flex;
     flex-flow: column;
   }
-  .about .tiles img, .about .tiles p {
-    width: 240px;
+  .illustrations .tiles img {
     font-size: 17px;
     margin: 20px auto auto;
   }
 }
-.about #social {
+.illustrations #social {
   align-items: center;
 }
-.about #social p {
+.illustrations #social p {
   color: #13151A;
 }
 @media only screen and (min-width: 992px) {
-  .about #social {
+  .illustrations #social {
     margin-top: 40px;
   }
 }
 
-/*# sourceMappingURL=about.css.map */
+/*# sourceMappingURL=illustrations.css.map */

@@ -1,9 +1,7 @@
 @import "./_variables.scss";
 @import "./custom-styles";
 
-.about {
-
-  // Test change!
+.illustrations {
   .header-wrapper {
     margin-bottom: 34px;
   }
@@ -53,21 +51,6 @@
     }
   }
 
-  #profile {
-    align-items:   center;
-    margin-bottom: 20px;
-
-    img {
-      border-radius: 50%;
-      max-width:     70vw;
-    }
-
-    @media only screen and (min-width: $bp-desktop) {
-      img {
-        max-width: 340px;
-      }
-    }
-  }
 
   // --- Tiles ---
   .tiles {
@@ -85,27 +68,23 @@
 
     img {
       width:        100%;
-      aspect-ratio: 1;
-    }
-
-    p {
-      @extend .bold;
-      color:      $black;
-      margin:     0;
-      text-align: center;
+      border-radius: 20px;
+      //aspect-ratio: 1;
     }
 
     @media only screen and (min-width: $bp-desktop) {
+      //flex-flow: column wrap;
+
       .tile {
         max-width:     unset;
         margin-bottom: 30px;
-        flex-basis:    33.33%;
+        flex-basis:    30%;
         display:       flex;
         flex-flow:     column;
       }
 
-      img, p {
-        width:      240px;
+      img {
+        //width:      240px;
         font-size:  17px;
         margin: 20px auto auto;
       }
