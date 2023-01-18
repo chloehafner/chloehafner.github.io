@@ -65,15 +65,19 @@
   .txt-sm {
     font-size: 26px;
   }
+
   .txt-md {
     font-size: 32px;
   }
+
   .txt-lg {
     font-size: 40px;
   }
+
   .txt-xl {
     font-size: 52px;
   }
+
   .txt-xxl {
     font-size: 60px;
   }
@@ -289,7 +293,7 @@ body {
     background-color: #FEF5F9;
   }
   25% {
-    background-color: #faf4f2;
+    background-color: #FDF3EE;
   }
   50% {
     background-color: #FCEEED;
@@ -318,6 +322,7 @@ body {
   .mobile-only {
     display: none;
   }
+
   .desktop-only {
     display: unset;
   }

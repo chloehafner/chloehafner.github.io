@@ -65,15 +65,19 @@
   .txt-sm {
     font-size: 26px;
   }
+
   .txt-md {
     font-size: 32px;
   }
+
   .txt-lg {
     font-size: 40px;
   }
+
   .txt-xl {
     font-size: 52px;
   }
+
   .txt-xxl {
     font-size: 60px;
   }
@@ -131,7 +135,7 @@
   background: #F962AB;
 }
 .home .bg-light-pink {
-  background: rgba(250, 146, 196, 0.6980392157);
+  background: #FA92C4B2;
 }
 .home .bg-light-pink:hover {
   background: #F962AB;
@@ -143,7 +147,7 @@
   background: #BDC02B;
 }
 .home .bg-light-green {
-  background: rgba(140, 142, 27, 0.6);
+  background: #8C8E1B99;
 }
 .home .bg-light-green:hover {
   background: #BDC02B;
