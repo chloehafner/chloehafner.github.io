@@ -242,14 +242,13 @@ p {
 }
 .header-wrapper .nav-links {
   display: flex;
-  font-size: 20px;
-  margin-top: 24px;
+  font-size: 16px;
+  margin-top: 12px;
+  flex-flow: column;
+  text-align: right;
 }
 .header-wrapper a {
   text-decoration: none;
-}
-.header-wrapper a + a {
-  margin-left: 20px;
 }
 @media only screen and (min-width: 992px) {
   .header-wrapper {
@@ -264,6 +263,10 @@ p {
     flex-flow: row;
     margin-top: 0;
     margin-right: 5px;
+    text-align: left;
+  }
+  .header-wrapper a + a {
+    margin-left: 20px;
   }
 }
 

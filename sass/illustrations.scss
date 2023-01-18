@@ -4,7 +4,7 @@
 .illustrations {
 
   .header-wrapper {
-    margin-bottom: 34px;
+    margin-bottom: 20px;
   }
 
   @media only screen and (min-width: $bp-desktop) {
@@ -34,7 +34,7 @@
     width:         95px;
     border-radius: 3px;
     margin-bottom: 14px;
-    border: 3px solid $bg-pink;
+    border:        3px solid $bg-pink;
 
     @media only screen and (min-width: $bp-desktop) {
       width:         165px;
@@ -52,7 +52,6 @@
     }
   }
 
-
   // --- Tiles ---
   .tiles {
     display:         flex;
@@ -68,7 +67,7 @@
     }
 
     img {
-      width:        100%;
+      width:         100%;
       border-radius: 20px;
       //aspect-ratio: 1;
     }
@@ -86,8 +85,8 @@
 
       img {
         //width:      240px;
-        font-size:  17px;
-        margin: 20px auto auto;
+        font-size: 17px;
+        margin:    20px auto auto;
       }
     }
   }
