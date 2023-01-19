@@ -250,7 +250,7 @@ p {
 @media only screen and (min-width: 992px) {
   .header-wrapper {
     align-items: center;
-    margin-bottom: 90px;
+    margin-bottom: 100px;
   }
   .header-wrapper .logo {
     max-width: 205px;
