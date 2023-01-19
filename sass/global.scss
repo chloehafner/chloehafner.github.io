@@ -160,16 +160,14 @@ p {
 
   .nav-links {
     display:    flex;
-    font-size:  20px;
-    margin-top: 24px;
+    font-size:  16px;
+    margin-top: 12px;
+    flex-flow:  column;
+    text-align: right;
   }
 
   a {
     text-decoration: none;
-
-    & + a {
-      margin-left: 20px;
-    }
   }
 
   .active {
@@ -189,8 +187,12 @@ p {
       flex-flow:    row;
       margin-top:   0;
       margin-right: 5px;
+      text-align:   left;
     }
 
+    a + a {
+      margin-left: 20px;
+    }
   }
 }
 
@@ -215,12 +217,11 @@ body {
   animation: colorchange 20s infinite;
 
 
-
   @keyframes colorchange {
-    0%   {background-color: #FEF5F9;}
-    25%  {background-color: #FDF3EE;}
-    50%  {background-color: #FCEEED;}
-    75%  {background-color: #F4F4EB;}
+    0% {background-color: #FEF5F9;}
+    25% {background-color: #FDF3EE;}
+    50% {background-color: #FCEEED;}
+    75% {background-color: #F4F4EB;}
     100% {background-color: #FEF5F9;}
   }
 }

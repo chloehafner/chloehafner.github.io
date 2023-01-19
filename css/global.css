@@ -65,15 +65,19 @@
   .txt-sm {
     font-size: 26px;
   }
+
   .txt-md {
     font-size: 32px;
   }
+
   .txt-lg {
     font-size: 40px;
   }
+
   .txt-xl {
     font-size: 52px;
   }
+
   .txt-xxl {
     font-size: 60px;
   }
@@ -238,14 +242,13 @@ p {
 }
 .header-wrapper .nav-links {
   display: flex;
-  font-size: 20px;
-  margin-top: 24px;
+  font-size: 16px;
+  margin-top: 12px;
+  flex-flow: column;
+  text-align: right;
 }
 .header-wrapper a {
   text-decoration: none;
-}
-.header-wrapper a + a {
-  margin-left: 20px;
 }
 @media only screen and (min-width: 992px) {
   .header-wrapper {
@@ -260,6 +263,10 @@ p {
     flex-flow: row;
     margin-top: 0;
     margin-right: 5px;
+    text-align: left;
+  }
+  .header-wrapper a + a {
+    margin-left: 20px;
   }
 }
 
@@ -289,7 +296,7 @@ body {
     background-color: #FEF5F9;
   }
   25% {
-    background-color: #faf4f2;
+    background-color: #FDF3EE;
   }
   50% {
     background-color: #FCEEED;
@@ -318,6 +325,7 @@ body {
   .mobile-only {
     display: none;
   }
+
   .desktop-only {
     display: unset;
   }
