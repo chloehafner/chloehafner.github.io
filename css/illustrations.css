@@ -65,19 +65,15 @@
   .txt-sm {
     font-size: 26px;
   }
-
   .txt-md {
     font-size: 32px;
   }
-
   .txt-lg {
     font-size: 40px;
   }
-
   .txt-xl {
     font-size: 52px;
   }
-
   .txt-xxl {
     font-size: 60px;
   }
@@ -122,7 +118,7 @@
 .illustrations section {
   display: flex;
   flex-direction: column;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
 }
 @media only screen and (min-width: 992px) {
   .illustrations section {

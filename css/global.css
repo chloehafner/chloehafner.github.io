@@ -65,19 +65,15 @@
   .txt-sm {
     font-size: 26px;
   }
-
   .txt-md {
     font-size: 32px;
   }
-
   .txt-lg {
     font-size: 40px;
   }
-
   .txt-xl {
     font-size: 52px;
   }
-
   .txt-xxl {
     font-size: 60px;
   }
@@ -253,7 +249,7 @@ p {
 @media only screen and (min-width: 992px) {
   .header-wrapper {
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 90px;
   }
   .header-wrapper .logo {
     max-width: 205px;
@@ -325,7 +321,6 @@ body {
   .mobile-only {
     display: none;
   }
-
   .desktop-only {
     display: unset;
   }
